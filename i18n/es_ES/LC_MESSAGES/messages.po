@@ -1,0 +1,295 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-08-20 16:19+0200\n"
+"PO-Revision-Date: 2021-08-20 16:21+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: include\n"
+"X-Poedit-SearchPath-2: view\n"
+
+#: config.php:2
+msgid ""
+"Damavis, Damavis Studio, Data, Big Data, Big Data Mallorca, Data Driven, "
+"Machine Learning, Mallorca Consultancy, Python, Apache Spark, Visualization, "
+"Data Lake, Scala, Apache Hadoop"
+msgstr ""
+"Damavis, Damavis Studio, Data, Big Data, Big Data Mallorca, Data Driven, "
+"Machine Learning, Consultoría Mallorca, Python, Apache Spark, Visualization, "
+"Data Lake, Scala, Apache Hadoop"
+
+#: config.php:3
+msgid ""
+"Damavis is an innovative startup specialized in the management of the most "
+"important resource of 21st century companies: their data. Our main objective "
+"is to get the highest possible performance of the data so that our clients "
+"can make better strategic decisions, ensuring scalability, maximum "
+"flexibility and integration of artificial intelligence algorithms."
+msgstr ""
+"Damavis es una startup innovadora especializada en la gestión del recurso "
+"más importante de las empresas del siglo XXI: sus datos. Nuestro principal "
+"objetivo es conseguir el mayor rendimiento posible de los datos para que "
+"nuestros clientes puedan tomar mejores decisiones estratégicas, asegurando "
+"escalabilidad, máxima flexibilidad e integración de algoritmos de "
+"inteligencia artificial."
+
+#: config.php:7
+msgid "Data, Machine Learning &amp; Visualization"
+msgstr "Datos, Machine Learning y Visualización"
+
+#: config.php:12
+msgid "About"
+msgstr "Sobre nosotros"
+
+#: config.php:15 include/navigation.php:9
+msgid "Contact"
+msgstr "Contacto"
+
+#: config.php:16 include/navigation.php:3
+msgid "Data Driven"
+msgstr "Impulsados por Datos"
+
+#: config.php:17
+msgid "Team"
+msgstr "Nuestro equipo"
+
+#: config.php:18 config.php:20 include/navigation.php:4
+msgid "Services"
+msgstr "Servicios"
+
+#: config.php:19
+msgid "Terms"
+msgstr "Términos"
+
+#: include/_gettext_hints.php:3 view/team.php:3
+msgid "CEO"
+msgstr "CEO"
+
+#: include/_gettext_hints.php:4 view/team.php:3 view/team.php:4 view/team.php:5
+#: view/team.php:6 view/team.php:7 view/team.php:8
+msgid "Co-founder"
+msgstr "Cofundador"
+
+#: include/_gettext_hints.php:5 view/team.php:7 view/team.php:8
+msgid "Head Data Scientist"
+msgstr "Director Científico de Datos"
+
+#: include/_gettext_hints.php:6 view/team.php:10 view/team.php:14
+msgid "Data Engineer"
+msgstr "Ingeniero de Datos"
+
+#: include/_gettext_hints.php:7 include/_gettext_hints.php:9 view/team.php:9
+#: view/team.php:11 view/team.php:13
+msgid "Data Scientist"
+msgstr "Científico de Datos"
+
+#: include/_gettext_hints.php:8 view/team.php:12
+msgid "Quality Assurance"
+msgstr "Seguro de Calidad"
+
+#: include/_gettext_hints.php:10
+#, php-format
+msgid ""
+"By clicking the “%s” button, you agree on our <a href=\"%s\">terms of "
+"pricacy</a>."
+msgstr ""
+"Clicando en “%s” Vd. acepta los <a href=\"%s\">terminos y condiciones de "
+"privacidad</a>."
+
+#: include/footer.php:13
+msgid "All rights reserved"
+msgstr "Derechos reservados"
+
+#: include/footer.php:13
+msgid "Attributions"
+msgstr "Atribuciones"
+
+#: include/footer.php:23
+msgid "Cookies advise"
+msgstr "Aviso de cookie"
+
+#: include/footer.php:25
+msgid "Terms and Conditions"
+msgstr "Terminos Legales"
+
+#: include/footer.php:27
+msgid "Okay"
+msgstr "Vale"
+
+#: include/form.php:4
+msgid "CONTACT"
+msgstr "CONTACTO"
+
+#: include/form.php:5
+msgid "Set up your data-driven growth"
+msgstr "Comienza tu crecimiento basado en datos"
+
+#: include/form.php:8
+msgid "What is your name?"
+msgstr "¿Cual es tu nombre?"
+
+#: include/form.php:9 include/form.php:11 include/form.php:13
+#: include/form.php:15
+msgid "Type here"
+msgstr "Escriba aquí"
+
+#: include/form.php:10
+msgid "What is your email?"
+msgstr "¿Cual es tu email?"
+
+#: include/form.php:12
+msgid "What is your organization?"
+msgstr "¿Cual es tu organización?"
+
+#: include/form.php:14
+msgid "What is your message?"
+msgstr "¿Y tu mensaje?"
+
+#: include/form.php:16 include/form.php:17
+msgid "Send Message"
+msgstr "Enviar mensaje"
+
+#: include/form.php:18
+msgid "The fields marked with a star (*) are mandatory"
+msgstr "Los campos marcados con un asterisco (*) son obligatorios"
+
+#: include/form.php:22
+msgid "Message received."
+msgstr "Mensaje recibido."
+
+#: include/form.php:23
+msgid "We usually take one day to respond."
+msgstr "Por lo general, tardamos un día en responder."
+
+#: include/form.php:26
+msgid "Do you need our services?"
+msgstr "¿Necesita nuestros servicios?"
+
+#: include/navigation.php:5
+msgid "About Us"
+msgstr "Sobre nosotros"
+
+#: include/navigation.php:6
+msgid "Our Team"
+msgstr "Nuestro equipo"
+
+#: include/navigation.php:7
+msgid "Work with us"
+msgstr "Trabaja con nosotros"
+
+#: include/navigation.php:8
+msgid "Blog"
+msgstr "Blog"
+
+#: view/team.php:4 view/team.php:5 view/team.php:6
+msgid "Head Data Engineer"
+msgstr "Ingeniero Jefe de Datos"
+
+#: view/team.php:17
+msgid "OUR TEAM"
+msgstr "NUESTRO EQUIPO"
+
+#: view/team.php:18
+msgid "Meet Damavis"
+msgstr "Conoce Damavis"
+
+#: view/team.php:19
+msgid ""
+"The high versatility of our profiles makes it possible for us to provide our "
+"services in any area related to data."
+msgstr ""
+"La alta versatilidad de nuestros perfiles nos permite brindar nuestros "
+"servicios en cualquier área relacionada con los datos."
+
+#: view/work.php:4 view/work.php:12
+msgid "WORK WITH US"
+msgstr "TRABAJA CON NOSOTROS"
+
+#: view/work.php:5 view/work.php:13
+msgid ""
+"We are a team of Data Engineer and Data Scientist experts in Big Data and "
+"Artificial Intelligence."
+msgstr ""
+"Somos un equipo de Data Engineer y Data Scientist expertos en BigData e "
+"Inteligencia Artificial."
+
+#: view/work.php:6 view/work.php:14
+msgid ""
+"We are oriented to provide value-added solutions to companies. Our most "
+"important values are the quality of our team and the service offered, which "
+"is why we attach great importance to the people who are part of the team."
+msgstr ""
+"Estamos orientados a brindar soluciones de valor agregado a las empresas. "
+"Nuestros valores más importantes son la calidad de nuestro equipo y el "
+"servicio ofrecido, por eso damos gran importancia a las personas que forman "
+"parte del equipo."
+
+#: view/work.php:19
+msgid "OUR OPEN POSITION"
+msgstr "NUESTRA OFERTA"
+
+#: view/work.php:20
+msgid "Serás responsable de:"
+msgstr "You will have to:"
+
+#: view/work.php:22
+msgid ""
+"Communication with the client both to understand their needs and to transmit "
+"the proposals and solutions developed by the data engineering team."
+msgstr ""
+"Comunicación con el cliente tanto para entender sus necesidades como para "
+"transmitir las propuestas y soluciones desarrolladas por el equipo de "
+"ingeniería de datos."
+
+#: view/work.php:23
+msgid ""
+"Participate in the development of Data Lake and Data Warehouse, as well as "
+"in real-time applications."
+msgstr ""
+"Participar en el desarrollo de Data Lake y Data Warehouse, así como en "
+"aplicaciones en tiempo real."
+
+#: view/work.php:24
+msgid "Automate data imports, exports, and transformations with orchestrators."
+msgstr ""
+"Automatizar importaciones, exportaciones y transformaciones de datos con "
+"orquestadores."
+
+#: view/work.php:25
+msgid "Management of SQL and NoSQL databases."
+msgstr "Gestión de bases de datos SQL y NoSQL."
+
+#: view/work.php:26
+msgid "Build horizontally scalable pipelines and data management applications."
+msgstr ""
+"Construir pipelines y aplicaciones de gestión del dato escalables "
+"horizontalmente."
+
+#~ msgid ""
+#~ "This website uses cookies to ensure the best experience on our website. "
+#~ "If you want to check more details, please read our."
+#~ msgstr ""
+#~ "Este sitio utiliza las cookies para ofrecerle el mejor servicio. Para más "
+#~ "información remítase a "
+
+#~ msgid ""
+#~ "Estamos orientados a dar soluciones de valor añadido a las empresas. "
+#~ "Nuestros valores más importantes son la calidad en nuestro equipo y el "
+#~ "servicio ofrecido, por lo que damos mucha importancia a las personas que "
+#~ "forman parte del equipo."
+#~ msgstr ""
+#~ "Estamos orientados a dar soluciones de valor añadido a las empresas. "
+#~ "Nuestros valores más importantes son la calidad en nuestro equipo y el "
+#~ "servicio ofrecido, por lo que damos mucha importancia a las personas que "
+#~ "forman parte del equipo."
+
+#~ msgid "Translate me please!"
+#~ msgstr "¡Traduceme ya!"

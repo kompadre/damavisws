@@ -1,0 +1,11 @@
+Cosas que comentar con Jordi: 
+- Logos
+- Home:
+	- Titulos de SERVICES y DATA DRIVEN son identicos
+	- Comprobar si el comportamiento de menu es el esperado
+- Videos:
+    - Convertir a MP4. MOV es un formato propietario de Apple y HTML no lo soporta
+
+
+
+

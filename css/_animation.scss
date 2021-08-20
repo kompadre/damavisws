@@ -1,0 +1,54 @@
+body >div#main {
+  >div.home.data-driven >div.steps:not(.stopped) {
+    @for $i from 0 through 5 {
+      @keyframes dd_steps_#{$i+1} {
+        0% { opacity: 0; }
+        #{$i*10%} { opacity: 0; }
+        #{$i*10%+10%} { opacity: 1; }
+        100% { opacity: 1; }
+      }
+      img:nth-of-type(#{$i+2}), video:nth-of-type(#{$i+1}), lottie-player:nth-of-type(#{$i+1}) > svg, div:nth-of-type(#{$i+1}) {
+        animation-name: dd_steps_#{$i+1};
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+      }
+    }
+    @keyframes dd_pointer {
+      0%  { top: 36px; opacity: 0; }
+      5% { top: 36px; opacity: 0.5; }
+      15% { top: 140px; opacity: 1; }
+      17% { top: 140px; }
+      25% { top: 244px; }
+      27% { top: 244px; }
+      35% { top: 348px; }
+      37% { top: 348px; }
+      45% { top: 453px; }
+      47% { top: 453px; }
+      55% { top: 453px; }
+      57% { top: 453px; }
+      57%   { top: 453px; }
+      100%   { top: 453px; }
+    }
+    img.pointer {
+      animation-name: dd_pointer;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
+  @keyframes appear {
+    0% { opacity: 0; margin-top: -100%; }
+    100% { opacity: 1; margin-top: 0; }
+  }
+  >div.banner_video >div.video >video#header_video:not(.hidden) {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+  }
+}
+
+
+
+

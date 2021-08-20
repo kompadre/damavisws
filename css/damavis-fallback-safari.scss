@@ -1,0 +1,80 @@
+@import "common";
+
+body > div#main {
+  >header.home {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    >div {
+      @media (max-width: $breakpoint_420) {
+        >nav.langs > a { display: inline; }
+      }
+      >nav.links {
+        -webkit-justify-content: flex-end;
+        >a {
+          margin: 6px 10px;
+          @media (max-width: $breakpoint_420) {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  >div.home.services >div.cards
+  {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    >div.card {
+      -webkit-flex-basis: 25%;
+      @media (max-width: $breakpoint_420) {
+        -webkit-flex-basis: 100%;
+      }
+    }
+  }
+  >div.home.data-driven {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    >div.steps {
+      -webkit-flex-basis: 85%;
+      @keyframes dd_pointer {
+        0%  { top: 80px; opacity: 0; }
+        5% { top: 80px; opacity: 0.5; }
+        15% { top: 232px; opacity: 1; }
+        17% { top: 232px; }
+        25% { top: 384px; }
+        27% { top: 384px; }
+        35% { top: 532px; }
+        37% { top: 532px; }
+        45% { top: 687px; }
+        47% { top: 687px; }
+        55% { top: 687px; }
+        57% { top: 687px; }
+        57%   { top: 687px; }
+        100%   { top: 687px; }
+      }
+      >img.pointer {
+        left: 15px
+      }
+      >img:not(.pointer), >div, >div >div {
+        animation-name: none!important;
+      }
+    }
+  }
+  >div.home.clients > div.logos {
+    text-align: center;
+    img {
+      display: inline;
+    }
+  }
+  >footer {
+    background-color: $color_text_dark_2;
+    >div >nav >a {
+      margin: 0 10px;
+    }
+  }
+
+  div.contact > div.contact-form > a.contact-jobs-link {
+    display: -webkit-flex;
+  }
+}
