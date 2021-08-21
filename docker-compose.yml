@@ -6,6 +6,6 @@ services:
     volumes:
     - ".:/var/www/html"
     - "./.htaccess.dynamic:/var/www/html/.htaccess"
-    - "./source/apache/localhost.conf:/etc/apache2/sites-enabled/localhost.conf"
+    - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
     ports:
     - "${DAMAVISWS_PORT}:80"

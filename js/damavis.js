@@ -182,8 +182,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     }
 
-    window.setTimeout(function() {
-        var header_video = document.getElementById("header_video");
-        header_video.classList.remove("hidden");
-    }, 200);
+    var header_video = document.getElementById("header_video");
+    if (!!header_video) {
+        window.setTimeout(function() {
+            header_video.classList.remove("hidden");
+        }, 200);
+    }
 });

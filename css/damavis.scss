@@ -255,12 +255,22 @@ body {
         >div nav.langs {
           grid-area: langs;
           justify-content: center;
+          @media (max-height: 400px) {
+            font-size: 0.7em;
+            margin-top: 0;
+            >a {
+              margin-bottom: 0;
+            }
+          }
         }
         >div nav.social {
           grid-area: social;
           >img {
             max-height: 30px;
             margin: 4px 8px;
+            @media (max-height: 400px) {
+              height: 1em;
+            }
           }
         }
         &:not(.active) >div nav {
@@ -304,7 +314,12 @@ body {
         >div nav a:visited {
           color: white;
         }
-        >div >nav.social { background-color: transparent; }
+        >div >nav.social {
+          background-color: transparent;
+          @media (max-width: $breakpoint_420) {
+            justify-content: center;
+          }
+        }
         @media (max-width: $breakpoint_768) {
           background-color: rgba(0,0,0,0.95);
         }
@@ -320,9 +335,13 @@ body {
             background-color: $color_almost_white;
           }
         }
-        >div >nav.social { background-color: $color_text_dark_2; }
+        >div >nav.social {
+          background-color: $color_text_dark_2;
+          @media(max-width: $breakpoint_420) {
+            justify-content: center;
+          }
+        }
       }
-
     }
     >div {
       padding-top: 90px;
@@ -405,7 +424,9 @@ body {
         >div.video,
         >div.banner-content {
           height: 550px;
-          max-height: calc(100vh - 89px);
+          @media (min-height: 650px) {
+            max-height: calc(100vh - 89px);
+          }
           @media (min-width: $breakpoint_420) {
             height: 580px;
           }
@@ -497,6 +518,7 @@ body {
           line-height: 73px;
           margin-bottom: 0px;
           margin-top: 0px;
+
         }
         >p {
           /* font-size: 24px; */

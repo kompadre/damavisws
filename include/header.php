@@ -32,7 +32,7 @@
 <body>
     <div class="<?= isset($darkBg) && $darkBg ? 'dark-bg' : '' ?>" id="main">
         <header class="home <?= isset($darkBg) && $darkBg ? 'relative' : 'fixed' ?>">
-            <a href="home.php">
+            <a href="/<?= $lang ?>/">
                 <img src="img/logo-<?= isset($darkBg) && $darkBg ? 'light' : 'dark' ?>.svg" class="logo" width="240" height="122" alt="DAMAVIS - DAta MAchine learning VISualization" /></a>
             <div>
                 <nav class="langs">

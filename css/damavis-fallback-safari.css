@@ -104,7 +104,8 @@ body > div.modal-dialog {
       height: auto;
       margin-top: 0.5em;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      align-self: start; }
     body > div.modal-dialog > div.modal-body > div:first-of-type > h3 {
       font-size: 1.25em; }
     body > div.modal-dialog > div.modal-body > div:first-of-type > p {
@@ -130,33 +131,42 @@ body > div.modal-dialog {
             margin-top: 2em;
             grid-column: 2; } }
 
-body > div#main > header.home {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap; }
-  @media (max-width: 425px) {
-    body > div#main > header.home > div > nav.langs > a {
-      display: inline; } }
-  body > div#main > header.home > div > nav.links {
-    -webkit-justify-content: flex-end; }
-    body > div#main > header.home > div > nav.links > a {
-      margin: 6px 10px; }
-      @media (max-width: 425px) {
-        body > div#main > header.home > div > nav.links > a {
-          display: block;
-          width: 100%; } }
-body > div#main > div.home.services > div.cards {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap; }
-  body > div#main > div.home.services > div.cards > div.card {
-    -webkit-flex-basis: 25%; }
+body > div#main {
+  /*
+  @media (max-width: $breakpoint_420) {
+    div.home.banner > div.banner-content > h1 {
+      margin-bottom: 40px;
+    }
+  }
+  */ }
+  body > div#main > header.home {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap; }
     @media (max-width: 425px) {
-      body > div#main > div.home.services > div.cards > div.card {
-        -webkit-flex-basis: 100%; } }
-body > div#main > div.home.data-driven {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap; }
-  body > div#main > div.home.data-driven > div.steps {
-    -webkit-flex-basis: 85%; }
+      body > div#main > header.home > div > nav.langs > a {
+        display: inline; } }
+    body > div#main > header.home > div > nav.links {
+      -webkit-justify-content: flex-end; }
+      body > div#main > header.home > div > nav.links > a {
+        margin: 6px 10px;
+        font-size: 0.8em; }
+        @media (max-width: 425px) {
+          body > div#main > header.home > div > nav.links > a {
+            display: block;
+            width: 100%; } }
+  body > div#main > div.home.services > div.cards {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap; }
+    body > div#main > div.home.services > div.cards > div.card {
+      -webkit-flex-basis: 25%; }
+      @media (max-width: 425px) {
+        body > div#main > div.home.services > div.cards > div.card {
+          -webkit-flex-basis: 100%; } }
+  body > div#main > div.home.data-driven {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap; }
+    body > div#main > div.home.data-driven > div.steps {
+      -webkit-flex-basis: 85%; }
 @keyframes dd_pointer {
   0% {
     top: 80px;
@@ -189,19 +199,19 @@ body > div#main > div.home.data-driven {
     top: 687px; }
   100% {
     top: 687px; } }
-    body > div#main > div.home.data-driven > div.steps > img.pointer {
-      left: 15px; }
-    body > div#main > div.home.data-driven > div.steps > img:not(.pointer), body > div#main > div.home.data-driven > div.steps > div, body > div#main > div.home.data-driven > div.steps > div > div {
-      animation-name: none !important; }
-body > div#main > div.home.clients > div.logos {
-  text-align: center; }
-  body > div#main > div.home.clients > div.logos img {
-    display: inline; }
-body > div#main > footer {
-  background-color: #051C3D; }
-  body > div#main > footer > div > nav > a {
-    margin: 0 10px; }
-body > div#main div.contact > div.contact-form > a.contact-jobs-link {
-  display: -webkit-flex; }
+      body > div#main > div.home.data-driven > div.steps > img.pointer {
+        left: 15px; }
+      body > div#main > div.home.data-driven > div.steps > img:not(.pointer), body > div#main > div.home.data-driven > div.steps > div, body > div#main > div.home.data-driven > div.steps > div > div {
+        animation-name: none !important; }
+  body > div#main > div.home.clients > div.logos {
+    text-align: center; }
+    body > div#main > div.home.clients > div.logos img {
+      display: inline; }
+  body > div#main > footer {
+    background-color: #051C3D; }
+    body > div#main > footer > div > nav > a {
+      margin: 0 10px; }
+  body > div#main div.contact > div.contact-form > a.contact-jobs-link {
+    display: -webkit-flex; }
 
 /*# sourceMappingURL=damavis-fallback-safari.css.map */

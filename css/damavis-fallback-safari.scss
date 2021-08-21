@@ -12,6 +12,7 @@ body > div#main {
         -webkit-justify-content: flex-end;
         >a {
           margin: 6px 10px;
+          font-size: 0.8em;
           @media (max-width: $breakpoint_420) {
             display: block;
             width: 100%;
@@ -77,4 +78,11 @@ body > div#main {
   div.contact > div.contact-form > a.contact-jobs-link {
     display: -webkit-flex;
   }
+  /*
+  @media (max-width: $breakpoint_420) {
+    div.home.banner > div.banner-content > h1 {
+      margin-bottom: 40px;
+    }
+  }
+  */
 }
