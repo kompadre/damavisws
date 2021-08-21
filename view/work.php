@@ -17,7 +17,7 @@
 <div class="work banner frame-3 img-right">
     <div class="double-title">
         <p><?= _('OUR OPEN POSITION') ?></p>
-        <h3><?= _('Serás responsable de:') ?></h3>
+        <h3><?= _('You will have to:') ?></h3>
         <ul>
             <li><?= _('Communication with the client both to understand their needs and to transmit the proposals and solutions developed by the data engineering team.') ?>
             <li><?= _('Participate in the development of Data Lake and Data Warehouse, as well as in real-time applications.') ?>
@@ -31,29 +31,29 @@
 <div class="work banner frame-4 img-left">
     <div><img src="img/work/frame-4.svg" /></div>
     <div class="double-title">
-        <p>OUR OPEN POSITION</p>
-        <h3>Requisitos</h3>
+        <p><?= _('OUR OPEN POSITION') ?></p>
+        <h3><?= _('Requirements') ?></h3>
         <ul>
-            <li>Persona graduada en ingeniería informática u otros grados con un alto componente tecnológico.</li>
-            <li>Claro entendimiento de arquitectura de software y buenas prácticas de programación como los principios SOLID.</li>
-            <li>Conocimientos avanzados de Scala, Python y SQL que permitan escribir, testear y validar código de forma ágil.</li>
-            <li>Conocimientos en sistemas operativos basados en linux.</li>
-            <li>Experiencia con tecnologías del Ecosistema Hadoop, como HDFS, Spark, Sqoop, entre otras.</li>
-            <li>Capacidad de comunicación tanto con personas técnicas como con perfiles de negocio.</li>
-            <li>Experiencia en orquestación de procesos de exportación y transformación del dato.</li>
-            <li>Conocimientos de sistema de control de versiones.</li>
+            <li><?= _('Person graduate in computer engineering or other degrees with a high technological component.') ?></li>
+            <li><?= _('Clear understanding of software architecture and good programming practices such as SOLID principles.') ?></li>
+            <li><?= _('Advanced knowledge of Scala, Python and SQL that allow write, test and validate an agile code.') ?></li>
+            <li><?= _('Knowledge-based Linux operating systems.') ?></li>
+            <li><?= _('Experience with Ecosystem Hadoop technologies, as HDFS, Spark, Sqoop, among others.') ?></li>
+            <li><?= _('Communication skills both technical people and business profiles.') ?></li>
+            <li><?= _('Experience in export process orchestration and transformation of the data.') ?></li>
+            <li><?= _('Knowledge of version control systems.') ?></li>
         </ul>
     </div>
 </div>
 <div class="work banner frame-5 img-right">
     <div class="double-title">
-        <p>OUR OPEN POSITION</p>
-        <h3>Requisitos</h3>
+        <p><?= _('OUR OPEN POSITION') ?></p>
+        <h3><?= _('Requisitos') ?></h3>
         <ul>
-            <li>Devoción por el software libre.</li>
-            <li>Esperiencia con metodologías ágiles de desarrollo.</li>
-            <li>Tener un perfil de GitHub que muestre tus habilidades.</li>
-            <li>Conocimientos de herramientas de CI/CD.</li>
+            <li><?= _('Devotion to free software.') ?></li>
+            <li><?= _('Esperiencia with agile development methodologies.') ?></li>
+            <li><?= _('GitHub have a profile showing your skills.') ?></li>
+            <li><?= _('Knowledge of CI / CD tools.') ?></li>
         </ul>
     </div>
     <div><img src="img/work/octocat.png" class="photo" /></div>
@@ -61,14 +61,14 @@
 <div class="home contact">
     <div class="contact-form">
         <div class="double-title">
-            <p class="center">JOIN US</p>
-            <h3 class="center">Do you want to be part of the Damavis team?</h3>
+            <p class="center"><?= _('JOIN US') ?></p>
+            <h3 class="center"><?= _('Do you want to be part of the Damavis team?') ?></h3>
         </div>
         <form>
-            <button class="cta">Apply now</button>
+            <button class="cta"><?= _('Apply now') ?></button>
         </form>
         <a class="contact-jobs-link" href="">
-            > Do you want to work with us?
+            > <?= _('Do you want to work with us?') ?>
         </a>
     </div>
 </div>

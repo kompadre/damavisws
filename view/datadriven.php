@@ -1,9 +1,9 @@
 <?php $currentPage = 'datadriven'; include('./include/header.php'); ?>
 <div class="datadriven big-banner">
     <div class="double-title">
-        <p>DATA DRIVEN</p>
-        <h3>The path to success depends on your decisions.</h3>
-        <p class="content">Below, you will be able to define the stage your business is on the road to digital transformation</p>
+        <p><?= _('DATA DRIVEN') ?></p>
+        <h3><?= _('The path to success depends on your decisions.') ?></h3>
+        <p class="content"><?= _('Below, you will be able to define the stage your business is on the road to digital transformation') ?></p>
     </div>
     <div></div>
 </div>
@@ -15,23 +15,23 @@
             <source src="../img/video/dd_01.mp4" type="video/mp4" />
         </video>
         <div class="double-title">
-            <p>Stage 1</p>
-            <h3>Data-Resistant</h3>
-            <p class="content">In this stage, the company makes no use of the data, relying on the saying "things have always been done this way", something that is a clear brake for progress. The reason why companies could be stuck in this phase is because of the fear that data reveals facts that go against internal interests, such as wrong strategic decisions or inefficient departments.</p>
+            <p><?= __('Stage %d', 1) ?></p>
+            <h3><?= _('Data-Resistant') ?></h3>
+            <p class="content"><?= _('In this stage, the company makes no use of the data, relying on the saying "things have always been done this way", something that is a clear brake for progress. The reason why companies could be stuck in this phase is because of the fear that data reveals facts that go against internal interests, such as wrong strategic decisions or inefficient departments.') ?></p>
         </div>
         <video autoplay muted loop>
             <source src="../img/video/dd_02.webm" type="video/mp4">
         </video>
         <div class="double-title">
-            <p>Stage 2</p>
-            <h3>Data-Aware</h3>
-            <p class="content">Once passed the Data-Resistant stage, the company begins to be aware of the value of the data, so it begins to collect a subset of data and perform a basic descriptive analysis which does not lead to taking any action.</p>
+            <p><?= __('Stage %d', 2) ?></p>
+            <h3><?= _('Data-Aware') ?></h3>
+            <p class="content"><?= _('Once passed the Data-Resistant stage, the company begins to be aware of the value of the data, so it begins to collect a subset of data and perform a basic descriptive analysis which does not lead to taking any action.') ?></p>
         </div>
         <video autoplay muted loop>
             <source src="../img/video/dd_03.webm" type="video/mp4">
         </video>
         <div class="double-title">
-            <p>Stage 3</p>
+            <p><?= __('Stage %d', 2) ?></p>
             <h3>Data-Guided</h3>
             <p class="content">Now the company performs extensive analysis of its data, obtaining solid conclusions of the impact of taken past decisions. In this stage, the company is only able to obtain a tactical value from the data, which implies knowing if they should continue doing what they have done until now or changing their strategy.</p>
         </div>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-08-20 16:19+0200\n"
-"PO-Revision-Date: 2021-08-20 16:21+0200\n"
+"POT-Creation-Date: 2021-08-21 05:40+0200\n"
+"PO-Revision-Date: 2021-08-21 05:43+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -12,6 +12,7 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: include\n"
 "X-Poedit-SearchPath-2: view\n"
@@ -95,7 +96,7 @@ msgstr "Científico de Datos"
 msgid "Quality Assurance"
 msgstr "Seguro de Calidad"
 
-#: include/_gettext_hints.php:10
+#: include/_gettext_hints.php:10 include/form.php:17
 #, php-format
 msgid ""
 "By clicking the “%s” button, you agree on our <a href=\"%s\">terms of "
@@ -116,13 +117,24 @@ msgstr "Atribuciones"
 msgid "Cookies advise"
 msgstr "Aviso de cookie"
 
-#: include/footer.php:25
-msgid "Terms and Conditions"
-msgstr "Terminos Legales"
+#: include/footer.php:24
+#, php-format
+msgid ""
+"This website uses cookies to ensure the best experience on our website. If "
+"you want to check more details, please read our <a href=\"%s\">Terms and "
+"Conditions</a>."
+msgstr ""
+"Este sitio web utiliza cookies para garantizar la mejor experiencia en "
+"nuestro sitio web. Si desea comprobar más detalles, por favor lea nuestros "
+"<a href=\"%s\">Términos y Condiciones</a>."
 
 #: include/footer.php:27
 msgid "Okay"
 msgstr "Vale"
+
+#: include/footer.php:28
+msgid "Close"
+msgstr "Cerrar"
 
 #: include/form.php:4
 msgid "CONTACT"
@@ -189,6 +201,576 @@ msgstr "Trabaja con nosotros"
 msgid "Blog"
 msgstr "Blog"
 
+#: view/about.php:9 view/about.php:46
+msgid "ABOUT US"
+msgstr "SOBRE NOSOTROS"
+
+#: view/about.php:10
+msgid "We perform intelligent data analysis"
+msgstr "Realizamos análisis inteligente de datos"
+
+#: view/about.php:11
+msgid ""
+"Damavis is an innovative studio specialized in the management of the most "
+"important resource of 21st century companies: their data. Our main goal is "
+"to get the highest performance of the data so that our clients can make "
+"better strategic business decisions, going hand by hand with them on the way "
+"to becoming a Data Driven company. The high versatility of our profiles "
+"makes it possible for us to provide our services in any area related to "
+"data. We manage from the creation of optimized Data Lakes to the deployment "
+"of artificial intelligence algorithms into live production environments "
+"whose reponses can happen in real time."
+msgstr ""
+"Damavis es una startup innovadora especializada en la gestión del recurso "
+"más importante de las empresas del siglo XXI: sus datos. Nuestro principal "
+"objetivo es conseguir el mayor rendimiento posible de los datos para que "
+"nuestros clientes puedan tomar mejores decisiones estratégicas, asegurando "
+"escalabilidad, máxima flexibilidad e integración de algoritmos de "
+"inteligencia artificial."
+
+#: view/about.php:12
+msgid ""
+"At Damavis we believe that the journey towards Digital Transformation must "
+"be progressive and complete, adapted to the needs of each of our clients. "
+"With our experience in the data world, we are able to apply scalable, "
+"flexible and adapted solutions to all types of markets."
+msgstr ""
+"En Damavis creemos que el camino hacia la transformación digital debe ser "
+"progresiva y completa, adaptada a las necesidades de cada uno de nuestros "
+"clientes. Con nuestra experiencia en el mundo de los datos, que son capaces "
+"de aplicar soluciones escalables, flexibles y adaptados a todo tipo de "
+"mercados."
+
+#: view/about.php:17
+msgid "OUR MANIFESTO"
+msgstr "NUESTRO LEMA"
+
+#: view/about.php:18
+msgid ""
+"We believe in our <strong>Teamwork</strong>, it will make the dream work."
+msgstr ""
+"Creemos en nuestro <strong>Trabajo en equipo</strong>, que hará que el "
+"trabajo del sueño."
+
+#: view/about.php:19
+msgid "We keep <strong>quality</strong> as our seal."
+msgstr "Mantenemos <strong>Calidad</strong> como nuestro sello."
+
+#: view/about.php:20
+msgid ""
+"We’re direct, honest and respectful with others and we excel in the way we "
+"do things."
+msgstr ""
+"Estamos directa, honesta y respetuosa con los demás y nos destacamos en la "
+"forma en que hacemos las cosas."
+
+#: view/about.php:21
+msgid ""
+"We’re passionately curious and always remember, that <strong>knowledge is "
+"our power</strong>."
+msgstr ""
+"Estamos apasionadamente curioso y recordar siempre, que <strong>conocimiento "
+"es nuestro poder</strong>."
+
+#: view/about.php:25
+msgid "Mission"
+msgstr "Misión"
+
+#: view/about.php:27
+msgid ""
+"To add value to the power of our clients by promoting the use of Big Data in "
+"order to create success stories from efficient strategies."
+msgstr ""
+"Para añadir valor a la potencia de nuestros clientes mediante la promoción "
+"de la utilización de grandes volúmenes de datos con el fin de crear "
+"historias de éxito de estrategias eficientes."
+
+#: view/about.php:30
+msgid "Vision"
+msgstr "Visión"
+
+#: view/about.php:32
+msgid ""
+"To be the reference of quality and talent of the Big Data. A sure investment "
+"on the future and success."
+msgstr ""
+"Para ser la referencia de la calidad y el talento del Big Data. Una "
+"inversión segura en el futuro y el éxito."
+
+#: view/about.php:35
+msgid "Purpose"
+msgstr "Objetivo"
+
+#: view/about.php:37
+msgid "To highlight our commitment to the client, the team and society."
+msgstr ""
+"Para poner de relieve nuestro compromiso con el cliente, el equipo y la "
+"sociedad."
+
+#: view/about.php:47
+msgid "Damavis history"
+msgstr "Conoce Damavis"
+
+#: view/about.php:48
+msgid ""
+"We know your problem, and we know that there is a solution. And not just a "
+"solution, but an ability to add value to what you already have and ensure a "
+"resounding success for your business. And that power resides in the data."
+msgstr ""
+"Conocemos tu problema, y sabemos que hay una solución. Y no solo una "
+"solución, sino una posibilidad de añadir valor a lo que ya tienes y "
+"garantizar un éxito rotundo sobre tu empresa. Y ese poder, reside en los "
+"datos."
+
+#: view/about.php:49
+msgid ""
+"Our CEO David Martin has dedicated his life to the world of the big data and "
+"artificial intelligence, and in 2018 decided to focus on your vision and "
+"create something authentic, quality and above all effective."
+msgstr ""
+"Nuestro CEO David Martín ha dedicado su vida al mundo del big data y la "
+"inteligencia artificial, y en 2018 decidió centrarse en su visión y crear "
+"algo auténtico, de calidad y sobretodo efectivo."
+
+#: view/about.php:50
+msgid ""
+"To achieve this, brought together the best, the team that had been working "
+"for years and together they created the company Aneior Studio SL, where they "
+"recorded their study of Big Data and Machine Learning with the name of "
+"Damavis."
+msgstr ""
+"Para conseguirlo, reunió a los mejores, el equipo con el que había estado "
+"trabajando durante años y juntos crearon la empresa Aneior Studio SL, donde "
+"registraron su estudio de Big Data y Machine Learning con el nombre de "
+"Damavis."
+
+#: view/about.php:51
+msgid ""
+"Within days, thanks to the good reputation of quality that the team had "
+"achieved began to work for their first customers."
+msgstr ""
+"En cuestión de días, gracias a la buena reputación sobre calidad que el "
+"equipo había conseguido, empezaron a trabajar para sus primeros clientes."
+
+#: view/about.php:52
+msgid ""
+"The effectiveness, efficiency and overall quality with which Damavis solve "
+"the problems of its customers, led to success stories that served as an "
+"example and inspiration for new customers."
+msgstr ""
+"La eficacia, eficiencia y sobretodo calidad con la que Damavis resolvía los "
+"problemas de sus clientes, derivó en casos de éxito que sirvieron como "
+"ejemplo e inspiración para nuevos clientes."
+
+#: view/about.php:53
+msgid ""
+"Today, we have the trust of customers as Barceló, W2M, Camper, Jumbo Tours, "
+"FastPay, Globalia, Avoris, among others. Our goal remains focused on being "
+"the benchmark for quality and talent of the Big Data, being a safe bet for "
+"the future and success, highlighting our commitment to the customer, the "
+"team and society."
+msgstr ""
+"A día de hoy, contamos con la confianza de clientes como Barceló, W2M, "
+"Camper, Jumbo Tours, FastPay, Globalia, Avoris, entre otros. Nuestro "
+"objetivo sigue focalizado en ser el referente de calidad y talento del Big "
+"Data, siendo una apuesta segura por el futuro y el éxito, destacando nuestro "
+"compromiso con el cliente, el equipo y con la sociedad."
+
+#: view/about.php:54
+msgid ""
+"What a customer for a problem or hindrance to progress, Damavis perceives it "
+"as a possibility, and transforms, packed in a case of success."
+msgstr ""
+"Lo que para un cliente supone un problema o impedimento para seguir "
+"avanzando, Damavis lo percibe como una posibilidad, y lo transforma, de "
+"lleno, en un caso de éxito."
+
+#: view/datadriven.php:4 view/home.php:93
+msgid "DATA DRIVEN"
+msgstr "DATA DRIVEN"
+
+#: view/datadriven.php:5
+msgid "The path to success depends on your decisions."
+msgstr ""
+"A continuación, usted será capaz de definir la etapa de su negocio está en "
+"el camino de la transformación digital"
+
+#: view/datadriven.php:6
+msgid ""
+"Below, you will be able to define the stage your business is on the road to "
+"digital transformation"
+msgstr ""
+"A continuación, usted será capaz de definir la etapa de su negocio está en "
+"el camino de la transformación digital"
+
+#: view/datadriven.php:18 view/datadriven.php:26 view/datadriven.php:34
+#: view/home.php:46 view/home.php:55 view/home.php:64 view/home.php:73
+#: view/home.php:82
+#, php-format
+msgid "Stage %d"
+msgstr "Etapa %d"
+
+#: view/datadriven.php:19 view/home.php:47
+msgid "Data-Resistant"
+msgstr "Resistente a datos"
+
+#: view/datadriven.php:20
+msgid ""
+"In this stage, the company makes no use of the data, relying on the saying "
+"\"things have always been done this way\", something that is a clear brake "
+"for progress. The reason why companies could be stuck in this phase is "
+"because of the fear that data reveals facts that go against internal "
+"interests, such as wrong strategic decisions or inefficient departments."
+msgstr ""
+"En esta etapa, la compañía no hace uso de los datos, basándose en el dicho "
+"\"las cosas siempre se han hecho de esta manera\", algo que es un freno para "
+"el progreso claro. La razón por la cual las empresas podrían estar atrapados "
+"en esta fase es debido al temor de que los datos revelan hechos que van en "
+"contra de los intereses internos, como las decisiones estratégicas "
+"equivocadas o departamentos ineficientes."
+
+#: view/datadriven.php:27 view/home.php:56
+msgid "Data-Aware"
+msgstr "Impulsados por Datos"
+
+#: view/datadriven.php:28
+msgid ""
+"Once passed the Data-Resistant stage, the company begins to be aware of the "
+"value of the data, so it begins to collect a subset of data and perform a "
+"basic descriptive analysis which does not lead to taking any action."
+msgstr ""
+"Una vez pasado la etapa de Datos resistente, la empresa empieza a ser "
+"consciente del valor de los datos, por lo que comienza a recoger un "
+"subconjunto de datos y llevar a cabo un análisis descriptivo de base que no "
+"conducen a tomar cualquier acción."
+
+#: view/home.php:9
+msgid "BIG DATA STUDIO"
+msgstr "BIG DATA STUDIO"
+
+#: view/home.php:10
+msgid "Get insights from your data"
+msgstr "Amplia la perspectiva de los datos"
+
+#: view/home.php:11
+msgid ""
+"Damavis is an innovative startup specialized in the management of the most "
+"important resource of 21st century\n"
+"                companies: their data. Our main objective is to get the "
+"highest possible performance of the data so that our\n"
+"                clients can make better strategic decisions, ensuring "
+"scalability, maximum flexibility and integration of\n"
+"                artificial intelligence algorithms."
+msgstr ""
+"Damavis es una startup innovadora especializada en la gestión del recurso "
+"más importante de las empresas del siglo XXI: sus datos. Nuestro principal "
+"objetivo es conseguir el mayor rendimiento posible de los datos para que "
+"nuestros clientes puedan tomar mejores decisiones estratégicas, asegurando "
+"escalabilidad, máxima flexibilidad e integración de algoritmos de "
+"inteligencia artificial."
+
+#: view/home.php:20 view/home.php:102 view/services.php:4
+msgid "SERVICES"
+msgstr "SERVICIOS"
+
+#: view/home.php:21 view/home.php:103
+msgid "We provide the state-of-the-art data solutions your firm needs to grow."
+msgstr ""
+"Proporcionamos las soluciones de datos del estado de la técnica de sus "
+"necesidades firmes para crecer."
+
+#: view/home.php:26
+msgid "Data Management"
+msgstr "Gestión de datos"
+
+#: view/home.php:30 view/services.php:36
+msgid "Artificial Intelligence"
+msgstr "Inteligencia artificial"
+
+#: view/home.php:34
+msgid "Data Visualization"
+msgstr "Visualización de datos"
+
+#: view/home.php:38 view/services.php:118
+msgid "Real Time"
+msgstr "Tiempo real"
+
+#: view/home.php:65
+msgid "Data-Guided"
+msgstr "Datos guiada"
+
+#: view/home.php:74
+msgid "Data-Savy"
+msgstr "Data-Savy"
+
+#: view/home.php:83
+msgid "Data-Driven"
+msgstr "Data-Driven"
+
+#: view/home.php:94
+msgid "The solution is hidden in your data. Let us reveal it for you."
+msgstr "La solución se oculta en sus datos. Vamos a revelar por usted."
+
+#: view/home.php:96
+msgid ""
+"The objective of Damavis is to work hand in hand with our clients to take "
+"them to the Data Driven Stage, in which it is possible to be highly "
+"competitive through an intelligent use of the data. The following five "
+"stages describe the path to achieving complete Digital Transformation."
+msgstr ""
+"El objetivo de Damavis es a trabajar de la mano con nuestros clientes para "
+"llevarlos a la etapa controlada por datos, en el que es posible ser "
+"altamente competitiva a través de un uso inteligente de los datos. Las cinco "
+"etapas siguientes describen el camino para lograr la transformación digital "
+"completa."
+
+#: view/home.php:105
+msgid ""
+"Aware of the power that data can offer the world, we have created a team of "
+"experts with the ability to create and deliver Big Data tools that lead to "
+"success. "
+msgstr ""
+"Consciente del poder que los datos pueden ofrecer al mundo, hemos creado un "
+"equipo de expertos con la capacidad de crear y ofrecer herramientas de "
+"grandes volúmenes de datos que conducen al éxito."
+
+#: view/home.php:106
+msgid "Meet us"
+msgstr "Conócenos"
+
+#: view/home.php:114
+msgid "CLIENTS"
+msgstr "CLIENTES"
+
+#: view/home.php:115
+msgid "We have performed outstanding projects with:"
+msgstr "Hemos realizado proyectos con:"
+
+#: view/services.php:5
+msgid ""
+"We add value by promoting the use of Big Data to create success stories from "
+"efficient strategies."
+msgstr ""
+"Añadimos valor mediante la promoción de la utilización de grandes volúmenes "
+"de datos para crear historias de éxito de estrategias eficientes."
+
+#: view/services.php:6
+msgid ""
+"Management, Artificial Intelligence,  Visualization and Real Time data "
+"comprehension. All by Damavis."
+msgstr ""
+"Gestión, inteligencia artificial, visualización y comprensión de datos en "
+"tiempo real. Todo por Damavis."
+
+#: view/services.php:11 view/services.php:35 view/services.php:92
+#: view/services.php:117 view/services.php:124
+msgid "TECHNOLOGY"
+msgstr "TECNOLOGÍA"
+
+#: view/services.php:12 view/services.php:93
+msgid "Data management"
+msgstr "Gestión de datos"
+
+#: view/services.php:13 view/services.php:94
+msgid ""
+"This service stack includes all the necessary processes that intend to "
+"organize data in a way that is is prepared to obtain value from it by "
+"creating artificial intelligence models and dynamic visualizations that take "
+"place in further stages."
+msgstr ""
+"Esta pila de servicio incluye todos los procesos necesarios que tengan la "
+"intención de organizar los datos en una forma que es se prepara para obtener "
+"el valor de la misma mediante la creación de modelos de inteligencia "
+"artificial y visualizaciones dinámicas que se producen en etapas posteriores."
+
+#: view/services.php:18
+msgid "Data Lake"
+msgstr "Lago de Datos"
+
+#: view/services.php:19 view/services.php:43
+msgid ""
+"We are experts at creating data repositories in their natural format in a "
+"way that fulfils the specific needs of our clients thus creating a "
+"centralized and strong base so that the different parts of the company can "
+"use this source of information to develop their own projects."
+msgstr ""
+"Somos expertos en la creación de repositorios de datos en su formato natural "
+"de una manera que satisfaga las necesidades específicas de nuestros "
+"clientes, creando así una base centralizada y fuerte de manera que las "
+"diferentes partes de la empresa pueden utilizar esta fuente de información "
+"para desarrollar sus propios proyectos."
+
+#: view/services.php:23 view/services.php:28
+msgid "Data Warehouse"
+msgstr "Almacén de datos"
+
+#: view/services.php:24 view/services.php:48
+msgid ""
+"We take care of understanding the problems of our customers in order to "
+"decide which is the optimal format in which their data should be stored."
+msgstr ""
+"Nos ocupamos de la comprensión de los problemas de nuestros clientes con el "
+"fin de decidir cuál es el formato óptimo en el que se deben almacenar sus "
+"datos."
+
+#: view/services.php:29 view/services.php:53
+msgid ""
+"Extract, Transform and Load, also known as ETL, involves the transformation "
+"and processing of data so that analytical teams can develop artificial "
+"intelligence models as well as visualizations on which the company relies on."
+msgstr ""
+"De extracción, transformación y carga, también conocido como ETL, implica la "
+"transformación y procesamiento de datos para que los equipos de análisis "
+"puede desarrollar modelos de inteligencia artificial, así como las "
+"visualizaciones en el que la compañía se basa."
+
+#: view/services.php:37
+msgid ""
+"Understanding and modelling the underlying patterns that are present in data "
+"provides a great competitive advantage to companies since, not only more "
+"correct strategic decisions are made, but these decisions are executed "
+"practically in real time due to the automation of these processes."
+msgstr ""
+"Comprender y modelar los patrones subyacentes que están presentes en los "
+"datos proporciona una gran ventaja competitiva a las empresas ya que, no "
+"sólo es más correcta se toman las decisiones estratégicas, pero estas "
+"decisiones se ejecutan prácticamente en tiempo real debido a la "
+"automatización de estos procesos."
+
+#: view/services.php:42
+msgid "Customer Segmentation"
+msgstr "Segmentación de clientes"
+
+#: view/services.php:47
+msgid "Search of Optimal Paths"
+msgstr "Búsqueda de Caminos Óptimos"
+
+#: view/services.php:52
+msgid "Record Linkage"
+msgstr "Vinculación de registros"
+
+#: view/services.php:58
+msgid "Time Series Prediction"
+msgstr "Predicción de series temporales"
+
+#: view/services.php:59 view/services.php:76
+msgid ""
+"We are able to model any type of time series that has an implicit pattern, "
+"such as predicting product demands, prices or cash flows, using classic "
+"statistical techniques."
+msgstr ""
+"Somos capaces de modelar cualquier tipo de series de tiempo que tiene un "
+"patrón implícita, como la predicción de la demanda de productos, precios o "
+"flujos de efectivo, utilizando técnicas estadísticas clásicas."
+
+#: view/services.php:63
+msgid "Conversion Probability Estimation"
+msgstr "Conversión estimación de probabilidad"
+
+#: view/services.php:64 view/services.php:81
+msgid ""
+"We can estimate the probability of purchasing a product in a particular "
+"context using advanced classification algorithms. Something very valuable in "
+"terms of eCommerce, where knowing how much to bet on a product determines "
+"the profitability of an online marketing policy."
+msgstr ""
+"Podemos estimar la probabilidad de adquirir un producto en un contexto "
+"particular, el uso de algoritmos de clasificación avanzada. Algo muy valioso "
+"en términos de comercio electrónico, donde conocer la cantidad a apostar por "
+"un producto determina la rentabilidad de una política de marketing en línea."
+
+#: view/services.php:68
+msgid "Pricing Optimization"
+msgstr "La optimización de precios"
+
+#: view/services.php:69 view/services.php:86
+msgid ""
+"We develop intelligent algorithms for our clients that are able to "
+"understand the market context and change the price dynamically and "
+"automatically, thus increasing the speed of reaction to market changes and "
+"therefore their competitiveness."
+msgstr ""
+"Desarrollamos algoritmos inteligentes para nuestros clientes que son capaces "
+"de comprender el contexto del mercado y cambiar el precio de forma dinámica "
+"y automática, lo que aumenta la velocidad de reacción a los cambios del "
+"mercado y por lo tanto su competitividad."
+
+#: view/services.php:75
+msgid "Text Analysis"
+msgstr "Análisis de texto"
+
+#: view/services.php:80
+msgid "Recommendation Systems"
+msgstr "Sistemas de recomendación"
+
+#: view/services.php:85
+msgid "Image Recognition"
+msgstr "Reconocimiento de imagenes"
+
+#: view/services.php:99
+msgid "Business Intelligence Tools"
+msgstr "Herramientas de Business Intelligence"
+
+#: view/services.php:100
+msgid ""
+"We transform information into knowledge in order to optimize the strategic "
+"decisions of a company by integrating any Business Intelligence technology "
+"according to the needs and preferences of our customers."
+msgstr ""
+"Transformamos la información en conocimiento con el fin de optimizar las "
+"decisiones estratégicas de una empresa mediante la integración de cualquier "
+"tecnología de Business Intelligence de acuerdo a las necesidades y "
+"preferencias de nuestros clientes."
+
+#: view/services.php:104
+msgid "Dashboards"
+msgstr "Cuadros de mando"
+
+#: view/services.php:105
+msgid ""
+"We are experts at developing interactive Dashboards that, based on large "
+"volumes of data, visually shows direct results and helps to make strategic "
+"decisions."
+msgstr ""
+"Somos expertos en el desarrollo de cuadros de mando interactivos que, "
+"basándose en grandes volúmenes de datos, muestra visualmente los resultados "
+"directos y ayuda a tomar decisiones estratégicas."
+
+#: view/services.php:109
+#, fuzzy
+#| msgid "Data Visualization"
+msgid "High Dimensions Visualization"
+msgstr "Visualización de datos"
+
+#: view/services.php:110
+msgid ""
+"We provide visualization tools that make easy to quickly understand what is "
+"happening in our clients' market and thus be able to apply predictive "
+"analysis techniques and future projections."
+msgstr ""
+"Proporcionamos herramientas de visualización que hacen fácil de entender "
+"rápidamente lo que está sucediendo en el mercado de nuestros clientes y por "
+"lo tanto será capaz de aplicar las técnicas de análisis y proyecciones "
+"futuras predictivo."
+
+#: view/services.php:119
+msgid ""
+"We provide all our services in real time at the request of our clients, as "
+"the reaction time is essential to determine, in many contexts, changes in "
+"market trends."
+msgstr ""
+"Ofrecemos todos nuestros servicios en tiempo real, a petición de nuestros "
+"clientes, ya que el tiempo de reacción es esencial para determinar, en "
+"muchos contextos, los cambios en las tendencias del mercado."
+
+#: view/services.php:125
+msgid ""
+"We have experience with the best technologies from the Big Data field and we "
+"are constantly adding new ones."
+msgstr ""
+"Tenemos experiencia con las mejores tecnologías del campo de datos grandes y "
+"estamos añadiendo constantemente nuevos."
+
 #: view/team.php:4 view/team.php:5 view/team.php:6
 msgid "Head Data Engineer"
 msgstr "Ingeniero Jefe de Datos"
@@ -208,6 +790,152 @@ msgid ""
 msgstr ""
 "La alta versatilidad de nuestros perfiles nos permite brindar nuestros "
 "servicios en cualquier área relacionada con los datos."
+
+#: view/terms.php:4
+msgid "LEGAL TERMS OF USE COOKIES POLICY"
+msgstr "TÉRMINOS LEGALES DE USO Y POLÍTICA DE COOKIES"
+
+#: view/terms.php:5
+msgid "Terms of use of the website"
+msgstr "Condiciones generales de uso del sitio web"
+
+#: view/terms.php:8
+msgid "FIRST"
+msgstr "PRIMERA"
+
+#: view/terms.php:9
+msgid "Conditions of access and use"
+msgstr "Condiciones de acceso y uso"
+
+#: view/terms.php:11
+msgid ""
+"In compliance with Article 10 of Law 34/2002 of 11 July, Services "
+"Information Society and Electronic Commerce (LSSICE):/2002, de 11 de julio, "
+"de Servicios de la Sociedad de la Información y Comercio Electrónico "
+"(LSSICE):"
+msgstr ""
+"En cumplimiento de lo dispuesto en el artículo 10 de la Ley 34/2002, de 11 "
+"de julio, de Servicios de la Sociedad de la Información y Comercio "
+"Electrónico (LSSICE):"
+
+#: view/terms.php:12
+msgid ""
+"Aneior Studio, SL, established in Playa, 9 4 - 07458 Santa Margalida, Illes "
+"Balears with NIF B16592768 owns and makes available on its website damavis."
+"com informative information about your business."
+msgstr ""
+"Aneior Studio, SL, con domicilio en Playa, 9 4 - 07458 Santa Margalida, "
+"Illes Balears con NIF B16592768 es titular y pone a disposición en su sitio "
+"web damavis.com información de caracter informativo sobre su actividad "
+"comercial."
+
+#: view/terms.php:13
+msgid ""
+"Access to the website implies unreserved acceptance of these general "
+"conditions of use which the user states to fully understand. The user "
+"undertakes not to use the website for activities contrary to the law and "
+"respect at all times these conditions generales.º"
+msgstr ""
+"El acceso al sitio web implica sin reservas la aceptación de las presentes "
+"condiciones generales de uso que el USUARIO afirma comprender en su "
+"totalidad. El USUARIO se compromete a no utilizar el sitio web para "
+"actividades contrarias a la ley y respetar en todo momento las presentes "
+"condiciones generales.º"
+
+#: view/terms.php:15
+msgid "SECOND"
+msgstr "SEGUNDA"
+
+#: view/terms.php:16
+msgid "Contents"
+msgstr "Contenido"
+
+#: view/terms.php:18 view/terms.php:23
+msgid ""
+"The contents have been fully processed by the owner of the website and it "
+"reserves the right to modify any existing content at any time."
+msgstr ""
+"Los contenidos han sido elaborados íntegramente por el propietario del sitio "
+"web y este se reserva el derecho a modificar cualquier contenido existente "
+"en cualquier momento."
+
+#: view/terms.php:20
+msgid "THIRD"
+msgstr "TERCERA"
+
+#: view/terms.php:21
+msgid "Copyright and Brand"
+msgstr "Derechos de Autor y Marca"
+
+#: view/terms.php:25
+msgid "FOURTH"
+msgstr "CUARTA"
+
+#: view/terms.php:26
+msgid "Personal data protection"
+msgstr "Protección de datos de caracter personal"
+
+#: view/terms.php:28
+msgid ""
+"This website does not collect any personal information by any medium itself."
+msgstr ""
+"Este sitio web no recaba ningún tipo de dato personal por ningún medio "
+"propio."
+
+#: view/terms.php:30
+msgid "FIFTH"
+msgstr "QUINTA"
+
+#: view/terms.php:31
+msgid "Jurisdiction and applicable law"
+msgstr "Jurisdicción y ley aplicable"
+
+#: view/terms.php:33
+msgid ""
+"Las presentes condiciones generales se rigen por la legislación española. "
+"Siendo competentes para solventar cualquier controversia jurisdiccional "
+"sometiéndose expresamente las partes a los Juzgados y Tribunales de Palma de "
+"Mallorca (Illes Balears)."
+msgstr ""
+"Las presentes condiciones generales se rigen por la legislación española. "
+"Siendo competentes para solventar cualquier controversia jurisdiccional "
+"sometiéndose expresamente las partes a los Juzgados y Tribunales de Palma de "
+"Mallorca (Illes Balears)."
+
+#: view/terms.php:35
+msgid "SIXTH"
+msgstr "SEXTA"
+
+#: view/terms.php:36
+msgid "Cookies policy"
+msgstr "Aviso de cookies"
+
+#: view/terms.php:38
+msgid ""
+"These general conditions are governed by Spanish law. It is competent to "
+"resolve any jurisdictional dispute the parties expressly submit to the "
+"Courts of Palma de Mallorca (Illes Balears)."
+msgstr ""
+"Las presentes condiciones generales se rigen por la legislación española. "
+"Siendo competentes para solventar cualquier controversia jurisdiccional "
+"sometiéndose expresamente las partes a los Juzgados y Tribunales de Palma de "
+"Mallorca (Illes Balears)."
+
+#: view/terms.php:41
+msgid "SEVENTH"
+msgstr "SEPTIMA"
+
+#: view/terms.php:42
+msgid "Integrity"
+msgstr "Integridad"
+
+#: view/terms.php:44
+msgid ""
+"If any provision of this document is declared invalid, the other clauses "
+"will not affected and maintain their integrity."
+msgstr ""
+"En caso de que cualquier cláusula del presente documento sea declarada nula, "
+"la demás cláusulas no se verán afectadas y mantendrán su integridad."
 
 #: view/work.php:4 view/work.php:12
 msgid "WORK WITH US"
@@ -232,13 +960,13 @@ msgstr ""
 "servicio ofrecido, por eso damos gran importancia a las personas que forman "
 "parte del equipo."
 
-#: view/work.php:19
+#: view/work.php:19 view/work.php:34 view/work.php:50
 msgid "OUR OPEN POSITION"
 msgstr "NUESTRA OFERTA"
 
 #: view/work.php:20
-msgid "Serás responsable de:"
-msgstr "You will have to:"
+msgid "You will have to:"
+msgstr "Serás responsable de:"
 
 #: view/work.php:22
 msgid ""
@@ -273,12 +1001,173 @@ msgstr ""
 "Construir pipelines y aplicaciones de gestión del dato escalables "
 "horizontalmente."
 
+#: view/work.php:35
+msgid "Requirements"
+msgstr "Requisitos"
+
+#: view/work.php:37
+msgid ""
+"Person graduate in computer engineering or other degrees with a high "
+"technological component."
+msgstr ""
+"Persona graduada en ingeniería informática u otros grados con un alto "
+"componente tecnológico."
+
+#: view/work.php:38
+msgid ""
+"Clear understanding of software architecture and good programming practices "
+"such as SOLID principles."
+msgstr ""
+"Claro entendimiento de arquitectura de software y buenas prácticas de "
+"programación como los principios SOLID."
+
+#: view/work.php:39
+msgid ""
+"Advanced knowledge of Scala, Python and SQL that allow write, test and "
+"validate an agile code."
+msgstr ""
+"Conocimientos avanzados de Scala, Python y SQL que permitan escribir, "
+"testear y validar código de forma ágil."
+
+#: view/work.php:40
+msgid "Knowledge-based Linux operating systems."
+msgstr "Conocimientos en sistemas operativos basados en linux."
+
+#: view/work.php:41
+msgid ""
+"Experience with Ecosystem Hadoop technologies, as HDFS, Spark, Sqoop, among "
+"others."
+msgstr ""
+"Experiencia con tecnologías del Ecosistema Hadoop, como HDFS, Spark, Sqoop, "
+"entre otras."
+
+#: view/work.php:42
+msgid "Communication skills both technical people and business profiles."
+msgstr ""
+"Capacidad de comunicación tanto con personas técnicas como con perfiles de "
+"negocio."
+
+#: view/work.php:43
+msgid ""
+"Experience in export process orchestration and transformation of the data."
+msgstr ""
+"Experiencia en orquestación de procesos de exportación y transformación del "
+"dato."
+
+#: view/work.php:44
+msgid "Knowledge of version control systems."
+msgstr "Conocimientos de sistema de control de versiones."
+
+#: view/work.php:51
+msgid "Requisitos"
+msgstr ""
+
+#: view/work.php:53
+msgid "Devotion to free software."
+msgstr "Devoción por el software libre."
+
+#: view/work.php:54
+msgid "Esperiencia with agile development methodologies."
+msgstr ""
+
+#: view/work.php:55
+msgid "GitHub have a profile showing your skills."
+msgstr ""
+
+#: view/work.php:56
+msgid "Knowledge of CI / CD tools."
+msgstr ""
+
+#: view/work.php:64
+msgid "JOIN US"
+msgstr ""
+
+#: view/work.php:65
+msgid "Do you want to be part of the Damavis team?"
+msgstr ""
+
+#: view/work.php:68
+msgid "Apply now"
+msgstr ""
+
+#: view/work.php:71
+msgid "Do you want to work with us?"
+msgstr ""
+
+#~ msgid "Serás responsable de:"
+#~ msgstr "You will have to:"
+
+#~ msgid "TÉRMINOS LEGALES DE USO Y POLÍTICA DE COOKIES"
+#~ msgstr "TÉRMINOS LEGALES DE USO Y POLÍTICA DE COOKIES"
+
+#~ msgid "Condiciones generales de uso del sitio web"
+#~ msgstr "Condiciones Generales de Uso del Sitio Web"
+
+#~ msgid "PRIMERA"
+#~ msgstr "PRIMERA"
+
 #~ msgid ""
-#~ "This website uses cookies to ensure the best experience on our website. "
-#~ "If you want to check more details, please read our."
+#~ "Conocemos tu problema, y sabemos que hay una solución. Y no solo una "
+#~ "solución, sino una posibilidad de añadir valor a lo que ya tienes y "
+#~ "garantizar un éxito rotundo sobre tu empresa. Y ese poder, reside en los "
+#~ "datos."
 #~ msgstr ""
-#~ "Este sitio utiliza las cookies para ofrecerle el mejor servicio. Para más "
-#~ "información remítase a "
+#~ "Conocemos tu problema, y sabemos que hay una solución. Y no solo una "
+#~ "solución, sino una posibilidad de añadir valor a lo que ya tienes y "
+#~ "garantizar un éxito rotundo sobre tu empresa. Y ese poder, reside en los "
+#~ "datos."
+
+#~ msgid ""
+#~ "Para conseguirlo, reunió a los mejores, el equipo con el que había estado "
+#~ "trabajando durante años y juntos crearon la empresa Aneior Studio SL, "
+#~ "donde registraron su estudio de Big Data y Machine Learning con el nombre "
+#~ "de Damavis."
+#~ msgstr ""
+#~ "Para conseguirlo, reunió a los mejores, el equipo con el que había estado "
+#~ "trabajando durante años y juntos crearon la empresa Aneior Studio SL, "
+#~ "donde registraron su estudio de Big Data y Machine Learning con el nombre "
+#~ "de Damavis."
+
+#~ msgid ""
+#~ "En cuestión de días, gracias a la buena reputación sobre calidad que el "
+#~ "equipo había conseguido, empezaron a trabajar para sus primeros clientes."
+#~ msgstr ""
+#~ "En cuestión de días, gracias a la buena reputación sobre calidad que el "
+#~ "equipo había conseguido, empezaron a trabajar para sus primeros clientes."
+
+#~ msgid ""
+#~ "La eficacia, eficiencia y sobretodo calidad con la que Damavis resolvía "
+#~ "los problemas de sus clientes, derivó en casos de éxito que sirvieron "
+#~ "como ejemplo e inspiración para nuevos clientes."
+#~ msgstr ""
+#~ "La eficacia, eficiencia y sobretodo calidad con la que Damavis resolvía "
+#~ "los problemas de sus clientes, derivó en casos de éxito que sirvieron "
+#~ "como ejemplo e inspiración para nuevos clientes."
+
+#~ msgid ""
+#~ "A día de hoy, contamos con la confianza de clientes como Barceló, W2M, "
+#~ "Camper, Jumbo Tours, FastPay, Globalia, Avoris, entre otros. Nuestro "
+#~ "objetivo sigue focalizado en ser el referente de calidad y talento del "
+#~ "Big Data, siendo una apuesta segura por el futuro y el éxito, destacando "
+#~ "nuestro compromiso con el cliente, el equipo y con la sociedad."
+#~ msgstr ""
+#~ "A día de hoy, contamos con la confianza de clientes como Barceló, W2M, "
+#~ "Camper, Jumbo Tours, FastPay, Globalia, Avoris, entre otros. Nuestro "
+#~ "objetivo sigue focalizado en ser el referente de calidad y talento del "
+#~ "Big Data, siendo una apuesta segura por el futuro y el éxito, destacando "
+#~ "nuestro compromiso con el cliente, el equipo y con la sociedad."
+
+#~ msgid ""
+#~ "Lo que para un cliente supone un problema o impedimento para seguir "
+#~ "avanzando, Damavis lo percibe como una posibilidad, y lo transforma, de "
+#~ "lleno, en un caso de éxito."
+#~ msgstr ""
+#~ "Lo que para un cliente supone un problema o impedimento para seguir "
+#~ "avanzando, Damavis lo percibe como una posibilidad, y lo transforma, de "
+#~ "lleno, en un caso de éxito."
+
+#~ msgid "Terms and Conditions"
+#~ msgstr "Terminos Legales"
 
 #~ msgid ""
 #~ "Estamos orientados a dar soluciones de valor añadido a las empresas. "

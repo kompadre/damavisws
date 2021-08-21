@@ -1,46 +1,46 @@
 <?php $currentPage = 'terms'; $darkBg = false; include('./include/header.php'); ?>
 <div class="terms">
     <div class="double-title">
-        <p>TÉRMINOS LEGALES DE USO Y POLÍTICA DE COOKIES</p>
-        <h1>Condiciones generales de uso del sitio web</h1>
+        <p><?= _('LEGAL TERMS OF USE COOKIES POLICY') ?></p>
+        <h1><?= _('Terms of use of the website') ?></h1>
     </div>
     <div class="double-title">
-        <p>PRIMERA</p>
-        <h3>Condiciones de acceso y uso</h3>
+        <p><?= _('FIRST') ?></p>
+        <h3><?= _('Conditions of access and use') ?></h3>
     </div>
-    <p>En cumplimiento de lo dispuesto en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE):</p>
-    <p>Aneior Studio, SL, con domicilio en Playa, 9 4 - 07458 Santa Margalida, Illes Balears con NIF B16592768 es titular y pone a disposición en su sitio web damavis.com información de caracter informativo sobre su actividad comercial.</p>
-    <p>El acceso al sitio web implica sin reservas la aceptación de las presentes condiciones generales de uso que el USUARIO afirma comprender en su totalidad. El USUARIO se compromete a no utilizar el sitio web para actividades contrarias a la ley y respetar en todo momento las presentes condiciones generales.º</p>
+    <p><?= _('In compliance with Article 10 of Law 34/2002 of 11 July, Services Information Society and Electronic Commerce (LSSICE):/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE):') ?></p>
+    <p><?= _('Aneior Studio, SL, established in Playa, 9 4 - 07458 Santa Margalida, Illes Balears with NIF B16592768 owns and makes available on its website damavis.com informative information about your business.') ?></p>
+    <p><?= _('Access to the website implies unreserved acceptance of these general conditions of use which the user states to fully understand. The user undertakes not to use the website for activities contrary to the law and respect at all times these conditions generales.º') ?></p>
     <div class="double-title">
-        <p>SEGUNDA</p>
-        <h3>Contenidos</h3>
+        <p><?= _('SECOND') ?></p>
+        <h3><?= _('Contents') ?></h3>
     </div>
-    <p>Los contenidos han sido elaborados íntegramente por el propietario del sitio web y este se reserva el derecho a modificar cualquier contenido existente en cualquier momento.</p>
+    <p><?= _('The contents have been fully processed by the owner of the website and it reserves the right to modify any existing content at any time.') ?></p>
     <div class="double-title">
-        <p>TERCERA</p>
-        <h3>Derechos de Autor y Marca</h3>
+        <p><?= _('THIRD') ?></p>
+        <h3><?= _('Copyright and Brand') ?></h3>
     </div>
-    <p>Los contenidos han sido elaborados íntegramente por el propietario del sitio web y este se reserva el derecho a modificar cualquier contenido existente en cualquier momento.</p>
+    <p><?= _('The contents have been fully processed by the owner of the website and it reserves the right to modify any existing content at any time.') ?></p>
     <div class="double-title">
-        <p>CUARTA</p>
-        <h3>Protección de datos de caracter personal</h3>
+        <p><?= _('FOURTH') ?></p>
+        <h3><?= _('Personal data protection') ?></h3>
     </div>
-    <p>Este sitio web no recaba ningún tipo de dato personal por ningún medio propio.</p>
+    <p><?= _('This website does not collect any personal information by any medium itself.') ?></p>
     <div class="double-title">
-        <p>QUINTA</p>
-        <h3>Jurisdicción y ley aplicable</h3>
+        <p><?= _('FIFTH') ?></p>
+        <h3><?= _('Jurisdiction and applicable law') ?></h3>
     </div>
-    <p>Las presentes condiciones generales se rigen por la legislación española. Siendo competentes para solventar cualquier controversia jurisdiccional sometiéndose expresamente las partes a los Juzgados y Tribunales de Palma de Mallorca (Illes Balears).</p>
+    <p><?= _('Las presentes condiciones generales se rigen por la legislación española. Siendo competentes para solventar cualquier controversia jurisdiccional sometiéndose expresamente las partes a los Juzgados y Tribunales de Palma de Mallorca (Illes Balears).') ?></p>
     <div class="double-title">
-        <p>SEXTA</p>
-        <h3>Política de Cookies</h3>
+        <p><?= _('SIXTH') ?></p>
+        <h3><?= _('Cookies policy') ?></h3>
     </div>
-    <p>Este sitio web hace uso de Cookies con el único fin de obtener información acerca de cómo el USUARIO interactua con la misma. Para ello usamos el servicio de Google Analytics y por tanto la información será directamente transmitida y archivada por Google. Las cookies usadas no recogen datos personales del USUARIO.</p>
+    <p><?= _('These general conditions are governed by Spanish law. It is competent to resolve any jurisdictional dispute the parties expressly submit to the Courts of Palma de Mallorca (Illes Balears).') ?></p>
 
     <div class="double-title">
-        <p>SEPTIMA</p>
-        <h3>Integridad</h3>
+        <p><?= _('SEVENTH') ?></p>
+        <h3><?= _('Integrity') ?></h3>
     </div>
-    <p>En caso de que cualquier cláusula del presente documento sea declarada nula, la demás cláusulas no se verán afectadas y mantendrán su integridad.</p>
+    <p><?= _('If any provision of this document is declared invalid, the other clauses will not affected and maintain their integrity.') ?></p>
 </div>
 <?php include('./include/footer.php'); ?>
