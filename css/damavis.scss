@@ -215,6 +215,13 @@ body {
               }
             }
           }
+          &.links > a {
+            @media (max-width: $breakpoint_340) {
+              margin: 11px 10px;
+              font-size: 1.2em;
+            }
+          }
+
           &.social {
             @media (min-width: $breakpoint_1080) {
               display: none;
@@ -356,6 +363,9 @@ body {
           font-size: 2.22em;
           @media (max-width: $breakpoint_1080) {
             font-size: 1.4em;
+          }
+          @media (max-width: $breakpoint_420) {
+            font-size: 1em;
           }
           margin-top: 0px!important;
           margin-bottom: 1em;

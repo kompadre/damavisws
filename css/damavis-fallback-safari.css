@@ -147,13 +147,10 @@ body > div#main {
         display: inline; } }
     body > div#main > header.home > div > nav.links {
       -webkit-justify-content: flex-end; }
-      body > div#main > header.home > div > nav.links > a {
-        margin: 6px 10px;
-        font-size: 0.8em; }
-        @media (max-width: 425px) {
-          body > div#main > header.home > div > nav.links > a {
-            display: block;
-            width: 100%; } }
+      @media (max-width: 425px) {
+        body > div#main > header.home > div > nav.links > a {
+          display: block;
+          width: 100%; } }
   body > div#main > div.home.services > div.cards {
     display: -webkit-flex;
     -webkit-flex-wrap: wrap; }

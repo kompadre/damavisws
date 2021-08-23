@@ -11,8 +11,6 @@ body > div#main {
       >nav.links {
         -webkit-justify-content: flex-end;
         >a {
-          margin: 6px 10px;
-          font-size: 0.8em;
           @media (max-width: $breakpoint_420) {
             display: block;
             width: 100%;

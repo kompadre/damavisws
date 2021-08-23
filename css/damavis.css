@@ -441,6 +441,10 @@ body {
                 body > div#main > header.home > div nav.links a {
                   font-size: 1.5em;
                   text-align: center; } }
+          @media (max-width: 340px) {
+            body > div#main > header.home > div nav.links > a {
+              margin: 11px 10px;
+              font-size: 1.2em; } }
           @media (min-width: 1080px) {
             body > div#main > header.home > div nav.social {
               display: none; } }
@@ -556,6 +560,9 @@ body {
           @media (max-width: 1080px) {
             body > div#main > div div.double-title h1, body > div#main > div div.double-title > h3 {
               font-size: 1.4em; } }
+          @media (max-width: 425px) {
+            body > div#main > div div.double-title h1, body > div#main > div div.double-title > h3 {
+              font-size: 1em; } }
         body > div#main > div div.double-title > h1 {
           font-size: 3.5em;
           margin-bottom: 1em; }
