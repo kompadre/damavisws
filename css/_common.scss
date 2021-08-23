@@ -31,7 +31,7 @@ a {
   text-decoration: none;
 }
 
-button.cta {
+button.cta, a.cta {
   cursor: pointer;
   background-color: $color_accent_2;
   padding: 0.75vw 1.15vw;

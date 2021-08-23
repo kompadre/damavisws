@@ -34,7 +34,7 @@ h3 {
 a {
   text-decoration: none; }
 
-button.cta {
+button.cta, a.cta {
   cursor: pointer;
   background-color: #00FDAA;
   padding: 0.75vw 1.15vw;
@@ -45,7 +45,7 @@ button.cta {
   border: 0;
   font-family: Rubik; }
   @media (max-width: 425px) {
-    button.cta {
+    button.cta, a.cta {
       padding: 3vw 2.5vw; } }
 
 .center {
