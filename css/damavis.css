@@ -947,10 +947,11 @@ body {
               color: #f95f15; }
               body > div#main > div.home.contact > div.contact-form > form input[type=text]:invalid:focus::placeholder, body > div#main > div.home.contact > div.contact-form > form textarea:invalid:focus::placeholder {
                 color: #f95f15; }
-          body > div#main > div.home.contact > div.contact-form > form > button.cta {
+          body > div#main > div.home.contact > div.contact-form > form > a.cta {
             width: 50%;
             margin-top: 20px;
-            margin-bottom: 20px; }
+            margin-bottom: 20px;
+            text-align: center; }
           body > div#main > div.home.contact > div.contact-form > form > p.small-font {
             color: #94949F;
             font-size: 70%;
@@ -1240,7 +1241,10 @@ body {
     body > div#main > div.contact.spanner {
       height: 0;
       padding: 0;
-      margin-bottom: 112px; }
+      margin-bottom: 56px; }
+      @media (max-width: 420px) {
+        body > div#main > div.contact.spanner {
+          margin-bottom: 0px; } }
     body > div#main > div.terms {
       background-color: #f2f2f9; }
       body > div#main > div.terms > div.double-title {

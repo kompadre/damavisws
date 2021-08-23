@@ -7,7 +7,7 @@
                 <img src="img/icons/Instagram.svg">
                 <img src="img/icons/Github.svg">
             </div>
-            <?php include(__DIR__ . '/navigation.php'); ?>
+            <?php $showLegal = true; include(__DIR__ . '/navigation.php'); ?>
         </div>
         <p class="footer-copyright small-font">
             © Aneior Studio S.L. - <?= _('All rights reserved') ?> - <a href="#"><?= _('Attributions') ?></a>

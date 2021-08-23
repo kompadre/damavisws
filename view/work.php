@@ -65,9 +65,9 @@
             <h3 class="center"><?= _('Do you want to be part of the Damavis team?') ?></h3>
         </div>
         <form>
-            <button class="cta"><?= _('Apply now') ?></button>
+            <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdGlELnI193ckVAWnla2Gw8v_zUHEGNQQnYXUuP5JGp3wbrrw/viewform"><?= _('Apply now') ?></a>
         </form>
-        <a class="contact-jobs-link" href="">
+        <a class="contact-jobs-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdGlELnI193ckVAWnla2Gw8v_zUHEGNQQnYXUuP5JGp3wbrrw/viewform">
             > <?= _('Do you want to work with us?') ?>
         </a>
     </div>

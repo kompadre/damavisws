@@ -827,10 +827,11 @@ body {
               }
             }
           }
-          >button.cta {
+          >a.cta {
             width: 50%;
             margin-top: 20px;
             margin-bottom: 20px;
+            text-align:center;
           }
           >p.small-font {
             color: #94949F;
@@ -1200,7 +1201,10 @@ body {
     >div.contact.spanner {
       height: 0;
       padding: 0;
-      margin-bottom: 112px;
+      margin-bottom: 56px;
+      @media (max-width: 420px) {
+        margin-bottom: 0px;
+      }
     }
     >div.terms {
       background-color: $color_bg_light_2;
