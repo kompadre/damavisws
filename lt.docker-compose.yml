@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  http:
+    build: .
+    volumes:
+    - ".:/var/www/html"
+    - "./.htaccess.dynamic:/var/www/html/.htaccess"
+    - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
+    ports:
+    - "${DAMAVISWS_PORT}:80"
+  lt:
+    image: lambdatest/tunnel:latest
+    environment:
+      LT_USERNAME: kompadre@gmail.com
+      LT_ACCESS_KEY: ${LT_ACCESS_KEY}
