@@ -4,7 +4,10 @@ services:
   http:
     build: .
     volumes:
-    - ".:/var/www/html:ro"
+    - "./html/:/var/www/html/"
+    - "./img/:/var/www/html/img/:ro"
+    - "./css/:/var/www/html/css/:ro"
+    - "./js/:/var/www/html/js/:ro"
     - "./.htaccess.static:/var/www/html/.htaccess:ro"
     - "./source/apache/localhost.conf:/etc/apache2/sites-enabled/localhost.conf:ro"
     ports:

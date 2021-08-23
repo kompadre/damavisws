@@ -2,7 +2,7 @@
     <div class="home banner banner_video">
         <div class="video">
             <video autoplay muted loop id="header_video" class="hidden">
-                <source src="../img/video/1_damavis_cube.mp4" type="video/mp4">
+                <source src="img/video/1_damavis_cube.mp4" type="video/mp4">
             </video>
         </div>
         <div class="banner-content">
@@ -19,70 +19,70 @@
         </div>
         <div class="cards">
             <div class="card">
-                <img src="../img/home/ill-services-1.png" alt="Damavis Data Management" />
+                <img src="img/home/ill-services-1.png" alt="Damavis Data Management" />
                 <a href="/<?= $lang ?>/services/#data-management">&gt;&nbsp;<?= _('Data Management') ?></a>
             </div>
             <div class="card">
-                <img src="../img/home/ill-services-2.png" alt="Damavis Artificial Intelligence" />
+                <img src="img/home/ill-services-2.png" alt="Damavis Artificial Intelligence" />
                 <a href="/<?= $lang ?>/services/#ai">&gt;&nbsp;<?= _('Artificial Intelligence') ?></a>
             </div>
             <div class="card">
-                <img src="../img/home/ill-services-3.png" alt="Damavis Data Visualization" />
+                <img src="img/home/ill-services-3.png" alt="Damavis Data Visualization" />
                 <a href="/<?= $lang ?>/services/#visualization">&gt;&nbsp;<?= _('Data Visualization') ?></a>
             </div>
             <div class="card">
-                <img src="../img/home/ill-services-4.png" alt="Damavis Real Time" />
+                <img src="img/home/ill-services-4.png" alt="Damavis Real Time" />
                 <a href="/<?= $lang ?>/services/#rt">&gt;&nbsp;<?= _('Real Time') ?></a>
             </div>
         </div>
     </div>
     <div class="home data-driven">
         <div class="steps" alt="Damavis Data Driven Scheme">
-            <img src="../img/home/ill-datadriven-pointer.png" class="pointer" />
+            <img src="img/home/ill-datadriven-pointer.png" class="pointer" />
             <div>
                 <div class="stage"><?= __('Stage %d', 1) ?></div>
                 <?= _('Data-Resistant') ?>
             </div>
-            <img src="../img/home/ill-datadriven-circle.png">
+            <img src="img/home/ill-datadriven-circle.png">
             <video autoplay muted loop preload="auto">
-                <source src="../img/video/dd_01.webm?cache=<?= time() ?>">
-                <source src="../img/video/dd_01.mov?cache=<?= time() ?>">
+                <source src="img/video/dd_01.webm?cache=<?= time() ?>">
+                <source src="img/video/dd_01.mov?cache=<?= time() ?>">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 2) ?></div>
                 <?= _('Data-Aware') ?>
             </div>
-            <img src="../img/home/ill-datadriven-circle.png">
+            <img src="img/home/ill-datadriven-circle.png">
             <video autoplay muted loop preload="auto">
-                <source src="../img/video/dd_02.webm?cache=<?= time() ?>">
-                <source src="../img/video/dd_02.mov?cache=<?= time() ?>">
+                <source src="img/video/dd_02.webm?cache=<?= time() ?>">
+                <source src="img/video/dd_02.mov?cache=<?= time() ?>">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 3) ?></div>
                 <?= _('Data-Guided') ?>
             </div>
-            <img src="../img/home/ill-datadriven-circle.png">
+            <img src="img/home/ill-datadriven-circle.png">
             <video autoplay muted loop preload="auto">
-                <source src="../img/video/dd_03.webm?cache=<?= time() ?>">
-                <source src="../img/video/dd_03.mov?cache=<?= time() ?>">
+                <source src="img/video/dd_03.webm?cache=<?= time() ?>">
+                <source src="img/video/dd_03.mov?cache=<?= time() ?>">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 4) ?></div>
                 <?= _('Data-Savy') ?>
             </div>
-            <img src="../img/home/ill-datadriven-circle.png">
+            <img src="img/home/ill-datadriven-circle.png">
             <video autoplay muted loop preload="auto">
-                <source src="../img/video/dd_04.webm?cache=<?= time() ?>">
-                <source src="../img/video/dd_04.mov?cache=<?= time() ?>">
+                <source src="img/video/dd_04.webm?cache=<?= time() ?>">
+                <source src="img/video/dd_04.mov?cache=<?= time() ?>">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 5) ?></div>
                 <?= _('Data-Driven') ?>
             </div>
-            <img src="../img/home/ill-datadriven-circle-last.png">
+            <img src="img/home/ill-datadriven-circle-last.png">
             <video autoplay muted loop preload="auto">
-                <source src="../img/video/dd_05.webm?cache=<?= time() ?>">
-                <source src="../img/video/dd_05.mov?cache=<?= time() ?>">
+                <source src="img/video/dd_05.webm?cache=<?= time() ?>">
+                <source src="img/video/dd_05.mov?cache=<?= time() ?>">
             </video>
         </div>
         <div>
@@ -103,7 +103,7 @@
             <a class="cta" href="/<?= $lang ?>/team/"><?= _('Meet us') ?></a>
         </div>
         <div>
-            <img src="../img/home/ill-team.png" alt="Damavis Team">
+            <img src="img/home/ill-team.png" alt="Damavis Team">
         </div>
     </div>
     <div class="home clients">
@@ -112,17 +112,17 @@
             <h3 class="center"><?= _('We have performed outstanding projects with:') ?></h3>
         </div>
         <div class="logos">
-            <img src="../img/clients/camper.png">
-            <img src="../img/clients/avoris.png">
-            <img src="../img/clients/barcelo.png">
-            <img src="../img/clients/fastpay.png">
-            <img src="../img/clients/jtg.png">
-            <img src="../img/clients/hotelbeds.png">
-            <img src="../img/clients/melia.png">
-            <img src="../img/clients/globalia.png">
-            <img src="../img/clients/inno.png">
-            <img src="../img/clients/tcgfactory.png">
-            <img src="../img/clients/w2m.png">
+            <img src="img/clients/camper.png">
+            <img src="img/clients/avoris.png">
+            <img src="img/clients/barcelo.png">
+            <img src="img/clients/fastpay.png">
+            <img src="img/clients/jtg.png">
+            <img src="img/clients/hotelbeds.png">
+            <img src="img/clients/melia.png">
+            <img src="img/clients/globalia.png">
+            <img src="img/clients/inno.png">
+            <img src="img/clients/tcgfactory.png">
+            <img src="img/clients/w2m.png">
         </div>
     </div>
     <?php include('./include/form.php'); ?>
