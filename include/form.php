@@ -14,7 +14,7 @@
             <label for="textarea-contact-message"><?= _('What is your message?') ?></label>
             <textarea id="textarea-contact-message" name="message" placeholder="<?= _('Type here') ?>" required minlength="32"></textarea>
             <button class="cta"><?= _('Send Message') ?></button>
-            <p class="small-font"><?= __('By clicking the “%s” button, you agree on our <a href="%s">terms of pricacy</a>.', _('Send Message'), '#') ?></p>
+            <p class="small-font"><?= __('By clicking the “%s” button, you agree on our <a href="%s">terms of pricacy</a>.', _('Send Message'), '/' . $lang . '/legal/') ?></p>
             <p class="small-font"><?= _('The fields marked with a star (*) are mandatory') ?></p>
         </form>
         <div class="form-sent hide">
@@ -22,7 +22,7 @@
             <h3><?= _('Message received.') ?></h3>
             <p><?= _('We usually take one day to respond.') ?></p>
         </div>
-        <a class="contact-jobs-link" href="services.php">
+        <a class="contact-jobs-link" href="/<?= $lang ?>/services/">
             > <?= _('Do you need our services?') ?>
         </a>
     </div>
