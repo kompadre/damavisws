@@ -7,7 +7,7 @@
     </div>
 </div>
 <div class="work banner frame-2 img-left">
-    <div><img src="img/work/frame-2.jpg" class="photo" /></div>
+    <div><img src="img/work/frame-2.jpg" class="photo" alt="Damavis Careers Data Engineers Team" /></div>
     <div class="double-title">
         <p><?= _('WORK WITH US') ?></p>
         <h3><?= _('We are a team of Data Engineers and Data Scientists; experts in the fields of Big Data and Artificial Intelligence.') ?></h3>
@@ -56,7 +56,7 @@
             <li><?= _('Knowledge of CI / CD tools.') ?></li>
         </ul>
     </div>
-    <div><img src="img/work/octocat.png" class="photo" /></div>
+    <div><img src="img/work/octocat.png" class="photo" alt="Damavis Careers Special Value" /></div>
 </div>
 <div class="home contact">
     <div class="contact-form">

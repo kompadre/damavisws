@@ -1,7 +1,7 @@
 <?php $currentPage = 'about'; include('./include/header.php');  ?>
     <div class="about big-banner">
         <div>
-            <video autoplay muted loop id="header_video">
+            <video autoplay muted loop id="header_video" alt="Damavis About Us Brand Animation">
                 <source src="img/video/unfold.webm" type="video/webm" />
             </video>
         </div>
@@ -40,7 +40,7 @@
     </div>
     <div class="about big-banner">
         <div>
-            <div class="placeholder">TBD...</div>
+            <div class="placeholder" alt="Damavis About Us History">TBD...</div>
         </div>
         <div class="double-title">
             <p><?= _('ABOUT US') ?></p>

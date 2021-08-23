@@ -6,7 +6,7 @@
         <p class="content"><?= _('Management, Artificial Intelligence,  Visualization and Real Time data comprehension. All by Damavis.') ?></p>
     </div>
 </div>
-<div class="services technology big-banner">
+<div class="services technology big-banner" id="data-management">
     <div class="double-title">
         <p><?= _('TECHNOLOGY') ?></p>
         <h3><?= _('Data management') ?></h3>
@@ -30,7 +30,7 @@
         </div>
     </div>
 </div>
-<div class="services technology big-banner ai">
+<div class="services technology big-banner ai" id="ai">
     <div class="double-title">
         <p><?= _('TECHNOLOGY') ?></p>
         <h3><?= _('Artificial Intelligence') ?></h3>
@@ -85,7 +85,7 @@
         </div>
     </div>
 </div>
-<div class="services technology big-banner viz">
+<div class="services technology big-banner viz" id="visualization">
     <div class="double-title">
         <p><?= _('TECHNOLOGY') ?></p>
         <h3><?= _('Visualization') ?></h3>
@@ -110,7 +110,7 @@
     </div>
 </div>
 
-<div class="services technology big-banner rt">
+<div class="services technology big-banner rt" id="rt">
     <div class="double-title">
         <p><?= _('TECHNOLOGY') ?></p>
         <h3><?= _('Real Time') ?></h3>
@@ -122,9 +122,9 @@
         <p><?= _('TECHNOLOGY') ?></p>
         <h3><?= _('We have experience with the best technologies from the Big Data field and we are constantly adding new ones.') ?></h3>
     </div>
-    <div class="logos">
-        <?php for($i=1;$i<16;$i++) : ?>
-        <img src="img/services/logo-<?= $i ?>.png" />
+    <div class="logos"><?php $techs = [ null, 'Apache Spark', 'Hadoop', 'Kafka', 'Storm', 'MongoDB', 'Elastic', 'Docker', 'H2O.AI', 'Python', 'Scala', 'Snowflake',
+            'Scikit Learn', 'Jupyter', 'Neo4J', 'Databricks', 'Hortonworks', 'Cloudera', 'Google Cloud Platform', 'Amazon Web Services', 'Azure' ];
+            for($i=1;$i<=15;$i++) : ?><img src="img/services/logo-<?= $i ?>.png" alt="Damavis Services Technologies <?= $techs[$i] ?>" />
         <?php endfor; ?>
     </div>
 </div>

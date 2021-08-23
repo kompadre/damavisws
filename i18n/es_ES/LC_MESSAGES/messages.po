@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-08-23 17:35+0200\n"
-"PO-Revision-Date: 2021-08-23 18:29+0200\n"
+"POT-Creation-Date: 2021-08-23 21:56+0200\n"
+"PO-Revision-Date: 2021-08-23 21:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -66,7 +66,7 @@ msgstr "Nuestro equipo"
 msgid "Services"
 msgstr "Servicios"
 
-#: config.php:19
+#: config.php:19 include/navigation.php:11
 msgid "Legal"
 msgstr "Aviso Legal"
 
@@ -408,18 +408,18 @@ msgstr ""
 "El camino al éxito depende de ello. A continuación, podrás definir en qué "
 "etapa se encuentra tu negocio en el camino hacia la transformación digital."
 
-#: view/datadriven.php:18 view/datadriven.php:26 view/datadriven.php:34
-#: view/datadriven.php:42 view/datadriven.php:50 view/home.php:43
+#: view/datadriven.php:16 view/datadriven.php:24 view/datadriven.php:32
+#: view/datadriven.php:40 view/datadriven.php:48 view/home.php:43
 #: view/home.php:52 view/home.php:61 view/home.php:70 view/home.php:79
 #, php-format
 msgid "Stage %d"
 msgstr "Fase %d"
 
-#: view/datadriven.php:19 view/home.php:44
+#: view/datadriven.php:17 view/home.php:44
 msgid "Data-Resistant"
 msgstr "Resistente al dato"
 
-#: view/datadriven.php:20
+#: view/datadriven.php:18
 msgid ""
 "In this stage, the company makes no use of the data, relying on the saying "
 "\"things have always been done this way\", something that is a clear brake "
@@ -434,11 +434,11 @@ msgstr ""
 "intereses internos, como pueden ser decisiones estratégicas erróneas o "
 "departamentos ineficientes."
 
-#: view/datadriven.php:27 view/home.php:53
+#: view/datadriven.php:25 view/home.php:53
 msgid "Data-Aware"
 msgstr "Consciente del dato"
 
-#: view/datadriven.php:28
+#: view/datadriven.php:26
 msgid ""
 "Once passed the Data-Resistant stage, the company begins to be aware of the "
 "value of the data, so it begins to collect a subset of data and perform a "
@@ -448,11 +448,11 @@ msgstr ""
 "motivo por el cual empieza a recolectarlos y a hacer análisis descriptivos "
 "básicos, producto de la débil curiosidad que presenta hasta el momento."
 
-#: view/datadriven.php:35 view/home.php:62
+#: view/datadriven.php:33 view/home.php:62
 msgid "Data-Guided"
 msgstr "Guiado por el dato"
 
-#: view/datadriven.php:36
+#: view/datadriven.php:34
 msgid ""
 "Now the company performs extensive analysis of its data, obtaining solid "
 "conclusions of the impact of taken past decisions. In this stage, the "
@@ -466,11 +466,11 @@ msgstr ""
 "capaz de obtener del dato un valor táctico, el cual implica saber si deben "
 "seguir haciendo lo que han hecho hasta ahora o cambiar de estrategia."
 
-#: view/datadriven.php:43 view/home.php:71
+#: view/datadriven.php:41 view/home.php:71
 msgid "Data-Savy"
 msgstr "Experto con los datos"
 
-#: view/datadriven.php:44
+#: view/datadriven.php:42
 msgid ""
 "Here, besides the obtained tactical value from the Data-Guided stage, a "
 "strategic value is also exploited, which means that the company not only "
@@ -482,11 +482,11 @@ msgstr ""
 "un valor estratégico, en el que la empresa no solo se centra en el qué (¿qué "
 "ha ido mal?) sino que lo extiende al por qué (¿por qué ha ido mal?)."
 
-#: view/datadriven.php:51 view/home.php:80
+#: view/datadriven.php:49 view/home.php:80
 msgid "Data-Driven"
 msgstr "Data Driven"
 
-#: view/datadriven.php:52
+#: view/datadriven.php:50
 msgid ""
 "In this last phase, once businesses have found out what has gone wrong and "
 "why, the immediate challenge to tackle is \"given that data confirms this "
@@ -1032,7 +1032,7 @@ msgstr ""
 
 #: view/work.php:19 view/work.php:34 view/work.php:50
 msgid "OUR OPEN POSITION"
-msgstr "VER OFERTAS"
+msgstr "OFERTA DE TRABAJO"
 
 #: view/work.php:20
 msgid "You will have to:"

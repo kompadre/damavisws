@@ -19,6 +19,8 @@ $meta = [
     'terms' => [ 'page' => 'terms', 'title' => 'Damavis | '. _('Legal'), 'keywords' => $defaultKeywords, 'description' => $defaultDescription ],
     'work' => [ 'page' => 'work', 'title' => 'Damavis | '. _('Services'), 'keywords' => $defaultKeywords, 'description' => $defaultDescription ]];
 
+
+
 if (!function_exists('__')) {
     function __() {
         $args = func_get_args();

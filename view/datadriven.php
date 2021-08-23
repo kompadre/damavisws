@@ -9,42 +9,40 @@
 </div>
 <div class="datadriven data-driven">
     <div class="steps">
-        <video autoplay muted loop>
-            <source src="../img/video/dd_01.mov" type="video/mov" />
-            <source src="../img/video/dd_01.webm" type="video/webm" />
-            <source src="../img/video/dd_01.mp4" type="video/mp4" />
+        <video autoplay muted loop alt="Damavis Data Resistant Stage">
+            <source src="img/video/dd_01.webm" type="video/mp4" />
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 1) ?></p>
             <h3><?= _('Data-Resistant') ?></h3>
             <p class="content"><?= _('In this stage, the company makes no use of the data, relying on the saying "things have always been done this way", something that is a clear brake for progress. The reason why companies could be stuck in this phase is because of the fear that data reveals facts that go against internal interests, such as wrong strategic decisions or inefficient departments.') ?></p>
         </div>
-        <video autoplay muted loop>
-            <source src="../img/video/dd_02.webm" type="video/mp4">
+        <video autoplay muted loop alt="Damavis Data Aware Stage">
+            <source src="img/video/dd_02.webm" type="video/mp4">
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 2) ?></p>
             <h3><?= _('Data-Aware') ?></h3>
             <p class="content"><?= _('Once passed the Data-Resistant stage, the company begins to be aware of the value of the data, so it begins to collect a subset of data and perform a basic descriptive analysis which does not lead to taking any action.') ?></p>
         </div>
-        <video autoplay muted loop>
-            <source src="../img/video/dd_03.webm" type="video/mp4">
+        <video autoplay muted loop alt="Damavis Data Guided Stage">
+            <source src="img/video/dd_03.webm" type="video/mp4">
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 3) ?></p>
             <h3><?= _('Data-Guided') ?></h3>
             <p class="content"><?= _('Now the company performs extensive analysis of its data, obtaining solid conclusions of the impact of taken past decisions. In this stage, the company is only able to obtain a tactical value from the data, which implies knowing if they should continue doing what they have done until now or changing their strategy.') ?></p>
         </div>
-        <video autoplay muted loop>
-            <source src="../img/video/dd_04.webm" type="video/mp4">
+        <video autoplay muted loop alt="Damavis Data Savy Stage">
+            <source src="img/video/dd_04.webm" type="video/mp4">
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 4) ?></p>
             <h3><?= _('Data-Savy') ?></h3>
             <p class="content"><?= _('Here, besides the obtained tactical value from the Data-Guided stage, a strategic value is also exploited, which means that the company not only focuses on the what (what has gone wrong?), but also in the (why has it gone wrong?).') ?></p>
         </div>
-        <video autoplay muted loop>
-            <source src="../img/video/dd_05.webm" type="video/mp4">
+        <video autoplay muted loop alt="Damavis Data Driven Stage">
+            <source src="img/video/dd_05.webm" type="video/mp4">
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 5) ?></p>

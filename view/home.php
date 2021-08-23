@@ -19,25 +19,25 @@
         </div>
         <div class="cards">
             <div class="card">
-                <img src="../img/home/ill-services-1.png" />
-                <a href="">&gt;&nbsp;&nbsp;&nbsp;<?= _('Data Management') ?></a>
+                <img src="../img/home/ill-services-1.png" alt="Damavis Data Management" />
+                <a href="/<?= $lang ?>/services/#data-management">&gt;&nbsp;<?= _('Data Management') ?></a>
             </div>
             <div class="card">
-                <img src="../img/home/ill-services-2.png" />
-                <a href="">&gt;&nbsp;&nbsp;&nbsp;<?= _('Artificial Intelligence') ?></a>
+                <img src="../img/home/ill-services-2.png" alt="Damavis Artificial Intelligence" />
+                <a href="/<?= $lang ?>/services/#ai">&gt;&nbsp;<?= _('Artificial Intelligence') ?></a>
             </div>
             <div class="card">
-                <img src="../img/home/ill-services-3.png" />
-                <a href="">&gt;&nbsp;&nbsp;&nbsp;<?= _('Data Visualization') ?></a>
+                <img src="../img/home/ill-services-3.png" alt="Damavis Data Visualization" />
+                <a href="/<?= $lang ?>/services/#visualization">&gt;&nbsp;<?= _('Data Visualization') ?></a>
             </div>
             <div class="card">
-                <img src="../img/home/ill-services-4.png" />
-                <a href="">&gt;&nbsp;&nbsp;&nbsp;<?= _('Real Time') ?></a>
+                <img src="../img/home/ill-services-4.png" alt="Damavis Real Time" />
+                <a href="/<?= $lang ?>/services/#rt">&gt;&nbsp;<?= _('Real Time') ?></a>
             </div>
         </div>
     </div>
     <div class="home data-driven">
-        <div class="steps">
+        <div class="steps" alt="Damavis Data Driven Scheme">
             <img src="../img/home/ill-datadriven-pointer.png" class="pointer" />
             <div>
                 <div class="stage"><?= __('Stage %d', 1) ?></div>
@@ -103,7 +103,7 @@
             <a class="cta" href="/<?= $lang ?>/team/"><?= _('Meet us') ?></a>
         </div>
         <div>
-            <img src="../img/home/ill-team.png">
+            <img src="../img/home/ill-team.png" alt="Damavis Team">
         </div>
     </div>
     <div class="home clients">

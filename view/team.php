@@ -21,7 +21,7 @@
         <div class="cards">
             <?php foreach($team as $member) : ?>
             <div class="card">
-                <img src="img/team/<?= $member[0] ?>.jpg" />
+                <img src="img/team/<?= $member[0] ?>.jpg" alt="Damavis Team <?= $member[2] ?> <?= $member[1]?>" />
                 <div class="footer">
                     <p class="name"><?= $member[1] ?></p>
                     <p class="position"><?= $member[2] ?></p>
