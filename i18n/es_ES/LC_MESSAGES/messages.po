@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-08-23 17:35+0200\n"
-"PO-Revision-Date: 2021-08-23 17:44+0200\n"
+"PO-Revision-Date: 2021-08-23 18:29+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -586,7 +586,7 @@ msgstr "CLIENTES"
 
 #: view/home.php:112
 msgid "We have performed outstanding projects with:"
-msgstr "Hemos realizado maravillosos proyectos con:"
+msgstr "Hemos realizado proyectos excepcionales con:"
 
 #: view/services.php:5
 #, fuzzy
