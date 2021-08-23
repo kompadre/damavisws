@@ -100,7 +100,7 @@
                 <h3 class="left"><?= _('We are strongly committed to teamwork, quality, assertiveness, effectiveness and efficiency.') ?></h3>
             </div>
             <p><?= _('Aware of the power that data can offer the world, we have created a team of experts with the ability to create and deliver Big Data tools that lead to success.') ?></p>
-            <button class="cta"><?= _('Meet us') ?></button>
+            <a class="cta" href="/<?= $lang ?>/team/"><?= _('Meet us') ?></a>
         </div>
         <div>
             <img src="../img/home/ill-team.png">
