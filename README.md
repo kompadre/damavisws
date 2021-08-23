@@ -28,10 +28,21 @@ sets up an http server for static html files. The only thing that changes from _
 
 ### Method 3 - deploying into production
 
-- First regenerate html following *Method 2*
-- Upload contents of `./html` into your document root
-- Upload `./css`, `./js`, `./img` into same document root (so that say `/en` and `/img` are on the same level).  
-- Finally upload `./.htacess.static` as `.htaccess` into yet again the same document root.
+First regenerate html following *Method 2*
+
+Upload contents of `./html` into your document root. Something like 
+
+> scp ./html/* user@example.com:/path/to/htdocs/ 
+
+Upload `./css`, `./js`, `./img` into same document root (so that say `/en` and `/img` are on the same level). 
+```shell
+scp ./js user@example.com:/path/to/htdocs/ && \
+scp ./css user@example.com:/path/to/htdocs/ && \
+scp ./img user@example.com:/path/to/htdocs/
+```
+
+Finally upload `./.htacess.static` as `.htaccess` into yet again the same document root. 
+> scp ./.htaccess.static user@example.com:/path/to/htdocs/.htaccess
 
 ## Making changes
 
