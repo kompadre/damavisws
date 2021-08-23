@@ -9,6 +9,6 @@ services:
     - "./css/:/var/www/html/css/:ro"
     - "./js/:/var/www/html/js/:ro"
     - "./.htaccess.static:/var/www/html/.htaccess:ro"
-    - "./source/apache/localhost.conf:/etc/apache2/sites-enabled/localhost.conf:ro"
+    - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf:ro"
     ports:
     - "80:80"

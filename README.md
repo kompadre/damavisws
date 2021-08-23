@@ -12,7 +12,7 @@ If port 80 is busy you can change exposed port in docker-compose.yml in ports se
 This will create a temporary development environment where you can 
 make your changes and see what they do in real time.
 
-### Method 2 (slower one - static html)
+### Method 2 - static html
 
 > docker build . -t php-damavis:latest
 
@@ -20,12 +20,18 @@ creates a docker image with all the stuff necessary to generate static files.
 
 > docker run --env-file=.env -v \`pwd\`:/var/www/html php-damavis:latest php regen-static-html.php
 
-generates static html files inside `./html`
+generates static html files inside `./html`. Make sure `./html` exists!
 
 > docker-compose -f static.docker-compose.yml up
 
 sets up an http server for static html files. The only thing that changes from _normal_ docker-compose.yml is that this one overrides .htaccess to serve static html instead of php.
 
+### Method 3 - deploying into production
+
+- First regenerate html following *Method 2*
+- Upload contents of `./html` into your document root
+- Upload `./css`, `./js`, `./img` into same document root (so that say `/en` and `/img` are on the same level).  
+- Finally upload `./.htacess.static` as `.htaccess` into yet again the same document root.
 
 ## Making changes
 
