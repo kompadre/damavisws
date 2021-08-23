@@ -57,7 +57,7 @@ Let's say now footer.php looks something like this:
  
 Now we add our localized string
 ```html
-<footer>© Aneior Studio S.L. <?= echo _('Translate me please!') ?></footer>
+<footer>© Aneior Studio S.L. <?= _('Translate me please!') ?></footer>
 ```
 
 Note that the original localized string should look exactly what you want it to look like in your default language (in our case English).
