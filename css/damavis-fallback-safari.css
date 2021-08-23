@@ -42,7 +42,8 @@ button.cta, a.cta {
   color: #01153A;
   border-radius: 0.35vw;
   border: 0;
-  font-family: Rubik; }
+  font-family: Rubik;
+  margin-bottom: 1em; }
   @media (max-width: 425px) {
     button.cta, a.cta {
       padding: 3vw 2.5vw; } }
