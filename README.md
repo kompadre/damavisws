@@ -118,8 +118,3 @@ _('home_title');
 _('work_title');
 // ...
 ```
-
-### DEPLOYING STATIC VERSION 
-
-Make sure that you actually have generated html files (see **Method 2**) and just publish the following folders: `./css`, `./html`, `./js` and `./img`. 
-At last copy `.htaccess.static` to `.htaccess` into your document root.
