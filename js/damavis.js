@@ -98,8 +98,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             elem.addEventListener('touch', hideCookiePopup);
         });
     }
-
-    var menucl = document.querySelector("header.home").classList;
     var logo = document.querySelector("header > a > img.logo");
     var hamburger = document.querySelector(".burger");
 
@@ -138,6 +136,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Switching between dark and light header is only relevant in homepage.
     var homebanner = document.querySelector(".home.banner");
     if (!!homebanner && 'IntersectionObserver' in window) {
+        var home = document.querySelector("header.home");
+        var menucl = home.classList;
+
         var elementsOfInterest = document.querySelectorAll(".home.banner, .home .steps");
         var observer = new IntersectionObserver(function(events) {
             var scrollIn  = new Event('scrollin');
@@ -154,12 +155,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     menucl.remove("fixed");
                     menucl.add("relative");
                     logo.setAttribute('src', 'img/logo-light.svg');
+                    console.log(home.querySelectorAll("nav.social > img"));
+                    home.querySelectorAll("nav.social > img").forEach(function(img) {
+                        var oldSrc = img.getAttribute('src');
+                        if (oldSrc.indexOf("Dark.svg") != -1) {
+                            img.setAttribute("src", oldSrc.replace("Dark.svg", ".svg"));
+                        }
+                    });
                 }, {passive: true});
                 elem.addEventListener("scrollout", function() {
                     console.log("switching to fixed");
                     menucl.add("fixed");
                     menucl.remove("relative");
                     logo.setAttribute('src', 'img/logo-dark.svg');
+                    home.querySelectorAll("nav.social > img").forEach(function(img) {
+                        var oldSrc = img.getAttribute('src');
+                        if (oldSrc.indexOf("Dark.svg") == -1) {
+                            img.setAttribute("src", oldSrc.replace(".svg", "Dark.svg"));
+                        }
+                    });
                 }, { passive: false });
             }
             else if (elem.classList.contains("steps")) {

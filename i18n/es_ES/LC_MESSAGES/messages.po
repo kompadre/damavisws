@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-08-21 05:40+0200\n"
-"PO-Revision-Date: 2021-08-21 05:43+0200\n"
+"POT-Creation-Date: 2021-08-23 17:35+0200\n"
+"PO-Revision-Date: 2021-08-23 17:35+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Machine Learning, Consultoría Mallorca, Python, Apache Spark, Visualization, "
 "Data Lake, Scala, Apache Hadoop"
 
-#: config.php:3
+#: config.php:3 view/home.php:11
 msgid ""
 "Damavis is an innovative startup specialized in the management of the most "
 "important resource of 21st century companies: their data. Our main objective "
@@ -35,9 +35,9 @@ msgid ""
 "can make better strategic decisions, ensuring scalability, maximum "
 "flexibility and integration of artificial intelligence algorithms."
 msgstr ""
-"Damavis es una startup innovadora especializada en la gestión del recurso "
-"más importante de las empresas del siglo XXI: sus datos. Nuestro principal "
-"objetivo es conseguir el mayor rendimiento posible de los datos para que "
+"Damavis es una startup innovadora y especializada en la gestión del recurso "
+"más importante de las empresas del siglo XXI: los datos. Nuestro principal "
+"objetivo es obtener el mayor rendimiento posible de los datos para que "
 "nuestros clientes puedan tomar mejores decisiones estratégicas, asegurando "
 "escalabilidad, máxima flexibilidad e integración de algoritmos de "
 "inteligencia artificial."
@@ -48,7 +48,7 @@ msgstr "Datos, Machine Learning y Visualización"
 
 #: config.php:12
 msgid "About"
-msgstr "Sobre nosotros"
+msgstr "Acerca de nosotros"
 
 #: config.php:15 include/navigation.php:9
 msgid "Contact"
@@ -56,7 +56,7 @@ msgstr "Contacto"
 
 #: config.php:16 include/navigation.php:3
 msgid "Data Driven"
-msgstr "Impulsados por Datos"
+msgstr "Data Driven"
 
 #: config.php:17
 msgid "Team"
@@ -67,8 +67,8 @@ msgid "Services"
 msgstr "Servicios"
 
 #: config.php:19
-msgid "Terms"
-msgstr "Términos"
+msgid "Legal"
+msgstr "Aviso Legal"
 
 #: include/_gettext_hints.php:3 view/team.php:3
 msgid "CEO"
@@ -94,7 +94,7 @@ msgstr "Científico de Datos"
 
 #: include/_gettext_hints.php:8 view/team.php:12
 msgid "Quality Assurance"
-msgstr "Seguro de Calidad"
+msgstr "Control de Calidad"
 
 #: include/_gettext_hints.php:10 include/form.php:17
 #, php-format
@@ -102,12 +102,11 @@ msgid ""
 "By clicking the “%s” button, you agree on our <a href=\"%s\">terms of "
 "pricacy</a>."
 msgstr ""
-"Clicando en “%s” Vd. acepta los <a href=\"%s\">terminos y condiciones de "
-"privacidad</a>."
+"Clicando en “%s” Vd. acepta nuestras <a href=\"%s\">condiciones legales</a>."
 
 #: include/footer.php:13
 msgid "All rights reserved"
-msgstr "Derechos reservados"
+msgstr "Todos los derechos reservados"
 
 #: include/footer.php:13
 msgid "Attributions"
@@ -115,7 +114,7 @@ msgstr "Atribuciones"
 
 #: include/footer.php:23
 msgid "Cookies advise"
-msgstr "Aviso de cookie"
+msgstr "Política de cookie"
 
 #: include/footer.php:24
 #, php-format
@@ -124,13 +123,13 @@ msgid ""
 "you want to check more details, please read our <a href=\"%s\">Terms and "
 "Conditions</a>."
 msgstr ""
-"Este sitio web utiliza cookies para garantizar la mejor experiencia en "
-"nuestro sitio web. Si desea comprobar más detalles, por favor lea nuestros "
-"<a href=\"%s\">Términos y Condiciones</a>."
+"Este sitio web hace uso de cookies para ofrecer la mejor experiencia al "
+"usuario. Para más información lea, por favor, nuestras <a href=\"%s"
+"\">Condiciones Legales</a>."
 
 #: include/footer.php:27
 msgid "Okay"
-msgstr "Vale"
+msgstr "¡Entendido!"
 
 #: include/footer.php:28
 msgid "Close"
@@ -141,53 +140,60 @@ msgid "CONTACT"
 msgstr "CONTACTO"
 
 #: include/form.php:5
+#, fuzzy
 msgid "Set up your data-driven growth"
 msgstr "Comienza tu crecimiento basado en datos"
 
 #: include/form.php:8
 msgid "What is your name?"
-msgstr "¿Cual es tu nombre?"
+msgstr "Nombre completo"
 
 #: include/form.php:9 include/form.php:11 include/form.php:13
 #: include/form.php:15
+#, fuzzy
 msgid "Type here"
 msgstr "Escriba aquí"
 
 #: include/form.php:10
+#, fuzzy
 msgid "What is your email?"
 msgstr "¿Cual es tu email?"
 
 #: include/form.php:12
+#, fuzzy
 msgid "What is your organization?"
 msgstr "¿Cual es tu organización?"
 
 #: include/form.php:14
 msgid "What is your message?"
-msgstr "¿Y tu mensaje?"
+msgstr "Mensaje completo"
 
 #: include/form.php:16 include/form.php:17
 msgid "Send Message"
 msgstr "Enviar mensaje"
 
 #: include/form.php:18
+#, fuzzy
 msgid "The fields marked with a star (*) are mandatory"
 msgstr "Los campos marcados con un asterisco (*) son obligatorios"
 
 #: include/form.php:22
+#, fuzzy
 msgid "Message received."
 msgstr "Mensaje recibido."
 
 #: include/form.php:23
 msgid "We usually take one day to respond."
-msgstr "Por lo general, tardamos un día en responder."
+msgstr "Por lo general tardamos un día en responder."
 
 #: include/form.php:26
+#, fuzzy
 msgid "Do you need our services?"
 msgstr "¿Necesita nuestros servicios?"
 
 #: include/navigation.php:5
 msgid "About Us"
-msgstr "Sobre nosotros"
+msgstr "Acerca de nosotros"
 
 #: include/navigation.php:6
 msgid "Our Team"
@@ -195,7 +201,7 @@ msgstr "Nuestro equipo"
 
 #: include/navigation.php:7
 msgid "Work with us"
-msgstr "Trabaja con nosotros"
+msgstr "Empleo"
 
 #: include/navigation.php:8
 msgid "Blog"
@@ -203,11 +209,11 @@ msgstr "Blog"
 
 #: view/about.php:9 view/about.php:46
 msgid "ABOUT US"
-msgstr "SOBRE NOSOTROS"
+msgstr "ACERCA DE NOSOTROS"
 
 #: view/about.php:10
 msgid "We perform intelligent data analysis"
-msgstr "Realizamos análisis inteligente de datos"
+msgstr "Hacemos análisis inteligente de datos"
 
 #: view/about.php:11
 msgid ""
@@ -221,12 +227,15 @@ msgid ""
 "of artificial intelligence algorithms into live production environments "
 "whose reponses can happen in real time."
 msgstr ""
-"Damavis es una startup innovadora especializada en la gestión del recurso "
-"más importante de las empresas del siglo XXI: sus datos. Nuestro principal "
-"objetivo es conseguir el mayor rendimiento posible de los datos para que "
-"nuestros clientes puedan tomar mejores decisiones estratégicas, asegurando "
-"escalabilidad, máxima flexibilidad e integración de algoritmos de "
-"inteligencia artificial."
+"Damavis es una startup innovadora y especializada en la gestión del recurso "
+"más importante de las empresas del siglo XXI: los datos. Nuestro principal "
+"objetivo es obtener el mayor rendimiento posible de los datos para que "
+"nuestros clientes puedan tomar mejores decisiones estratégicas, "
+"acompañándolos en el camino hasta convertirse en una empresa Data Driven. La "
+"alta versatilidad de nuestros perfiles hace posible que podamos proporcionar "
+"nuestros servicios en cualquier área relacionada con el dato. Gestionamos "
+"desde la creación de un optimizado Data Lake hasta la puesta en producción "
+"de algoritmos de inteligencia artificial en tiempo real."
 
 #: view/about.php:12
 msgid ""
@@ -235,42 +244,41 @@ msgid ""
 "With our experience in the data world, we are able to apply scalable, "
 "flexible and adapted solutions to all types of markets."
 msgstr ""
-"En Damavis creemos que el camino hacia la transformación digital debe ser "
-"progresiva y completa, adaptada a las necesidades de cada uno de nuestros "
-"clientes. Con nuestra experiencia en el mundo de los datos, que son capaces "
-"de aplicar soluciones escalables, flexibles y adaptados a todo tipo de "
-"mercados."
+"En Damavis creemos que el viaje hacia la Transformación Digital debe ser "
+"progresivo y completo, adaptado a las necesidades de cada uno de nuestros "
+"clientes. Con nuestra experiencia en el mundo del dato, somos capaces de "
+"aplicar soluciones escalables, flexibles y adaptadas a todo tipo de mercado."
 
 #: view/about.php:17
 msgid "OUR MANIFESTO"
-msgstr "NUESTRO LEMA"
+msgstr "NUESTRO MANIFESTO"
 
 #: view/about.php:18
 msgid ""
 "We believe in our <strong>Teamwork</strong>, it will make the dream work."
 msgstr ""
-"Creemos en nuestro <strong>Trabajo en equipo</strong>, que hará que el "
-"trabajo del sueño."
+"Confiamos en nuestro <strong>equipo</strong>, el que hará que nuestros "
+"sueños se cumplan."
 
 #: view/about.php:19
 msgid "We keep <strong>quality</strong> as our seal."
-msgstr "Mantenemos <strong>Calidad</strong> como nuestro sello."
+msgstr "Mantenemos la <strong>calidad</strong> como sello."
 
 #: view/about.php:20
 msgid ""
 "We’re direct, honest and respectful with others and we excel in the way we "
 "do things."
 msgstr ""
-"Estamos directa, honesta y respetuosa con los demás y nos destacamos en la "
-"forma en que hacemos las cosas."
+"Somos directos, honestos y respetamos a los demás, destacando así en la "
+"manera en la que hacemos las cosas."
 
 #: view/about.php:21
 msgid ""
 "We’re passionately curious and always remember, that <strong>knowledge is "
 "our power</strong>."
 msgstr ""
-"Estamos apasionadamente curioso y recordar siempre, que <strong>conocimiento "
-"es nuestro poder</strong>."
+"Somos pasionalmente curiosos, recordando siempre que <strong>nuestro poder "
+"reside en el conocimiento</strong>."
 
 #: view/about.php:25
 msgid "Mission"
@@ -281,9 +289,8 @@ msgid ""
 "To add value to the power of our clients by promoting the use of Big Data in "
 "order to create success stories from efficient strategies."
 msgstr ""
-"Para añadir valor a la potencia de nuestros clientes mediante la promoción "
-"de la utilización de grandes volúmenes de datos con el fin de crear "
-"historias de éxito de estrategias eficientes."
+"Añadir valor al potencial de nuestros clientes impulsando el uso del Big "
+"Data, para crear casos de éxito a partir de estrategias eficientes."
 
 #: view/about.php:30
 msgid "Vision"
@@ -294,22 +301,21 @@ msgid ""
 "To be the reference of quality and talent of the Big Data. A sure investment "
 "on the future and success."
 msgstr ""
-"Para ser la referencia de la calidad y el talento del Big Data. Una "
-"inversión segura en el futuro y el éxito."
+"Ser el referente de calidad y talento del Big Data. Una apuesta segura por "
+"el futuro y el éxito."
 
 #: view/about.php:35
 msgid "Purpose"
-msgstr "Objetivo"
+msgstr "Propósito"
 
 #: view/about.php:37
 msgid "To highlight our commitment to the client, the team and society."
 msgstr ""
-"Para poner de relieve nuestro compromiso con el cliente, el equipo y la "
-"sociedad."
+"Destacar nuestro compromiso con el cliente, el equipo y con la sociedad."
 
 #: view/about.php:47
 msgid "Damavis history"
-msgstr "Conoce Damavis"
+msgstr "Las raíces de Damavis"
 
 #: view/about.php:48
 msgid ""
@@ -385,34 +391,32 @@ msgstr ""
 "avanzando, Damavis lo percibe como una posibilidad, y lo transforma, de "
 "lleno, en un caso de éxito."
 
-#: view/datadriven.php:4 view/home.php:93
+#: view/datadriven.php:4 view/home.php:90
 msgid "DATA DRIVEN"
 msgstr "DATA DRIVEN"
 
 #: view/datadriven.php:5
 msgid "The path to success depends on your decisions."
-msgstr ""
-"A continuación, usted será capaz de definir la etapa de su negocio está en "
-"el camino de la transformación digital"
+msgstr "¿Cómo de acertadas están siendo tus decisiones?"
 
 #: view/datadriven.php:6
 msgid ""
 "Below, you will be able to define the stage your business is on the road to "
-"digital transformation"
+"digital transformation."
 msgstr ""
-"A continuación, usted será capaz de definir la etapa de su negocio está en "
-"el camino de la transformación digital"
+"El camino al éxito depende de ello. A continuación, podrás definir en qué "
+"etapa se encuentra tu negocio en el camino hacia la transformación digital."
 
 #: view/datadriven.php:18 view/datadriven.php:26 view/datadriven.php:34
-#: view/home.php:46 view/home.php:55 view/home.php:64 view/home.php:73
-#: view/home.php:82
+#: view/datadriven.php:42 view/datadriven.php:50 view/home.php:43
+#: view/home.php:52 view/home.php:61 view/home.php:70 view/home.php:79
 #, php-format
 msgid "Stage %d"
-msgstr "Etapa %d"
+msgstr "Fase %d"
 
-#: view/datadriven.php:19 view/home.php:47
+#: view/datadriven.php:19 view/home.php:44
 msgid "Data-Resistant"
-msgstr "Resistente a datos"
+msgstr "Resistente al dato"
 
 #: view/datadriven.php:20
 msgid ""
@@ -422,16 +426,16 @@ msgid ""
 "because of the fear that data reveals facts that go against internal "
 "interests, such as wrong strategic decisions or inefficient departments."
 msgstr ""
-"En esta etapa, la compañía no hace uso de los datos, basándose en el dicho "
-"\"las cosas siempre se han hecho de esta manera\", algo que es un freno para "
-"el progreso claro. La razón por la cual las empresas podrían estar atrapados "
-"en esta fase es debido al temor de que los datos revelan hechos que van en "
-"contra de los intereses internos, como las decisiones estratégicas "
-"equivocadas o departamentos ineficientes."
+"En esta fase, la empresa no hace ningún uso del dato, apoyándose en el dicho "
+"\"las cosas siempre se han hecho así\", algo que es un claro freno para el "
+"progreso. El motivo por el cual las empresas podrían estar estancadas en "
+"esta fase es por miedo a que los datos revelen hechos que van en contra de "
+"intereses internos, como pueden ser decisiones estratégicas erróneas o "
+"departamentos ineficientes."
 
-#: view/datadriven.php:27 view/home.php:56
+#: view/datadriven.php:27 view/home.php:53
 msgid "Data-Aware"
-msgstr "Impulsados por Datos"
+msgstr "Consciente del dato"
 
 #: view/datadriven.php:28
 msgid ""
@@ -439,10 +443,61 @@ msgid ""
 "value of the data, so it begins to collect a subset of data and perform a "
 "basic descriptive analysis which does not lead to taking any action."
 msgstr ""
-"Una vez pasado la etapa de Datos resistente, la empresa empieza a ser "
-"consciente del valor de los datos, por lo que comienza a recoger un "
-"subconjunto de datos y llevar a cabo un análisis descriptivo de base que no "
-"conducen a tomar cualquier acción."
+"En este momento, la empresa empieza a ser consciente del valor de los datos, "
+"motivo por el cual empieza a recolectarlos y a hacer análisis descriptivos "
+"básicos, producto de la débil curiosidad que presenta hasta el momento."
+
+#: view/datadriven.php:35 view/home.php:62
+msgid "Data-Guided"
+msgstr "Guiado por el dato"
+
+#: view/datadriven.php:36
+msgid ""
+"Now the company performs extensive analysis of its data, obtaining solid "
+"conclusions of the impact of taken past decisions. In this stage, the "
+"company is only able to obtain a tactical value from the data, which implies "
+"knowing if they should continue doing what they have done until now or "
+"changing their strategy."
+msgstr ""
+"Ahora la empresa ya hace un análisis extensivo de sus datos, obteniendo "
+"conclusiones sólidas del impacto que han tenido sus decisiones en el pasado "
+"y conociendo si fueron buenas o malas. En esta fase, la empresa sólo es "
+"capaz de obtener del dato un valor táctico, el cual implica saber si deben "
+"seguir haciendo lo que han hecho hasta ahora o cambiar de estrategia."
+
+#: view/datadriven.php:43 view/home.php:71
+msgid "Data-Savy"
+msgstr "Experto con los datos"
+
+#: view/datadriven.php:44
+msgid ""
+"Here, besides the obtained tactical value from the Data-Guided stage, a "
+"strategic value is also exploited, which means that the company not only "
+"focuses on the what (what has gone wrong?), but also in the (why has it gone "
+"wrong?)."
+msgstr ""
+"Experto con los datos\n"
+"En esta etapa, la empresa extiende el valor táctico de los datos a también "
+"un valor estratégico, en el que la empresa no solo se centra en el qué (¿qué "
+"ha ido mal?) sino que lo extiende al por qué (¿por qué ha ido mal?)."
+
+#: view/datadriven.php:51 view/home.php:80
+msgid "Data-Driven"
+msgstr "Data Driven"
+
+#: view/datadriven.php:52
+msgid ""
+"In this last phase, once businesses have found out what has gone wrong and "
+"why, the immediate challenge to tackle is \"given that data confirms this "
+"fact, what do we do about it?\". Decision making is entirely based on what "
+"the data says given that it reveals the absolute truth of what happens in "
+"the company and in the market."
+msgstr ""
+"En esta última fase, una vez averiguado qué ha ido mal y por qué, la "
+"pregunta inmediata que hay que hacer es \"dado que los datos confirman este "
+"hecho, ¿qué hacemos al respecto?\". La toma de decisiones está basada "
+"completamente en lo que dicen los datos, los cuales revelan la verdad "
+"absoluta de lo que ocurre en la empresa y en el mercado."
 
 #: view/home.php:9
 msgid "BIG DATA STUDIO"
@@ -450,68 +505,42 @@ msgstr "BIG DATA STUDIO"
 
 #: view/home.php:10
 msgid "Get insights from your data"
-msgstr "Amplia la perspectiva de los datos"
+msgstr "Transformación digital mediante Big Data"
 
-#: view/home.php:11
-msgid ""
-"Damavis is an innovative startup specialized in the management of the most "
-"important resource of 21st century\n"
-"                companies: their data. Our main objective is to get the "
-"highest possible performance of the data so that our\n"
-"                clients can make better strategic decisions, ensuring "
-"scalability, maximum flexibility and integration of\n"
-"                artificial intelligence algorithms."
-msgstr ""
-"Damavis es una startup innovadora especializada en la gestión del recurso "
-"más importante de las empresas del siglo XXI: sus datos. Nuestro principal "
-"objetivo es conseguir el mayor rendimiento posible de los datos para que "
-"nuestros clientes puedan tomar mejores decisiones estratégicas, asegurando "
-"escalabilidad, máxima flexibilidad e integración de algoritmos de "
-"inteligencia artificial."
-
-#: view/home.php:20 view/home.php:102 view/services.php:4
+#: view/home.php:17 view/services.php:4
 msgid "SERVICES"
 msgstr "SERVICIOS"
 
-#: view/home.php:21 view/home.php:103
+#: view/home.php:18
+#, fuzzy
 msgid "We provide the state-of-the-art data solutions your firm needs to grow."
 msgstr ""
 "Proporcionamos las soluciones de datos del estado de la técnica de sus "
 "necesidades firmes para crecer."
 
-#: view/home.php:26
+#: view/home.php:23
 msgid "Data Management"
-msgstr "Gestión de datos"
+msgstr "Gestión del dato"
 
-#: view/home.php:30 view/services.php:36
+#: view/home.php:27 view/services.php:36
 msgid "Artificial Intelligence"
-msgstr "Inteligencia artificial"
+msgstr "Inteligencia Artificial"
 
-#: view/home.php:34
+#: view/home.php:31
 msgid "Data Visualization"
 msgstr "Visualización de datos"
 
-#: view/home.php:38 view/services.php:118
+#: view/home.php:35 view/services.php:116
 msgid "Real Time"
 msgstr "Tiempo real"
 
-#: view/home.php:65
-msgid "Data-Guided"
-msgstr "Datos guiada"
-
-#: view/home.php:74
-msgid "Data-Savy"
-msgstr "Data-Savy"
-
-#: view/home.php:83
-msgid "Data-Driven"
-msgstr "Data-Driven"
-
-#: view/home.php:94
+#: view/home.php:91
+#, fuzzy
 msgid "The solution is hidden in your data. Let us reveal it for you."
 msgstr "La solución se oculta en sus datos. Vamos a revelar por usted."
 
-#: view/home.php:96
+#: view/home.php:93
+#, fuzzy
 msgid ""
 "The objective of Damavis is to work hand in hand with our clients to take "
 "them to the Data Driven Stage, in which it is possible to be highly "
@@ -524,29 +553,43 @@ msgstr ""
 "etapas siguientes describen el camino para lograr la transformación digital "
 "completa."
 
-#: view/home.php:105
+#: view/home.php:99
+msgid "MEET OUR TEAM"
+msgstr "NUESTRO EQUIPO"
+
+#: view/home.php:100
+msgid ""
+"We are strongly committed to teamwork, quality, assertiveness, effectiveness "
+"and efficiency."
+msgstr ""
+"Apostamos por el trabajo en equipo, la calidad, asertividad, eficacia y "
+"eficiencia."
+
+#: view/home.php:102
 msgid ""
 "Aware of the power that data can offer the world, we have created a team of "
 "experts with the ability to create and deliver Big Data tools that lead to "
-"success. "
+"success."
 msgstr ""
-"Consciente del poder que los datos pueden ofrecer al mundo, hemos creado un "
-"equipo de expertos con la capacidad de crear y ofrecer herramientas de "
-"grandes volúmenes de datos que conducen al éxito."
+"Conscientes del poder que los datos pueden ofrecer al mundo, hemos creado un "
+"equipo de profesionales con capacidad de crear y facilitar herramientas de "
+"Big Data que conduzcan al éxito."
 
-#: view/home.php:106
+#: view/home.php:103
+#, fuzzy
 msgid "Meet us"
 msgstr "Conócenos"
 
-#: view/home.php:114
+#: view/home.php:111
 msgid "CLIENTS"
 msgstr "CLIENTES"
 
-#: view/home.php:115
+#: view/home.php:112
 msgid "We have performed outstanding projects with:"
-msgstr "Hemos realizado proyectos con:"
+msgstr "Hemos realizado maravillosos proyectos con:"
 
 #: view/services.php:5
+#, fuzzy
 msgid ""
 "We add value by promoting the use of Big Data to create success stories from "
 "efficient strategies."
@@ -555,6 +598,7 @@ msgstr ""
 "de datos para crear historias de éxito de estrategias eficientes."
 
 #: view/services.php:6
+#, fuzzy
 msgid ""
 "Management, Artificial Intelligence,  Visualization and Real Time data "
 "comprehension. All by Damavis."
@@ -562,30 +606,29 @@ msgstr ""
 "Gestión, inteligencia artificial, visualización y comprensión de datos en "
 "tiempo real. Todo por Damavis."
 
-#: view/services.php:11 view/services.php:35 view/services.php:92
-#: view/services.php:117 view/services.php:124
+#: view/services.php:11 view/services.php:35 view/services.php:90
+#: view/services.php:115 view/services.php:122
 msgid "TECHNOLOGY"
 msgstr "TECNOLOGÍA"
 
-#: view/services.php:12 view/services.php:93
+#: view/services.php:12
 msgid "Data management"
-msgstr "Gestión de datos"
+msgstr "Gestión del dato"
 
-#: view/services.php:13 view/services.php:94
+#: view/services.php:13
 msgid ""
 "This service stack includes all the necessary processes that intend to "
 "organize data in a way that is is prepared to obtain value from it by "
 "creating artificial intelligence models and dynamic visualizations that take "
 "place in further stages."
 msgstr ""
-"Esta pila de servicio incluye todos los procesos necesarios que tengan la "
-"intención de organizar los datos en una forma que es se prepara para obtener "
-"el valor de la misma mediante la creación de modelos de inteligencia "
-"artificial y visualizaciones dinámicas que se producen en etapas posteriores."
+"Este stack de servicios incluye toda la gestión necesaria para que el dato "
+"esté preparado para sacarle valor en contextos de creación de modelos de "
+"inteligencia artificial o visualizaciones dinámicas."
 
 #: view/services.php:18
 msgid "Data Lake"
-msgstr "Lago de Datos"
+msgstr "Data Lake"
 
 #: view/services.php:19 view/services.php:43
 msgid ""
@@ -594,35 +637,39 @@ msgid ""
 "centralized and strong base so that the different parts of the company can "
 "use this source of information to develop their own projects."
 msgstr ""
-"Somos expertos en la creación de repositorios de datos en su formato natural "
-"de una manera que satisfaga las necesidades específicas de nuestros "
-"clientes, creando así una base centralizada y fuerte de manera que las "
-"diferentes partes de la empresa pueden utilizar esta fuente de información "
-"para desarrollar sus propios proyectos."
+"Somos expertos en crear repositorios de datos en su formato natural acorde a "
+"las necesidades específicas de nuestros clientes, formando así una base "
+"robusta y centralizada para que las diferentes partes de la empresa puedan "
+"alimentarse de dicha fuente de información."
 
-#: view/services.php:23 view/services.php:28
+#: view/services.php:23
 msgid "Data Warehouse"
-msgstr "Almacén de datos"
+msgstr "Data Warehouse"
 
 #: view/services.php:24 view/services.php:48
 msgid ""
 "We take care of understanding the problems of our customers in order to "
 "decide which is the optimal format in which their data should be stored."
 msgstr ""
-"Nos ocupamos de la comprensión de los problemas de nuestros clientes con el "
-"fin de decidir cuál es el formato óptimo en el que se deben almacenar sus "
+"Nos encargamos de entender las problemáticas de nuestros clientes para así "
+"decidir cuál es el formato óptimo en el que deben estar almacenados sus "
 "datos."
 
-#: view/services.php:29 view/services.php:53
+#: view/services.php:28
+msgid "ETL"
+msgstr "ETL"
+
+#: view/services.php:29
 msgid ""
 "Extract, Transform and Load, also known as ETL, involves the transformation "
 "and processing of data so that analytical teams can develop artificial "
 "intelligence models as well as visualizations on which the company relies on."
 msgstr ""
-"De extracción, transformación y carga, también conocido como ETL, implica la "
-"transformación y procesamiento de datos para que los equipos de análisis "
-"puede desarrollar modelos de inteligencia artificial, así como las "
-"visualizaciones en el que la compañía se basa."
+"Proveniente del inglés Extract, Transform and Load, implica la "
+"transformación y el procesamiento del dato para que este pueda ser empleado "
+"en la toma de decisiones estratégicas, la realización de modelos de "
+"inteligencia artificial, el análisis exploratorio del mercado o como fuente "
+"centralizada de datos en la que toda la empresa se apoya."
 
 #: view/services.php:37
 msgid ""
@@ -631,11 +678,10 @@ msgid ""
 "correct strategic decisions are made, but these decisions are executed "
 "practically in real time due to the automation of these processes."
 msgstr ""
-"Comprender y modelar los patrones subyacentes que están presentes en los "
-"datos proporciona una gran ventaja competitiva a las empresas ya que, no "
-"sólo es más correcta se toman las decisiones estratégicas, pero estas "
-"decisiones se ejecutan prácticamente en tiempo real debido a la "
-"automatización de estos procesos."
+"Entender y modelizar los patrones subyacentes en los datos proporciona una "
+"gran ventaja competitiva a las empresas, ya que no solo se toman decisiones "
+"estratégicas más correctas, sino que se ejecutan prácticamente en tiempo "
+"real debido a la automatización de estos procesos."
 
 #: view/services.php:42
 msgid "Customer Segmentation"
@@ -643,17 +689,27 @@ msgstr "Segmentación de clientes"
 
 #: view/services.php:47
 msgid "Search of Optimal Paths"
-msgstr "Búsqueda de Caminos Óptimos"
+msgstr "Búsqueda de Rutas Óptimas"
 
 #: view/services.php:52
 msgid "Record Linkage"
-msgstr "Vinculación de registros"
+msgstr "Record Linkage"
+
+#: view/services.php:53
+msgid ""
+"We create relationships of the records that lack unique identifier between "
+"the different data sources, using probabilistic methodologies of Record "
+"Linkage or Machine Learning."
+msgstr ""
+"Creamos relaciones de los registros que carecen de identificador único entre "
+"las diferentes fuentes de datos mediante metodologías probabilísticas de "
+"Record Linkage o Machine Learning."
 
 #: view/services.php:58
 msgid "Time Series Prediction"
 msgstr "Predicción de series temporales"
 
-#: view/services.php:59 view/services.php:76
+#: view/services.php:59 view/services.php:74
 msgid ""
 "We are able to model any type of time series that has an implicit pattern, "
 "such as predicting product demands, prices or cash flows, using classic "
@@ -667,7 +723,7 @@ msgstr ""
 msgid "Conversion Probability Estimation"
 msgstr "Conversión estimación de probabilidad"
 
-#: view/services.php:64 view/services.php:81
+#: view/services.php:64 view/services.php:79
 msgid ""
 "We can estimate the probability of purchasing a product in a particular "
 "context using advanced classification algorithms. Something very valuable in "
@@ -683,7 +739,7 @@ msgstr ""
 msgid "Pricing Optimization"
 msgstr "La optimización de precios"
 
-#: view/services.php:69 view/services.php:86
+#: view/services.php:69 view/services.php:84
 msgid ""
 "We develop intelligent algorithms for our clients that are able to "
 "understand the market context and change the price dynamically and "
@@ -695,23 +751,37 @@ msgstr ""
 "y automática, lo que aumenta la velocidad de reacción a los cambios del "
 "mercado y por lo tanto su competitividad."
 
-#: view/services.php:75
+#: view/services.php:73
 msgid "Text Analysis"
 msgstr "Análisis de texto"
 
-#: view/services.php:80
+#: view/services.php:78
 msgid "Recommendation Systems"
 msgstr "Sistemas de recomendación"
 
-#: view/services.php:85
+#: view/services.php:83
 msgid "Image Recognition"
 msgstr "Reconocimiento de imagenes"
 
-#: view/services.php:99
+#: view/services.php:91
+msgid "Visualization"
+msgstr "Visualización"
+
+#: view/services.php:92
+msgid ""
+"Our visualization services allow our clients to understand the dynamics of "
+"their market at a glance through dynamic dashboards, adapted to their "
+"specific needs."
+msgstr ""
+"Nuestros servicios de visualización permiten a nuestros clientes entender la "
+"dinámica de su mercado en un solo vistazo mediante dashboards dinámicos, "
+"adaptados a sus necesidades específicas."
+
+#: view/services.php:97
 msgid "Business Intelligence Tools"
 msgstr "Herramientas de Business Intelligence"
 
-#: view/services.php:100
+#: view/services.php:98
 msgid ""
 "We transform information into knowledge in order to optimize the strategic "
 "decisions of a company by integrating any Business Intelligence technology "
@@ -722,38 +792,36 @@ msgstr ""
 "tecnología de Business Intelligence de acuerdo a las necesidades y "
 "preferencias de nuestros clientes."
 
-#: view/services.php:104
+#: view/services.php:102
 msgid "Dashboards"
 msgstr "Cuadros de mando"
 
-#: view/services.php:105
+#: view/services.php:103
 msgid ""
 "We are experts at developing interactive Dashboards that, based on large "
 "volumes of data, visually shows direct results and helps to make strategic "
 "decisions."
 msgstr ""
-"Somos expertos en el desarrollo de cuadros de mando interactivos que, "
-"basándose en grandes volúmenes de datos, muestra visualmente los resultados "
-"directos y ayuda a tomar decisiones estratégicas."
+"Somos expertos en el desarrollo de Dashboards interactivos que, a partir de "
+"grandes volúmenes de datos, muestran de manera visual resultados directos y "
+"ayudan a tomar decisiones estratégicas."
 
-#: view/services.php:109
-#, fuzzy
-#| msgid "Data Visualization"
+#: view/services.php:107
 msgid "High Dimensions Visualization"
-msgstr "Visualización de datos"
+msgstr "Visualización de Altas Dimensiones"
 
-#: view/services.php:110
+#: view/services.php:108
 msgid ""
 "We provide visualization tools that make easy to quickly understand what is "
 "happening in our clients' market and thus be able to apply predictive "
 "analysis techniques and future projections."
 msgstr ""
-"Proporcionamos herramientas de visualización que hacen fácil de entender "
-"rápidamente lo que está sucediendo en el mercado de nuestros clientes y por "
-"lo tanto será capaz de aplicar las técnicas de análisis y proyecciones "
-"futuras predictivo."
+"Proporcionamos herramientas de visualización de múltiples variables en "
+"gráficas detalladas que facilitan entender rápidamente lo que está "
+"ocurriendo en el mercado de nuestros clientes para poder aplicar técnicas de "
+"análisis predictivo y proyecciones de futuro."
 
-#: view/services.php:119
+#: view/services.php:117
 msgid ""
 "We provide all our services in real time at the request of our clients, as "
 "the reaction time is essential to determine, in many contexts, changes in "
@@ -763,7 +831,7 @@ msgstr ""
 "clientes, ya que el tiempo de reacción es esencial para determinar, en "
 "muchos contextos, los cambios en las tendencias del mercado."
 
-#: view/services.php:125
+#: view/services.php:123
 msgid ""
 "We have experience with the best technologies from the Big Data field and we "
 "are constantly adding new ones."
@@ -772,6 +840,7 @@ msgstr ""
 "estamos añadiendo constantemente nuevos."
 
 #: view/team.php:4 view/team.php:5 view/team.php:6
+#, fuzzy
 msgid "Head Data Engineer"
 msgstr "Ingeniero Jefe de Datos"
 
@@ -792,7 +861,8 @@ msgstr ""
 "servicios en cualquier área relacionada con los datos."
 
 #: view/terms.php:4
-msgid "LEGAL TERMS OF USE COOKIES POLICY"
+#, fuzzy
+msgid "LEGAL TERMS OF USE AND COOKIES POLICY"
 msgstr "TÉRMINOS LEGALES DE USO Y POLÍTICA DE COOKIES"
 
 #: view/terms.php:5
@@ -826,7 +896,7 @@ msgid ""
 msgstr ""
 "Aneior Studio, SL, con domicilio en Playa, 9 4 - 07458 Santa Margalida, "
 "Illes Balears con NIF B16592768 es titular y pone a disposición en su sitio "
-"web damavis.com información de caracter informativo sobre su actividad "
+"web damavis.com información de carácter informativo sobre su actividad "
 "comercial."
 
 #: view/terms.php:13
@@ -848,7 +918,7 @@ msgstr "SEGUNDA"
 
 #: view/terms.php:16
 msgid "Contents"
-msgstr "Contenido"
+msgstr "Contenidos"
 
 #: view/terms.php:18 view/terms.php:23
 msgid ""
@@ -943,8 +1013,8 @@ msgstr "TRABAJA CON NOSOTROS"
 
 #: view/work.php:5 view/work.php:13
 msgid ""
-"We are a team of Data Engineer and Data Scientist experts in Big Data and "
-"Artificial Intelligence."
+"We are a team of Data Engineers and Data Scientists; experts in the fields "
+"of Big Data and Artificial Intelligence."
 msgstr ""
 "Somos un equipo de Data Engineer y Data Scientist expertos en BigData e "
 "Inteligencia Artificial."
@@ -962,7 +1032,7 @@ msgstr ""
 
 #: view/work.php:19 view/work.php:34 view/work.php:50
 msgid "OUR OPEN POSITION"
-msgstr "NUESTRA OFERTA"
+msgstr "VER OFERTAS"
 
 #: view/work.php:20
 msgid "You will have to:"
@@ -1060,39 +1130,67 @@ msgstr "Conocimientos de sistema de control de versiones."
 
 #: view/work.php:51
 msgid "Requisitos"
-msgstr ""
+msgstr "Requirements"
 
 #: view/work.php:53
 msgid "Devotion to free software."
-msgstr "Devoción por el software libre."
+msgstr "Devoción al software libre."
 
 #: view/work.php:54
-msgid "Esperiencia with agile development methodologies."
-msgstr ""
+msgid "Experience with agile development methodologies."
+msgstr "Experiencia con metodologías agile."
 
 #: view/work.php:55
-msgid "GitHub have a profile showing your skills."
-msgstr ""
+msgid "GitHub profile showing your professional skills."
+msgstr "Perfil en GitHub demostrando sus habilidades."
 
 #: view/work.php:56
 msgid "Knowledge of CI / CD tools."
-msgstr ""
+msgstr "Conocimientos de herramientas de CI / CD."
 
 #: view/work.php:64
 msgid "JOIN US"
-msgstr ""
+msgstr "ÚNETE A NOSOTROS"
 
 #: view/work.php:65
 msgid "Do you want to be part of the Damavis team?"
-msgstr ""
+msgstr "¿Quieres formar parte del equipo Damavis?"
 
 #: view/work.php:68
 msgid "Apply now"
-msgstr ""
+msgstr "Suscríbete"
 
 #: view/work.php:71
 msgid "Do you want to work with us?"
-msgstr ""
+msgstr "¿Quieres trabajar con nosotros?"
+
+#, fuzzy
+#~ msgid ""
+#~ "We are a team of Data Engineer and Data Scientist experts in Big Data and "
+#~ "Artificial Intelligence."
+#~ msgstr ""
+#~ "Somos un equipo de Data Engineer y Data Scientist expertos en BigData e "
+#~ "Inteligencia Artificial."
+
+#~ msgid ""
+#~ "Damavis is an innovative startup specialized in the management of the "
+#~ "most important resource of 21st century\n"
+#~ "                companies: their data. Our main objective is to get the "
+#~ "highest possible performance of the data so that our\n"
+#~ "                clients can make better strategic decisions, ensuring "
+#~ "scalability, maximum flexibility and integration of\n"
+#~ "                artificial intelligence algorithms."
+#~ msgstr ""
+#~ "Damavis es una startup innovadora y especializada en la gestión del "
+#~ "recurso más importante de las empresas del siglo XXI: los datos. Nuestro "
+#~ "principal objetivo es obtener el mayor rendimiento posible de los datos "
+#~ "para que nuestros clientes puedan tomar mejores decisiones estratégicas, "
+#~ "asegurando escalabilidad, máxima flexibilidad e integración de algoritmos "
+#~ "de inteligencia artificial."
+
+#, fuzzy
+#~ msgid "Terms"
+#~ msgstr "Términos"
 
 #~ msgid "Serás responsable de:"
 #~ msgstr "You will have to:"

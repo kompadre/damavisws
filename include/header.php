@@ -40,10 +40,10 @@
                 </nav>
 <?php include(__DIR__ . '/navigation.php'); ?>
                 <nav class="social">
-                    <img alt="Facebook" src="img/icons/Facebook.svg">
-                    <img alt="Twitter" src="img/icons/Twitter.svg">
-                    <img alt="Instagram" src="img/icons/Instagram.svg">
-                    <img alt="Github" src="img/icons/Github.svg">
+                    <img alt="Facebook" src="img/icons/FacebookDark.svg">
+                    <img alt="Twitter" src="img/icons/TwitterDark.svg">
+                    <img alt="Instagram" src="img/icons/InstagramDark.svg">
+                    <img alt="Github" src="img/icons/GithubDark.svg">
                 </nav>
                 <div class="burger"></div>
                 <!--<img class="burger" src="img/icons/Burger.png" />-->

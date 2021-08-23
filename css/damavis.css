@@ -535,7 +535,7 @@ body {
             body > div#main > header.home.fixed > div:first-of-type {
               background-color: #FAFAFF; } }
         body > div#main > header.home.fixed > div > nav.social {
-          background-color: #051C3D; }
+          /* background-color: $color_text_dark_2; */ }
           @media (max-width: 425px) {
             body > div#main > header.home.fixed > div > nav.social {
               justify-content: center; } }
@@ -1060,9 +1060,11 @@ body {
             grid-template-columns: 1fr 1fr 1fr; } }
         @media (max-width: 425px) {
           body > div#main > div.services.technology > div.logos {
-            grid-template-columns: 1fr 1fr; }
-            body > div#main > div.services.technology > div.logos > img {
-              height: 86px; } }
+            grid-template-columns: 1fr 1fr; } }
+        body > div#main > div.services.technology > div.logos > img {
+          width: 100%;
+          display: block;
+          height: auto; }
     body > div#main > div.about.big-banner {
       grid-template-columns: 1fr 1.25fr; }
       @media (max-width: 754px) {

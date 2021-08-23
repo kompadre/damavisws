@@ -2,7 +2,6 @@
 RewriteEngine on
 RewriteBase /
 
-
 RewriteRule ^$ /en/ [R,L]
 RewriteRule ^(en|es)/*$ /index.php?url=home.php&l=$1 [L]
 RewriteRule ^(en|es)/data-driven/*$ /index.php?url=datadriven.php&l=$1 [L]
@@ -10,5 +9,5 @@ RewriteRule ^(en|es)/services/*$ /index.php?url=services.php&l=$1 [L]
 RewriteRule ^(en|es)/about/*$ /index.php?url=about.php&l=$1 [L]
 RewriteRule ^(en|es)/team/*$ /index.php?url=team.php&l=$1 [L]
 RewriteRule ^(en|es)/contact/*$ /index.php?url=contact.php&l=$1 [L]
-RewriteRule ^(en|es)/terms/*$ /index.php?url=terms.php&l=$1 [L]
-RewriteRule ^job/*$ /index.php?url=work.php&l=$1 [L]
+RewriteRule ^(en|es)/(terms|legal)/*$ /index.php?url=terms.php&l=$1 [L]
+RewriteRule ^(en|es)/job/*$ /index.php?url=work.php&l=$1 [L]

@@ -25,7 +25,7 @@
         </div>
         <div class="card">
             <img src="../img/services/card-3.png" />
-            <h3><?= _('Data Warehouse') ?></h3>
+            <h3><?= _('ETL') ?></h3>
             <p><?= _('Extract, Transform and Load, also known as ETL, involves the transformation and processing of data so that analytical teams can develop artificial intelligence models as well as visualizations on which the company relies on.') ?></p>
         </div>
     </div>
@@ -50,7 +50,7 @@
         <div class="card">
             <img src="../img/services/card-6.png" />
             <h3><?= _('Record Linkage') ?></h3>
-            <p><?= _('Extract, Transform and Load, also known as ETL, involves the transformation and processing of data so that analytical teams can develop artificial intelligence models as well as visualizations on which the company relies on.') ?></p>
+            <p><?= _('We create relationships of the records that lack unique identifier between the different data sources, using probabilistic methodologies of Record Linkage or Machine Learning.') ?></p>
         </div>
 
         <div class="card">
@@ -68,8 +68,6 @@
             <h3><?= _('Pricing Optimization') ?></h3>
             <p><?= _('We develop intelligent algorithms for our clients that are able to understand the market context and change the price dynamically and automatically, thus increasing the speed of reaction to market changes and therefore their competitiveness.') ?></p>
         </div>
-
-
         <div class="card">
             <img src="../img/services/card-10.png" />
             <h3><?= _('Text Analysis') ?></h3>
@@ -90,8 +88,8 @@
 <div class="services technology big-banner viz">
     <div class="double-title">
         <p><?= _('TECHNOLOGY') ?></p>
-        <h3><?= _('Data management') ?></h3>
-        <p class="content"><?= _('This service stack includes all the necessary processes that intend to organize data in a way that is is prepared to obtain value from it by creating artificial intelligence models and dynamic visualizations that take place in further stages.') ?></p>
+        <h3><?= _('Visualization') ?></h3>
+        <p class="content"><?= _('Our visualization services allow our clients to understand the dynamics of their market at a glance through dynamic dashboards, adapted to their specific needs.') ?></p>
     </div>
     <div class="cards">
         <div class="card">

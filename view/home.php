@@ -8,10 +8,7 @@
         <div class="banner-content">
             <p><?= _('BIG DATA STUDIO') ?></p>
             <h1><?= _('Get insights from your data') ?></h1>
-            <p><?= _('Damavis is an innovative startup specialized in the management of the most important resource of 21st century
-                companies: their data. Our main objective is to get the highest possible performance of the data so that our
-                clients can make better strategic decisions, ensuring scalability, maximum flexibility and integration of
-                artificial intelligence algorithms.') ?></p>
+            <p><?= _('Damavis is an innovative startup specialized in the management of the most important resource of 21st century companies: their data. Our main objective is to get the highest possible performance of the data so that our clients can make better strategic decisions, ensuring scalability, maximum flexibility and integration of artificial intelligence algorithms.') ?></p>
             <button class="cta">Reach us</button>
         </div>
     </div>
@@ -99,10 +96,10 @@
     <div class="home team">
         <div>
             <div class="double-title">
-                <p class="left"><?= _('SERVICES') ?></p>
-                <h3 class="left"><?= _('We provide the state-of-the-art data solutions your firm needs to grow.') ?></h3>
+                <p class="left"><?= _('MEET OUR TEAM') ?></p>
+                <h3 class="left"><?= _('We are strongly committed to teamwork, quality, assertiveness, effectiveness and efficiency.') ?></h3>
             </div>
-            <p><?= _('Aware of the power that data can offer the world, we have created a team of experts with the ability to create and deliver Big Data tools that lead to success. ') ?></p>
+            <p><?= _('Aware of the power that data can offer the world, we have created a team of experts with the ability to create and deliver Big Data tools that lead to success.') ?></p>
             <button class="cta"><?= _('Meet us') ?></button>
         </div>
         <div>

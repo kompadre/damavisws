@@ -336,7 +336,7 @@ body {
           }
         }
         >div >nav.social {
-          background-color: $color_text_dark_2;
+          /* background-color: $color_text_dark_2; */
           @media(max-width: $breakpoint_420) {
             justify-content: center;
           }
@@ -957,17 +957,19 @@ body {
         grid-column: 1 / span 2;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        margin-left: auto;
+        margin-right: auto;
         @media (max-width: $breakpoint_1080) {
           grid-template-columns: 1fr 1fr 1fr;
         }
         @media (max-width: $breakpoint_420) {
           grid-template-columns: 1fr 1fr;
-          >img {
-            height: 86px;
-          }
         }
-        margin-left: auto;
-        margin-right: auto;
+        >img {
+          width: 100%;
+          display: block;
+          height: auto;
+        }
       }
     }
     >div.about.big-banner {

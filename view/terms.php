@@ -1,7 +1,7 @@
 <?php $currentPage = 'terms'; $darkBg = false; include('./include/header.php'); ?>
 <div class="terms">
     <div class="double-title">
-        <p><?= _('LEGAL TERMS OF USE COOKIES POLICY') ?></p>
+        <p><?= _('LEGAL TERMS OF USE AND COOKIES POLICY') ?></p>
         <h1><?= _('Terms of use of the website') ?></h1>
     </div>
     <div class="double-title">

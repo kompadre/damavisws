@@ -2,7 +2,7 @@
 <div class="work banner frame-1">
     <div class="double-title">
         <p><?= _('WORK WITH US') ?></p>
-        <h3><?= _('We are a team of Data Engineer and Data Scientist experts in Big Data and Artificial Intelligence.') ?></h3>
+        <h3><?= _('We are a team of Data Engineers and Data Scientists; experts in the fields of Big Data and Artificial Intelligence.') ?></h3>
         <p class="content"><?= _('We are oriented to provide value-added solutions to companies. Our most important values are the quality of our team and the service offered, which is why we attach great importance to the people who are part of the team.') ?></p>
     </div>
 </div>
@@ -10,7 +10,7 @@
     <div><img src="img/work/frame-2.jpg" class="photo" /></div>
     <div class="double-title">
         <p><?= _('WORK WITH US') ?></p>
-        <h3><?= _('We are a team of Data Engineer and Data Scientist experts in Big Data and Artificial Intelligence.') ?></h3>
+        <h3><?= _('We are a team of Data Engineers and Data Scientists; experts in the fields of Big Data and Artificial Intelligence.') ?></h3>
         <p class="content"><?= _('We are oriented to provide value-added solutions to companies. Our most important values are the quality of our team and the service offered, which is why we attach great importance to the people who are part of the team.') ?></p>
     </div>
 </div>
@@ -51,8 +51,8 @@
         <h3><?= _('Requisitos') ?></h3>
         <ul>
             <li><?= _('Devotion to free software.') ?></li>
-            <li><?= _('Esperiencia with agile development methodologies.') ?></li>
-            <li><?= _('GitHub have a profile showing your skills.') ?></li>
+            <li><?= _('Experience with agile development methodologies.') ?></li>
+            <li><?= _('GitHub profile showing your professional skills.') ?></li>
             <li><?= _('Knowledge of CI / CD tools.') ?></li>
         </ul>
     </div>
