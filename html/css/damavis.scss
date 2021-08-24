@@ -1176,6 +1176,7 @@ body {
           background-position: left top;
           padding-left: 36px;
           flex-basis: 33.333%;
+          box-sizing: border-box;
           @media (max-width: $breakpoint_420) {
             flex-basis: 100%;
             margin-bottom: 1em;
