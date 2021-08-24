@@ -1164,6 +1164,31 @@ body {
         }
       }
     }
+    >div.team.great-place {
+      background-color: $color_almost_white;
+      >div.quotes {
+        text-align: left;
+        display: flex;
+        >div.quote {
+          background-image:url('../img/icons/Quote.png');
+          background-repeat: no-repeat;
+          background-position: left top;
+          padding-left: 36px;
+          flex-basis: 33.333%;
+          >p {
+            font-size: 1.44em;
+            &:not(.author) {
+              min-height: 7.5em;
+              margin-top: 0;
+            }
+            &.author {
+              font-size: 1em;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
     >div.work.frame-1 {
       >div.double-title {
         @media (min-width: $breakpoint_768) {

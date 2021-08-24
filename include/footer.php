@@ -2,10 +2,10 @@
         <div class="footer-content">
             <img src="img/logo-light.svg" class="footer-logo">
             <div class="social">
-                <img src="img/icons/Facebook.svg">
-                <img src="img/icons/Twitter.svg">
-                <img src="img/icons/Instagram.svg">
-                <img src="img/icons/Github.svg">
+                <img alt="Social Media Facebook" src="img/icons/Facebook.svg">
+                <img alt="Social Media Twitter" src="img/icons/Twitter.svg">
+                <img alt="Social Media Instagram" src="img/icons/Instagram.svg">
+                <img alt="Social Media Github" src="img/icons/Github.svg">
             </div>
             <?php $showLegal = true; include(__DIR__ . '/navigation.php'); ?>
         </div>
@@ -18,7 +18,7 @@
     <div class="modal-dialog hide">
         <a class="button close"></a>
         <div class="modal-body cookie">
-            <img src="../img/icons/Cookie.png" />
+            <img alt="Damavis Cookies" src="../img/icons/Cookie.png" />
             <div>
                 <h3><?= _('Cookies advise') ?></h3>
                 <p><?= __('This website uses cookies to ensure the best experience on our website. If you want to check more details, please read our <a href="%s">Terms and Conditions</a>.', '/' . $lang . '/terms/') ?></p>

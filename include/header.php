@@ -32,7 +32,7 @@
     <div class="<?= isset($darkBg) && $darkBg ? 'dark-bg' : '' ?>" id="main">
         <header class="home <?= isset($darkBg) && $darkBg ? 'relative' : 'fixed' ?>">
             <a href="/<?= $lang ?>/">
-                <img src="img/logo-<?= isset($darkBg) && $darkBg ? 'light' : 'dark' ?>.svg" class="logo" width="240" height="122" alt="DAMAVIS - DAta MAchine learning VISualization" /></a>
+                <img src="img/logo-<?= isset($darkBg) && $darkBg ? 'light' : 'dark' ?>.svg" class="logo" width="240" height="122" alt="Damavis Brand" /></a>
             <div>
                 <nav class="langs">
                     <a href="<?= preg_replace('#^/(en|es)/#', '/es/', $_SERVER['REQUEST_URI']) ?>" class="<?= $lang == 'es' ? 'active' : '' ?>">ESP</a>
@@ -40,10 +40,10 @@
                 </nav>
 <?php include(__DIR__ . '/navigation.php'); ?>
                 <nav class="social">
-                    <img alt="Facebook" src="img/icons/FacebookDark.svg">
-                    <img alt="Twitter" src="img/icons/TwitterDark.svg">
-                    <img alt="Instagram" src="img/icons/InstagramDark.svg">
-                    <img alt="Github" src="img/icons/GithubDark.svg">
+                    <img alt="Social Media Facebook" src="img/icons/FacebookDark.svg">
+                    <img alt="Social Media Twitter" src="img/icons/TwitterDark.svg">
+                    <img alt="Social Media Instagram" src="img/icons/InstagramDark.svg">
+                    <img alt="Social Media Github" src="img/icons/GithubDark.svg">
                 </nav>
                 <div class="burger"></div>
                 <!--<img class="burger" src="img/icons/Burger.png" />-->

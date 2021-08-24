@@ -1223,6 +1223,25 @@ body {
                 body > div#main > div.team > div.cards > div.card > div.footer div.social > a > img {
                   height: 1.4em;
                   margin-right: 0.4em; } }
+    body > div#main > div.team.great-place {
+      background-color: #FAFAFF; }
+      body > div#main > div.team.great-place > div.quotes {
+        text-align: left;
+        display: flex; }
+        body > div#main > div.team.great-place > div.quotes > div.quote {
+          background-image: url("../img/icons/Quote.png");
+          background-repeat: no-repeat;
+          background-position: left top;
+          padding-left: 36px;
+          flex-basis: 33.333%; }
+          body > div#main > div.team.great-place > div.quotes > div.quote > p {
+            font-size: 1.44em; }
+            body > div#main > div.team.great-place > div.quotes > div.quote > p:not(.author) {
+              min-height: 7.5em;
+              margin-top: 0; }
+            body > div#main > div.team.great-place > div.quotes > div.quote > p.author {
+              font-size: 1em;
+              font-weight: 500; }
     @media (min-width: 768px) {
       body > div#main > div.work.frame-1 > div.double-title {
         max-width: 65%; }

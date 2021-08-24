@@ -12,9 +12,8 @@
             ['carlos_rodriguez', 'Carlos Isaac Rodríguez', _('Data Scientist'), null, null, 'carlos-isaac-rodriguez-prado-482031155'],
             ['corina_schuster', 'Corina Schuster', _('Quality Assurance'), null, null, 'corina-schuster-g%C3%B3mez-34757a1a4'],
             ['biel_garau', 'Biel Garau', _('Data Scientist'), null, null, 'gabriel-garau-estarellas-70a1a8183'],
-            ['pedro_novas', 'Pedro Novas', _('Data Engineer'), null, null, 'pedro-novas-otero'],
-    ];
-?><div class="team big-banner">
+            ['pedro_novas', 'Pedro Novas', _('Data Engineer'), null, null, 'pedro-novas-otero']]; ?>
+    <div class="team big-banner">
         <div class="double-title">
             <p><?= _('OUR TEAM') ?></p>
             <h3><?= _('Meet Damavis') ?></h3>
@@ -35,6 +34,27 @@
                 </div>
             </div>
             <?php endforeach; ?>
+        </div>
+    </div>
+    <div class="team great-place big-banner center">
+        <div class="double-title">
+            <p><?= _('OUR TEAM') ?></p>
+            <h3><?= _('A great place to work') ?></h3>
+            <p class="content center"><?= _('Trust in the team is our first secret of success, that\'s why we are concerned with offering quality jobs in which to grow professionally and personally.') ?></p>
+        </div>
+        <div class="quotes">
+            <div class="quote">
+                <p><?= _('Damavis offers the possibility to connect with something bigger than oneself.') ?></p>
+                <p class="author">Corina Schuster<br><?= _('Quality Assurance') ?></p>
+            </div>
+            <div class="quote">
+                <p><?= _('Damavis is a team of honest and demanding people who enjoy what they do.') ?></p>
+                <p class="author">Antonio Boutaour<br><?= _('Data Engineer') ?></p>
+            </div>
+            <div class="quote">
+                <p><?= _('Damavis consists of a group of people who collaborate to solve amazing problems and where helping each other is essential.') ?></p>
+                <p class="author">Carlos Isaac Rodríguez<br><?= _('Data Scientist') ?></p>
+            </div>
         </div>
     </div>
     <?php include('./include/form.php'); ?>
