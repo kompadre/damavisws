@@ -5,10 +5,7 @@ services:
     build: .
     volumes:
     - "./html/:/var/www/html/"
-    - "./img/:/var/www/html/img/:ro"
-    - "./css/:/var/www/html/css/:ro"
-    - "./js/:/var/www/html/js/:ro"
-    - "./.htaccess.static:/var/www/html/.htaccess:ro"
-    - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf:ro"
+    - "./.htaccess.static:/var/www/html/.htaccess"
+    - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
     ports:
     - "80:80"
