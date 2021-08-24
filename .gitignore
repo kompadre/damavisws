@@ -1,6 +1,6 @@
 .idea/
-.sass-cache/*
-*/.sass-cache/*
+*/*/.sass-cache/*
 *-autosave.kra
 *~
 .htaccess
+/html/??/*.html
