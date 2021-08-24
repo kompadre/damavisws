@@ -1200,6 +1200,7 @@ body {
     >div.team.life {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-areas: "photos description";
       @media (max-width: $breakpoint_768) {
         grid-template-columns: 1fr;
         grid-template-areas: "text" "photos";

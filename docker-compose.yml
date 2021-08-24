@@ -16,4 +16,4 @@ services:
     - "./html/img/:/var/www/html/img/"
     - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
     ports:
-    - "${DAMAVISWS_PORT}:80"
+    - "80:80"

@@ -1253,7 +1253,8 @@ body {
               font-weight: 500; }
     body > div#main > div.team.life {
       display: grid;
-      grid-template-columns: 1fr 1fr; }
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "photos description"; }
       @media (max-width: 768px) {
         body > div#main > div.team.life {
           grid-template-columns: 1fr;
