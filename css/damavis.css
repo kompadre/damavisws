@@ -418,7 +418,7 @@ body {
             justify-content: space-between; }
             @media (min-width: 1440px) {
               body > div#main > header.home > div nav.links {
-                width: 75%; } }
+                width: 85%; } }
             @media (max-width: 1080px) {
               body > div#main > header.home > div nav.links {
                 width: 100%;
@@ -1227,39 +1227,56 @@ body {
       background-color: #FAFAFF; }
       body > div#main > div.team.great-place > div.quotes {
         text-align: left;
-        display: flex; }
+        display: flex;
+        flex-wrap: wrap; }
         body > div#main > div.team.great-place > div.quotes > div.quote {
           background-image: url("../img/icons/Quote.png");
           background-repeat: no-repeat;
           background-position: left top;
           padding-left: 36px;
           flex-basis: 33.333%; }
+          @media (max-width: 425px) {
+            body > div#main > div.team.great-place > div.quotes > div.quote {
+              flex-basis: 100%;
+              margin-bottom: 1em; } }
           body > div#main > div.team.great-place > div.quotes > div.quote > p {
             font-size: 1.44em; }
             body > div#main > div.team.great-place > div.quotes > div.quote > p:not(.author) {
-              min-height: 7.5em;
               margin-top: 0; }
+              @media (min-width: 425px) {
+                body > div#main > div.team.great-place > div.quotes > div.quote > p:not(.author) {
+                  min-height: 7.5em; } }
             body > div#main > div.team.great-place > div.quotes > div.quote > p.author {
               font-size: 1em;
               font-weight: 500; }
     body > div#main > div.team.life {
       display: grid;
       grid-template-columns: 1fr 1fr; }
+      @media (max-width: 768px) {
+        body > div#main > div.team.life {
+          grid-template-columns: 1fr;
+          grid-template-areas: "text" "photos"; } }
       body > div#main > div.team.life > div.photo {
         columns: 2 auto;
-        column-gap: 1em; }
+        column-gap: 1em;
+        grid-area: photos; }
+        @media (max-width: 425px) {
+          body > div#main > div.team.life > div.photo {
+            columns: 1 auto; } }
         body > div#main > div.team.life > div.photo > img {
           display: block;
           margin-right: 1em;
           margin-bottom: 1em;
           width: 100%; }
       body > div#main > div.team.life > div:nth-child(2) {
-        margin-left: 4em;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: flex-start;
-        margin-top: 10em; }
+        justify-content: flex-start; }
+        @media (min-width: 768px) {
+          body > div#main > div.team.life > div:nth-child(2) {
+            margin-left: 4em;
+            margin-top: 10em; } }
     @media (min-width: 768px) {
       body > div#main > div.work.frame-1 > div.double-title {
         max-width: 65%; }
@@ -1303,7 +1320,7 @@ body {
           padding: 50px 110px 30px 110px; } }
       body > div#main > footer > div.footer-content {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 7fr;
         grid-template-areas: "logo social" "logo menu"; }
         @media (max-width: 1080px) {
           body > div#main > footer > div.footer-content {
