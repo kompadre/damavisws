@@ -1189,6 +1189,28 @@ body {
         }
       }
     }
+    >div.team.life {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      >div.photo {
+        columns: 2 auto;
+        column-gap: 1em;
+        >img {
+          display: block;
+          margin-right: 1em;
+          margin-bottom: 1em;
+          width: 100%;
+        }
+      }
+      >div:nth-child(2) {
+        margin-left: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 10em;
+      }
+    }
     >div.work.frame-1 {
       >div.double-title {
         @media (min-width: $breakpoint_768) {

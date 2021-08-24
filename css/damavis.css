@@ -1242,6 +1242,24 @@ body {
             body > div#main > div.team.great-place > div.quotes > div.quote > p.author {
               font-size: 1em;
               font-weight: 500; }
+    body > div#main > div.team.life {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      body > div#main > div.team.life > div.photo {
+        columns: 2 auto;
+        column-gap: 1em; }
+        body > div#main > div.team.life > div.photo > img {
+          display: block;
+          margin-right: 1em;
+          margin-bottom: 1em;
+          width: 100%; }
+      body > div#main > div.team.life > div:nth-child(2) {
+        margin-left: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 10em; }
     @media (min-width: 768px) {
       body > div#main > div.work.frame-1 > div.double-title {
         max-width: 65%; }

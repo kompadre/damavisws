@@ -57,5 +57,17 @@
             </div>
         </div>
     </div>
+    <div class="team life">
+        <div class="photo">
+            <?php for($i=1;$i<=8;$i++) : ?>
+            <img src="img/team/action/damavis-about-<?= $i ?>.jpg" />
+            <?php endfor; ?>
+        </div>
+        <div class="double-title">
+            <p>OUR TEAM</p>
+            <h3>Life at Damavis</h3>
+            <p class="content">We build the team through meaningful experiences in one of the most beautiful places in the World: Mallorca.</p>
+        </div>
+    </div>
     <?php include('./include/form.php'); ?>
 <?php include('./include/footer.php'); ?>
