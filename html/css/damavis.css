@@ -762,10 +762,11 @@ body {
               margin-left: auto;
               margin-right: auto;
               margin-bottom: 20px; } }
-          body > div#main > div.home.services > div.cards > div.card > img {
+          body > div#main > div.home.services > div.cards > div.card > img, body > div#main > div.home.services > div.cards > div.card video {
             /* box-shadow: 3px 3px 6px 0px #828D9E; */
             /* border-bottom: 4px solid $color_bg_light_2; */
-            width: 100%;
+            margin: 10% auto;
+            width: 80%;
             height: auto; }
           body > div#main > div.home.services > div.cards > div.card > a {
             margin-top: 1px;

@@ -19,19 +19,28 @@
         </div>
         <div class="cards">
             <div class="card">
-                <img src="img/home/ill-services-1.png" alt="Damavis Data Management" />
+                <!-- <img src="img/home/ill-services-1.png" alt="Damavis Data Management" /> -->
+                <video muted autoplay loop>
+                    <source src="img/video/services/01.webm" type="video/webm" />
+                </video>
                 <a href="/<?= $lang ?>/services/#data-management">&gt;&nbsp;<?= _('Data Management') ?></a>
             </div>
             <div class="card">
-                <img src="img/home/ill-services-2.png" alt="Damavis Artificial Intelligence" />
+                <video muted autoplay loop>
+                    <source src="img/video/services/02.webm" type="video/webm" />
+                </video>
                 <a href="/<?= $lang ?>/services/#ai">&gt;&nbsp;<?= _('Artificial Intelligence') ?></a>
             </div>
             <div class="card">
-                <img src="img/home/ill-services-3.png" alt="Damavis Data Visualization" />
+                <video muted autoplay loop>
+                    <source src="img/video/services/03.webm" type="video/webm" />
+                </video>
                 <a href="/<?= $lang ?>/services/#visualization">&gt;&nbsp;<?= _('Data Visualization') ?></a>
             </div>
             <div class="card">
-                <img src="img/home/ill-services-4.png" alt="Damavis Real Time" />
+                <video muted autoplay loop>
+                    <source src="img/video/services/04.webm" type="video/webm" />
+                </video>
                 <a href="/<?= $lang ?>/services/#rt">&gt;&nbsp;<?= _('Real Time') ?></a>
             </div>
         </div>

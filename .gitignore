@@ -3,4 +3,5 @@
 *-autosave.kra
 *~
 .htaccess
-/html/??/*.html
+# /html/??/*.html
+/source/video
