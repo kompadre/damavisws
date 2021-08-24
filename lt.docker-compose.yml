@@ -4,11 +4,19 @@ services:
   http:
     build: .
     volumes:
-    - ".:/var/www/html"
+    - "./view/:/var/www/html/view/"
+    - "./include/:/var/www/html/include/"
+    - "./i18n/:/var/www/html/i18n/"
+    - "./bootstrap.php:/var/www/html/bootstrap.php"
+    - "./config.php:/var/www/html/config.php"
+    - "./index.php:/var/www/html/index.php"
     - "./.htaccess.dynamic:/var/www/html/.htaccess"
+    - "./html/css/:/var/www/html/css/"
+    - "./html/js/:/var/www/html/js/"
+    - "./html/img/:/var/www/html/img/"
     - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
     ports:
-    - "${DAMAVISWS_PORT}:80"
+    - "80:80"
   lt:
     image: lambdatest/tunnel:latest
     environment:

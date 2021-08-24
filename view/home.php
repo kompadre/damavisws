@@ -22,6 +22,7 @@
                 <!-- <img src="img/home/ill-services-1.png" alt="Damavis Data Management" /> -->
                 <video muted autoplay loop>
                     <source src="img/video/services/01.webm" type="video/webm" />
+                    <source src="img/video/services/01.mov" type="video/mov" />
                 </video>
                 <a href="/<?= $lang ?>/services/#data-management">&gt;&nbsp;<?= _('Data Management') ?></a>
             </div>
@@ -109,7 +110,7 @@
                 <h3 class="left"><?= _('We are strongly committed to teamwork, quality, assertiveness, effectiveness and efficiency.') ?></h3>
             </div>
             <p><?= _('Aware of the power that data can offer the world, we have created a team of experts with the ability to create and deliver Big Data tools that lead to success.') ?></p>
-            <a class="cta" href="/<?= $lang ?>/team/"><?= _('Meet us') ?></a>
+            <a class="cta" href="/<?= $lang ?>/team/"><?= _('Meet our team') ?></a>
         </div>
         <div>
             <img src="img/home/ill-team.png" alt="Damavis Team">

@@ -1,12 +1,14 @@
 # DirectoryIndex index.php
 RewriteEngine on
 RewriteBase /
+# RewriteLog /dev/stderr
 
 RewriteRule ^$ /en/home.html [R,L]
 RewriteRule ^(en|es)/*$ /$1/home.html [L]
 RewriteRule ^(en|es)/data-driven/*$ /$1/datadriven.html [L]
 RewriteRule ^(en|es)/job/*$ /$1/work.html [L]
 RewriteRule ^(en|es)/([a-z]+)/*$ /$1/$2.html [L]
+RewriteRule ^(en|es)/([a-z]+)/([a-z0-9]+)/*$ /$1/$2_$3.html [L]
 
 # RewriteRule ^(en|es)/about/*$ /html/$1.about.html [L]
 # RewriteRule ^(en|es)/team/*$ /html/$1.team.html [L]

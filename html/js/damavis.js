@@ -202,4 +202,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             header_video.classList.remove("hidden");
         }, 200);
     }
+
+    if (Safari) {
+        document.querySelectorAll("video > source[type$=webm]").forEach(function(elem) {
+            elem.remove();
+        });
+    }
 });
