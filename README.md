@@ -26,23 +26,34 @@ generates static html files inside `./html`. Make sure `./html` exists!
 
 sets up an http server for static html files. The only thing that changes from _normal_ docker-compose.yml is that this one overrides .htaccess to serve static html instead of php.
 
-### Method 3 - deploying into production
+### Deploying to production
 
 First regenerate html following *Method 2*
 
 Upload contents of `./html` into your document root. Something like 
 
-> scp ./html/* user@example.com:/path/to/htdocs/ 
+> scp ./html/* user@example.com:/path/to/htdocs/
 
-Upload `./css`, `./js`, `./img` into same document root (so that say `/en` and `/img` are on the same level). 
-```shell
-scp ./js user@example.com:/path/to/htdocs/ && \
-scp ./css user@example.com:/path/to/htdocs/ && \
-scp ./img user@example.com:/path/to/htdocs/
-```
+Make sure **mod_rewrite** is enabled.
+
+> a2enmod rewrite && systemctl restart apache2
 
 Finally upload `./.htacess.static` as `.htaccess` into yet again the same document root. 
 > scp ./.htaccess.static user@example.com:/path/to/htdocs/.htaccess
+
+**N.B.** See requirements for Production below.
+
+## Requirements
+
+### Development
+
+Not awfully outdated Docker with docker-compose.
+
+### Production
+
+Any http server (Apache2, nginx, IIS) that is capable of serving static files.
+Relevant configuration must take place. This document describes how to configure
+**Apache2** with **mod_rewrite** enabled.
 
 ## Making changes
 
