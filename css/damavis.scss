@@ -1152,7 +1152,13 @@ body {
               }
             }
             div.social {
-              >a >img { height: 1em; }
+              >a >img {
+                height: 1em;
+                @media (max-width: $breakpoint_420) {
+                  height: 1.4em;
+                  margin-right: 0.4em;
+                }
+              }
             }
           }
         }
