@@ -43,18 +43,12 @@
             <p class="content center"><?= _('Trust in the team is our first secret of success, that\'s why we are concerned with offering quality jobs in which to grow professionally and personally.') ?></p>
         </div>
         <div class="quotes">
-            <div class="quote">
-                <p><?= _('Damavis offers the possibility to connect with something bigger than oneself.') ?></p>
-                <p class="author">Corina Schuster<br><?= _('Quality Assurance') ?></p>
-            </div>
-            <div class="quote">
-                <p><?= _('Damavis is a team of honest and demanding people who enjoy what they do.') ?></p>
-                <p class="author">Antonio Boutaour<br><?= _('Data Engineer') ?></p>
-            </div>
-            <div class="quote">
-                <p><?= _('Damavis consists of a group of people who collaborate to solve amazing problems and where helping each other is essential.') ?></p>
-                <p class="author">Carlos Isaac Rodríguez<br><?= _('Data Scientist') ?></p>
-            </div>
+            <p class="quote" style="grid-area: quote1"><?= _('Damavis offers the possibility to connect with something bigger than oneself.') ?></p>
+            <p class="quote" style="grid-area: quote2"><?= _('Damavis is a team of honest and demanding people who enjoy what they do.') ?></p>
+            <p class="quote" style="grid-area: quote3"><?= _('Damavis consists of a group of people who collaborate to solve amazing problems and where helping each other is essential.') ?></p>
+            <p class="author" style="grid-area: author1">Corina Schuster<br><?= _('Quality Assurance') ?></p>
+            <p class="author" style="grid-area: author2">Antonio Boutaour<br><?= _('Data Engineer') ?></p>
+            <p class="author" style="grid-area: author3">Carlos Isaac Rodríguez<br><?= _('Data Scientist') ?></p>
         </div>
     </div>
     <div class="team life">
@@ -64,9 +58,9 @@
             <?php endfor; ?>
         </div>
         <div class="double-title">
-            <p>OUR TEAM</p>
-            <h3>Life at Damavis</h3>
-            <p class="content">We build the team through meaningful experiences in one of the most beautiful places in the World: Mallorca.</p>
+            <p><?= _('OUR TEAM') ?></p>
+            <h3><?= _('Life at Damavis') ?></h3>
+            <p class="content"><?= _('We build the team through meaningful experiences in one of the most beautiful places in the World: Mallorca.') ?></p>
         </div>
     </div>
     <?php include('./include/form.php'); ?>
