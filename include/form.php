@@ -8,7 +8,7 @@
             <label for="input-contact-name"><?= _('What is your name?') ?></label>
             <input type="text" id="input-contact-name" name="name" placeholder="<?= _('Type here') ?>" required>
             <label for="input-contact-email"><?= _('What is your email?') ?>*</label>
-            <input type="text" id="input-contact-email" name="email" placeholder="<?= _('Type here') ?>" pattern="[a-zA-Z0-9.-_]+@([a-zA-Z0-9]+\.)+[a-zA-Z]{2,}" required>
+            <input type="email" id="input-contact-email" name="email" placeholder="<?= _('Type here') ?>" pattern="[a-zA-Z0-9.-_]+@([a-zA-Z0-9]+\.)+[a-zA-Z]{2,}" required>
             <label for="input-contact-org"><?= _('What is your organization?') ?></label>
             <input type="text" id="input-contact-org" name="org" placeholder="<?= _('Type here') ?>" required>
             <label for="textarea-contact-message"><?= _('What is your message?') ?></label>

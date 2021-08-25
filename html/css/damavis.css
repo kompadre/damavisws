@@ -930,25 +930,21 @@ body {
             font-size: 14px;
             color: #051C3D;
             margin-bottom: 14px; }
-            body > div#main > div.home.contact > div.contact-form > form label:invalid {
-              color: #f95f15; }
-          body > div#main > div.home.contact > div.contact-form > form fieldset:invalid:focus {
-            background-color: red; }
-          body > div#main > div.home.contact > div.contact-form > form input[type=text], body > div#main > div.home.contact > div.contact-form > form textarea {
+          body > div#main > div.home.contact > div.contact-form > form input:not([type=checkbox]):not([type=submit]), body > div#main > div.home.contact > div.contact-form > form textarea {
             padding: 15px;
             box-sizing: border-box;
             margin-bottom: 14px;
             font-size: 1.1em;
             font-family: Roboto; }
-            body > div#main > div.home.contact > div.contact-form > form input[type=text]::placeholder, body > div#main > div.home.contact > div.contact-form > form textarea::placeholder {
+            body > div#main > div.home.contact > div.contact-form > form input:not([type=checkbox]):not([type=submit])::placeholder, body > div#main > div.home.contact > div.contact-form > form textarea::placeholder {
               font-weight: 100; }
-            body > div#main > div.home.contact > div.contact-form > form input[type=text]:invalid:focus, body > div#main > div.home.contact > div.contact-form > form textarea:invalid:focus {
+            body > div#main > div.home.contact > div.contact-form > form input:not([type=checkbox]):not([type=submit]).visited:invalid:not(:focus), body > div#main > div.home.contact > div.contact-form > form textarea.visited:invalid:not(:focus) {
               background-image: url("../img/icons/InputError.png");
               background-position: right center;
               background-repeat: no-repeat;
               border: 4px solid #f95f15 !important;
               color: #f95f15; }
-              body > div#main > div.home.contact > div.contact-form > form input[type=text]:invalid:focus::placeholder, body > div#main > div.home.contact > div.contact-form > form textarea:invalid:focus::placeholder {
+              body > div#main > div.home.contact > div.contact-form > form input:not([type=checkbox]):not([type=submit]).visited:invalid:not(:focus)::placeholder, body > div#main > div.home.contact > div.contact-form > form textarea.visited:invalid:not(:focus)::placeholder {
                 color: #f95f15; }
           body > div#main > div.home.contact > div.contact-form > form > a.cta {
             width: 50%;

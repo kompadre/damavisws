@@ -53,8 +53,7 @@
             </div>
             <img src="img/home/ill-datadriven-circle.png">
             <video autoplay muted loop preload="auto">
-                <source src="img/video/dd_01.webm?cache=<?= time() ?>">
-                <source src="img/video/dd_01.mov?cache=<?= time() ?>">
+                <source src="img/video/datadriven/dd_01.webm?cache=<?= time() ?>" type="video/webm">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 2) ?></div>
@@ -62,8 +61,7 @@
             </div>
             <img src="img/home/ill-datadriven-circle.png">
             <video autoplay muted loop preload="auto">
-                <source src="img/video/dd_02.webm?cache=<?= time() ?>">
-                <source src="img/video/dd_02.mov?cache=<?= time() ?>">
+                <source src="img/video/datadriven/dd_02.webm?cache=<?= time() ?>" type="video/webm">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 3) ?></div>
@@ -71,8 +69,7 @@
             </div>
             <img src="img/home/ill-datadriven-circle.png">
             <video autoplay muted loop preload="auto">
-                <source src="img/video/dd_03.webm?cache=<?= time() ?>">
-                <source src="img/video/dd_03.mov?cache=<?= time() ?>">
+                <source src="img/video/datadriven/dd_03.webm?cache=<?= time() ?>" type="video/webm">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 4) ?></div>
@@ -80,8 +77,7 @@
             </div>
             <img src="img/home/ill-datadriven-circle.png">
             <video autoplay muted loop preload="auto">
-                <source src="img/video/dd_04.webm?cache=<?= time() ?>">
-                <source src="img/video/dd_04.mov?cache=<?= time() ?>">
+                <source src="img/video/datadriven/dd_04.webm?cache=<?= time() ?>" type="video/webm">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 5) ?></div>
@@ -89,8 +85,7 @@
             </div>
             <img src="img/home/ill-datadriven-circle-last.png">
             <video autoplay muted loop preload="auto">
-                <source src="img/video/dd_05.webm?cache=<?= time() ?>">
-                <source src="img/video/dd_05.mov?cache=<?= time() ?>">
+                <source src="img/video/datadriven/dd_05.webm?cache=<?= time() ?>" type="video/webm">
             </video>
         </div>
         <div>

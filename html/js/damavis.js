@@ -66,14 +66,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             elem.classList.add("hide");
         });
     }
-
     var acceptCookies = function(e) {
         dateToExpire = new Date();
         dateToExpire.setDate(dateToExpire.getDate() + 365);
         document.cookie = "termsAccepted=1; expires=" + dateToExpire.toUTCString() + "; domain=" + document.location.host + "; path=/; SameSite=Strict";
         hideCookiePopup();
     }
-
     var showCookiePopup = function() {
         var modal_bd = document.querySelector("body > div.modal-backdrop");
         var modal_content = document.querySelector("body > div.modal-dialog");
@@ -120,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var cookies = document.cookie.split('; ');
     var termsAcceptedCookieFound = false;
-
     for (var i=0;i<cookies.length;i++) {
         console.log(cookies[i].split('=')[0]);
         if (cookies[i].split('=')[0] == 'termsAccepted') {
@@ -194,10 +191,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             form.parentElement.querySelector("div.form-sent").classList.remove("hide");
             form.classList.add("hide");
         });
+        form.querySelector("button.cta").addEventListener("click", function() {
+            form.querySelectorAll("input, textarea").forEach(function(input) {
+                input.classList.add("visited");
+            });
+        });
         form.querySelectorAll("input, textarea").forEach(function(elem) {
-            elem.addEventListener('change', function(event) {
-                var target = event.target;
-                console.log("changed", target);
+            elem.addEventListener('blur', function(event) {
+                if (!!event.target && !!event.target.classList) {
+                    event.target.classList.add("visited");
+                }
             });
         });
     }
@@ -214,7 +217,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (parent instanceof HTMLMediaElement) {
             if (Safari) {
                 var oldsrc = e.getAttribute('src');
-                console.log(oldsrc.replace(".webm", ".s.mov"));
                 e.remove();
                 parent.setAttribute("src", oldsrc.replace(".webm", ".s.mov"));
                 parent.setAttribute("type", "type/mov");

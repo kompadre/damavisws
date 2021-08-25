@@ -800,14 +800,8 @@ body {
             font-size: 14px;
             color: $color_text_dark_2;
             margin-bottom: 14px;
-            &:invalid {
-              color: #f95f15;
-            }
           }
-          fieldset:invalid:focus {
-            background-color: red;
-          }
-          input[type=text], textarea {
+          input:not([type=checkbox]):not([type=submit]), textarea {
             padding: 15px;
             box-sizing: border-box;
             margin-bottom: 14px;
@@ -816,7 +810,7 @@ body {
             &::placeholder {
               font-weight: 100;
             }
-            &:invalid:focus {
+            &.visited:invalid:not(:focus) {
               background-image: url("../img/icons/InputError.png");
               background-position: right center;
               background-repeat: no-repeat;
