@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  http:
+  damavis:
     build: .
     volumes:
     - "./view/:/var/www/html/view/"
@@ -17,6 +17,8 @@ services:
     - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
     ports:
     - "80:80"
+    environment:
+      DAMAVISWS_DOMAIN: damavis
   lt:
     image: lambdatest/tunnel:latest
     environment:

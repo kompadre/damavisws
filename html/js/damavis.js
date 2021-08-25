@@ -194,6 +194,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             form.parentElement.querySelector("div.form-sent").classList.remove("hide");
             form.classList.add("hide");
         });
+        form.querySelectorAll("input, textarea").forEach(function(elem) {
+            elem.addEventListener('change', function(event) {
+                var target = event.target;
+                console.log("changed", target);
+            });
+        });
     }
 
     var header_video = document.getElementById("header_video");
@@ -203,9 +209,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 200);
     }
 
-    if (Safari) {
-        document.querySelectorAll("video > source[type$=webm]").forEach(function(elem) {
-            elem.remove();
-        });
-    }
+    document.querySelectorAll("video > source[type$=webm]").forEach(function(e, index) {
+        var parent = e.parentElement;
+        if (parent instanceof HTMLMediaElement) {
+            if (Safari) {
+                var oldsrc = e.getAttribute('src');
+                console.log(oldsrc.replace(".webm", ".s.mov"));
+                e.remove();
+                parent.setAttribute("src", oldsrc.replace(".webm", ".s.mov"));
+                parent.setAttribute("type", "type/mov");
+            }
+            window.setTimeout(function() {
+                window.setInterval(function() {
+                    // parent.fastSeek(0);
+                    parent.play();
+                }, 10000);
+            }, index * 3000);
+        }
+    });
 });
