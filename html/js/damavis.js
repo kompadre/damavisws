@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelectorAll('video > source[type*="webm"]').forEach(function(e, index) {
         var parent = e.parentElement;
         if (parent instanceof HTMLMediaElement) {
-            if (Safari) { e.remove(); }
+            if (Safari) { console.log(e, "Removing &lt;source>"); e.setAttribute("src", ""); }
             parent.loop = false;
             parent.pause();
             console.log(index * 3000);
