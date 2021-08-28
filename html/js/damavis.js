@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             parent.pause();
             window.setTimeout(function() {
                 window.setInterval(function() {
-                    parent.play().then(function() { /* parent.pause(); */ }).catch(function(err) { console.log( err )});
+                    parent.play();
                 }, 10000);
             }, index * 3000);
         }
