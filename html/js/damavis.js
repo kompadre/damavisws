@@ -96,6 +96,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
             elem.addEventListener('touch', hideCookiePopup);
         });
     }
+    var cookies = document.cookie.split('; ');
+    var termsAcceptedCookieFound = false;
+    for (var i=0;i<cookies.length;i++) {
+        console.log(cookies[i].split('=')[0]);
+        if (cookies[i].split('=')[0] == 'termsAccepted') {
+            termsAcceptedCookieFound = true;
+            break;
+        }
+    }
+    if (!termsAcceptedCookieFound && document.location.href.indexOf("cookiesAccepted") === -1) {
+        showCookiePopup();
+    }
+
     var logo = document.querySelector("header > a > img.logo");
     var hamburger = document.querySelector(".burger");
 
@@ -115,20 +128,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         hamburger.addEventListener('mouseup', menuOpener);
     }
-
-    var cookies = document.cookie.split('; ');
-    var termsAcceptedCookieFound = false;
-    for (var i=0;i<cookies.length;i++) {
-        console.log(cookies[i].split('=')[0]);
-        if (cookies[i].split('=')[0] == 'termsAccepted') {
-            termsAcceptedCookieFound = true;
-            break;
-        }
-    }
-    if (!termsAcceptedCookieFound) {
-        showCookiePopup();
-    }
-
 
     // Switching between dark and light header is only relevant in homepage.
     var homebanner = document.querySelector(".home.banner");

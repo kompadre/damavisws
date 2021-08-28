@@ -8,7 +8,6 @@
 * Añadir los logos de las empresas de los clientes que falten ( Europcar, Occamshub).
 * Añadir botón “saber más” en animación de las etapas de data driven de la pantalla de inicio.
  
-
 * ~~Añadir pantalla de aviso legal.~~
 * ~~La aceptación de las cookies, añadir la opción de no aceptarlas y ver temas legales al dar esa opción.~~
 * ~~Añadir una pantalla de agradecimiento al enviar los formularios de contacto.~~
