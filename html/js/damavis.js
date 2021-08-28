@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (parent instanceof HTMLMediaElement) {
             if (Safari) {
                 // var oldsrc = e.getAttribute('src');
-                // e.remove();
+                e.remove();
                 // var newsrc = oldsrc.replace(".webm", ".s.mp4");
                 // e.setAttribute("src", newsrc);
                 // e.setAttribute("type", "type/mp4");
@@ -225,6 +225,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 // parent.setAttribute("type", "type/mp4");
             }
             window.setTimeout(function() {
+                parent.removeAttribute("autoplay");
                 window.setInterval(function() {
                     // parent.fastSeek(0);
                     parent.play().catch(function(err) { console.log( err )});
