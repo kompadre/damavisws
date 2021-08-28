@@ -218,6 +218,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             if (Safari) { e.remove(); }
             parent.loop = false;
             parent.pause();
+            console.log(index * 3000);
             window.setTimeout(function() {
                 window.setInterval(function() {
                     console.log(parent, "Playing");
