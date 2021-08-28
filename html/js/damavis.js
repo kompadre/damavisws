@@ -211,20 +211,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
             header_video.classList.remove("hidden");
         }, 200);
     }
-
+    var parentDurations = {  };
+    var totalDuration = 0;
+    var prevDuration = 0;
+    document.querySelectorAll('video').forEach(function(e) { totalDuration += e.duration; });
+    console.log(typeof (totalDuration * 1000), "typeof");
+    console.log(totalDuration, "totalDuration before loop");
+    const TotalDuration = (totalDuration * 1000);
     document.querySelectorAll('video > source[type*="webm"]').forEach(function(e, index) {
         var parent = e.parentElement;
         if (parent instanceof HTMLMediaElement) {
             if (Safari) { console.log(e, "Removing source"); }
             parent.loop = false;
             parent.pause();
-            console.log(index * 3000);
+            /*
             window.setTimeout(function() {
                 window.setInterval(function() {
-                    console.log(parent, "Playing");
+                    console.log(parent, "Playing every " + TotalDuration);
                     parent.play();
-                }, 10000);
-            }, index * 3000);
+                }, TotalDuration);
+            }, prevDuration);
+             */
+            prevDuration += (parent.duration * 1000);
+            console.log(prevDuration, totalDuration);
         }
     });
 });
