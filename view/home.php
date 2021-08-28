@@ -1,7 +1,7 @@
 <?php $currentPage = 'home'; $darkBg = true; include('./include/header.php'); unset($darkBg); ?>
     <div class="home banner banner_video">
         <div class="video">
-            <video autoplay muted loop id="header_video" class="hidden">
+            <video autoplay muted playsinline loop id="header_video" class="hidden">
                 <source src="img/video/1_damavis_cube.mp4" type="video/mp4">
             </video>
         </div>
@@ -19,26 +19,30 @@
         </div>
         <div class="cards">
             <div class="card">
-                <video muted>
+                <video muted autoplay loop playsinline>
                     <source src="/img/video/services/01.webm" type="video/webm" />
+                    <source src="/img/video/services/01.s.mp4" type="video/mp4" />
                 </video>
                 <a href="/<?= $lang ?>/services/#data-management">&gt;&nbsp;<?= _('Data Management') ?></a>
             </div>
             <div class="card">
-                <video muted>
-                    <source src="img/video/services/02.webm" type="video/webm" />
+                <video  muted autoplay loop playsinline>
+                    <source src="/img/video/services/02.webm" type="video/webm" />
+                    <source src="/img/video/services/02.s.mp4" type="video/mp4" />
                 </video>
                 <a href="/<?= $lang ?>/services/#ai">&gt;&nbsp;<?= _('Artificial Intelligence') ?></a>
             </div>
             <div class="card">
-                <video muted>
-                    <source src="img/video/services/03.webm" type="video/webm" />
+                <video  muted autoplay loop playsinline>
+                    <source src="/img/video/services/03.webm" type="video/webm" />
+                    <source src="/img/video/services/03.s.mp4" type="video/mp4" />
                 </video>
                 <a href="/<?= $lang ?>/services/#visualization">&gt;&nbsp;<?= _('Data Visualization') ?></a>
             </div>
             <div class="card">
-                <video muted>
-                    <source src="img/video/services/04.webm" type="video/webm" />
+                <video  muted autoplay loop playsinline>
+                    <source src="/img/video/services/04.webm" type="video/webm" />
+                    <source src="/img/video/services/04.s.mp4" type="video/mp4" />
                 </video>
                 <a href="/<?= $lang ?>/services/#rt">&gt;&nbsp;<?= _('Real Time') ?></a>
             </div>
@@ -52,40 +56,45 @@
                 <?= _('Data-Resistant') ?>
             </div>
             <img src="img/home/ill-datadriven-circle.png">
-            <video autoplay muted loop preload="auto">
+            <video autoplay muted loop playsinline preload="auto">
                 <source src="img/video/datadriven/dd_01.webm?cache=<?= time() ?>" type="video/webm">
+                <source src="img/video/datadriven/dd_01.s.mp4?cache=<?= time() ?>" type="video/mp4">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 2) ?></div>
                 <?= _('Data-Aware') ?>
             </div>
             <img src="img/home/ill-datadriven-circle.png">
-            <video autoplay muted loop preload="auto">
+            <video autoplay muted loop playsinline preload="auto">
                 <source src="img/video/datadriven/dd_02.webm?cache=<?= time() ?>" type="video/webm">
+                <source src="img/video/datadriven/dd_02.s.mp4?cache=<?= time() ?>" type="video/mp4">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 3) ?></div>
                 <?= _('Data-Guided') ?>
             </div>
             <img src="img/home/ill-datadriven-circle.png">
-            <video autoplay muted loop preload="auto">
+            <video autoplay muted loop playsinline preload="auto">
                 <source src="img/video/datadriven/dd_03.webm?cache=<?= time() ?>" type="video/webm">
+                <source src="img/video/datadriven/dd_03.s.mp4?cache=<?= time() ?>" type="video/mp4">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 4) ?></div>
                 <?= _('Data-Savy') ?>
             </div>
             <img src="img/home/ill-datadriven-circle.png">
-            <video autoplay muted loop preload="auto">
+            <video autoplay muted loop playsinline preload="auto">
                 <source src="img/video/datadriven/dd_04.webm?cache=<?= time() ?>" type="video/webm">
+                <source src="img/video/datadriven/dd_04.s.mp4?cache=<?= time() ?>" type="video/mp4">
             </video>
             <div>
                 <div class="stage"><?= __('Stage %d', 5) ?></div>
                 <?= _('Data-Driven') ?>
             </div>
             <img src="img/home/ill-datadriven-circle-last.png">
-            <video autoplay muted loop preload="auto">
+            <video autoplay muted loop playsinline preload="auto">
                 <source src="img/video/datadriven/dd_05.webm?cache=<?= time() ?>" type="video/webm">
+                <source src="img/video/datadriven/dd_05.s.mp4?cache=<?= time() ?>" type="video/mp4">
             </video>
         </div>
         <div>

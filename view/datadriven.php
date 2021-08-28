@@ -11,6 +11,7 @@
     <div class="steps">
         <video autoplay muted loop alt="Damavis Data Resistant Stage">
             <source src="/img/video/datadriven/dd_01.webm" type="video/webm" />
+            <source src="/img/video/datadriven/dd_01.s.mp4" type="video/mp4" />
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 1) ?></p>
@@ -19,6 +20,7 @@
         </div>
         <video autoplay muted loop alt="Damavis Data Aware Stage">
             <source src="/img/video/datadriven/dd_02.webm" type="video/webm">
+            <source src="/img/video/datadriven/dd_02.s.mp4" type="video/mp4" />
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 2) ?></p>
@@ -27,6 +29,7 @@
         </div>
         <video autoplay muted loop alt="Damavis Data Guided Stage">
             <source src="/img/video/datadriven/dd_03.webm" type="video/webm">
+            <source src="/img/video/datadriven/dd_03.s.mp4" type="video/mp4" />
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 3) ?></p>
@@ -35,6 +38,7 @@
         </div>
         <video autoplay muted loop alt="Damavis Data Savy Stage">
             <source src="/img/video/datadriven/dd_04.webm" type="video/webm">
+            <source src="/img/video/datadriven/dd_04.s.mp4" type="video/mp4" />
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 4) ?></p>
@@ -43,6 +47,7 @@
         </div>
         <video autoplay muted loop alt="Damavis Data Driven Stage">
             <source src="/img/video/datadriven/dd_05.webm" type="video/webm">
+            <source src="/img/video/datadriven/dd_05.s.mp4" type="video/mp4" />
         </video>
         <div class="double-title">
             <p><?= __('Stage %d', 5) ?></p>
