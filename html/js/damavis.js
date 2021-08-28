@@ -212,12 +212,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 200);
     }
 
-    document.querySelectorAll("video > source[type$=webm]").forEach(function(e, index) {
+    document.querySelectorAll('video > source[type="type/webm"]').forEach(function(e, index) {
         var parent = e.parentElement;
         if (parent instanceof HTMLMediaElement) {
-            if (Safari && e.getAttribute("type") == "type/webm") {
-                e.remove();
-            }
+            if (Safari) { e.remove(); }
             parent.loop = false;
             parent.pause();
             window.setTimeout(function() {
