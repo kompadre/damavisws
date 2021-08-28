@@ -827,7 +827,6 @@ body {
           grid-column: 1 / span 3;
           position: relative;
           z-index: 1001;
-          top: -455px;
           left: 217px;
           width: 22px; }
           @media (max-width: 425px) {
