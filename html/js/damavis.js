@@ -218,20 +218,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             if (Safari) {
                 // var oldsrc = e.getAttribute('src');
                 // e.remove();
-                /*
-                var newsrc = oldsrc.replace(".webm", ".s.mp4");
-                e.setAttribute("src", newsrc);
-                e.setAttribute("type", "type/mp4");
-                parent.setAttribute("src", newsrc);
-                parent.setAttribute("type", "type/mp4");
-                */
+                // var newsrc = oldsrc.replace(".webm", ".s.mp4");
+                // e.setAttribute("src", newsrc);
+                // e.setAttribute("type", "type/mp4");
+                // parent.setAttribute("src", newsrc);
+                // parent.setAttribute("type", "type/mp4");
             }
             window.setTimeout(function() {
                 window.setInterval(function() {
                     // parent.fastSeek(0);
-                    if (parent instanceof HTMLMediaElement) {
-                        parent.play().catch(function(err) { console.log( err )});
-                    }
+                    parent.play().catch(function(err) { console.log( err )});
                 }, 10000);
             }, index * 3000);
         }
