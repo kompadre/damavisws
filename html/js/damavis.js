@@ -215,14 +215,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelectorAll("video > source[type$=webm]").forEach(function(e, index) {
         var parent = e.parentElement;
         if (parent instanceof HTMLMediaElement) {
-            if (Safari) {
-                // var oldsrc = e.getAttribute('src');
+            if (Safari && e.getAttribute("type") == "type/webm") {
                 e.remove();
-                // var newsrc = oldsrc.replace(".webm", ".s.mp4");
-                // e.setAttribute("src", newsrc);
-                // e.setAttribute("type", "type/mp4");
-                // parent.setAttribute("src", newsrc);
-                // parent.setAttribute("type", "type/mp4");
             }
             parent.loop = false;
             parent.pause();
