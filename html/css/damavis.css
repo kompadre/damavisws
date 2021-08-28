@@ -334,7 +334,7 @@ body {
           position: relative;
           border-radius: 50%;
           background-color: #022387;
-          top: 1.25em; }
+          top: 0.85em; }
     body > div#main > header.home {
       display: grid;
       grid-template-columns: 2fr 5fr;
