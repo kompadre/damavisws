@@ -224,11 +224,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 // parent.setAttribute("src", newsrc);
                 // parent.setAttribute("type", "type/mp4");
             }
+            parent.loop = false;
+            parent.pause();
             window.setTimeout(function() {
-                parent.removeAttribute("autoplay");
                 window.setInterval(function() {
-                    // parent.fastSeek(0);
-                    parent.play().catch(function(err) { console.log( err )});
+                    parent.play().then(function() { /* parent.pause(); */ }).catch(function(err) { console.log( err )});
                 }, 10000);
             }, index * 3000);
         }
