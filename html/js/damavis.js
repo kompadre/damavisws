@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     console.log("switching to relative");
                     menucl.remove("fixed");
                     menucl.add("relative");
-                    logo.setAttribute('src', 'img/logo-light.svg');
+                    logo.setAttribute('src', 'img/damavis-logo-light.svg');
                     console.log(home.querySelectorAll("nav.social > img"));
                     home.querySelectorAll("nav.social > img").forEach(function(img) {
                         var oldSrc = img.getAttribute('src');
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     console.log("switching to fixed");
                     menucl.add("fixed");
                     menucl.remove("relative");
-                    logo.setAttribute('src', 'img/logo-dark.svg');
+                    logo.setAttribute('src', 'img/damavis-logo-dark.svg');
                     home.querySelectorAll("nav.social > img").forEach(function(img) {
                         var oldSrc = img.getAttribute('src');
                         if (oldSrc.indexOf("Dark.svg") == -1) {

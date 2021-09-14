@@ -32,11 +32,11 @@
     <div class="<?= isset($darkBg) && $darkBg ? 'dark-bg' : '' ?>" id="main">
         <header class="home <?= isset($darkBg) && $darkBg ? 'relative' : 'fixed' ?>">
             <a href="/<?= $lang ?>/">
-                <img src="img/logo-<?= isset($darkBg) && $darkBg ? 'light' : 'dark' ?>.svg" class="logo" width="240" height="122" alt="Damavis Brand" /></a>
+                <img src="img/damavis-logo-<?= isset($darkBg) && $darkBg ? 'light' : 'dark' ?>.svg" class="logo" width="240" height="122" alt="Damavis Brand" /></a>
             <div>
                 <nav class="langs">
-                    <a href="<?= preg_replace('#^/(en|es)/#', '/es/', $_SERVER['REQUEST_URI']) ?>" class="<?= $lang == 'es' ? 'active' : '' ?>">ESP</a>
-                    <a href="<?= preg_replace('#^/(en|es)/#', '/en/', $_SERVER['REQUEST_URI']) ?>" class="<?= $lang == 'en' ? 'active' : '' ?>">ENG</a>
+                    <a href="<?= preg_replace('#^/(en|es)/#', '/es/', $_SERVER['REQUEST_URI']) ?>" class="<?= $lang == 'es' ? 'active' : '' ?>" title="<?= _('Cambiar idioma a español') ?>">ESP</a>
+                    <a href="<?= preg_replace('#^/(en|es)/#', '/en/', $_SERVER['REQUEST_URI']) ?>" class="<?= $lang == 'en' ? 'active' : '' ?>" title="<?= _('Change language to English') ?>">ENG</a>
                 </nav>
 <?php include(__DIR__ . '/navigation.php'); ?>
                 <nav class="social">
