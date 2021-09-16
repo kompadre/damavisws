@@ -964,7 +964,9 @@ body {
           justify-items: center;
           justify-content: center;
           flex-direction: column;
-          font-family: Rubik; }
+          font-family: Rubik;
+          animation-name: appear;
+          animation-duration: 1s; }
           body > div#main > div.home.contact > div.contact-form > div.form-sent > h3, body > div#main > div.home.contact > div.contact-form > div.form-sent p {
             font-size: 1.1em;
             margin: 0;

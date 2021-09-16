@@ -17,7 +17,7 @@
             <p class="center"><?= _('SERVICES') ?></p>
             <h3 class="center"><?= _('We provide the state-of-the-art data solutions your firm needs to grow.') ?></h3>
         </div>
-        <div class="cards">
+        <div class="cards video-container">
             <div class="card">
                 <video muted autoplay loop playsinline>
                     <source src="/img/video/services/01.webm" type="video/webm" />

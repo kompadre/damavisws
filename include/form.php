@@ -5,7 +5,8 @@
             <h3 class="center"><?= _('Set up your data-driven growth') ?></h3>
         </div>
         <form id="contact-form">
-            <label for="input-contact-name"><?= _('What is your name?') ?></label>
+            <input type="hidden" name="csrf" value="" />
+            <label for="input-contact-name"><?= _('What is your name?') ?>*</label>
             <input type="text" id="input-contact-name" name="name" placeholder="<?= _('Type here') ?>" required>
             <label for="input-contact-email"><?= _('What is your email?') ?>*</label>
             <input type="email" id="input-contact-email" name="email" placeholder="<?= _('Type here') ?>" required>
@@ -13,12 +14,14 @@
             <input type="text" id="input-contact-org" name="org" placeholder="<?= _('Type here') ?>">
             <label for="textarea-contact-message"><?= _('What is your message?') ?></label>
             <textarea id="textarea-contact-message" name="message" placeholder="<?= _('Type here') ?>" required></textarea>
-            <button class="cta"><?= _('Send Message') ?></button>
+            <button class="cta" class="g-recaptcha" data-sitekey="<?= getenv('RECAPTCHA_SITE') ?>" data-callback="recaptchaCallback" data-action="submit">
+                <?= _('Send Message') ?>
+            </button>
             <p class="small-font"><?= __('By clicking the “%s” button, you agree on our <a href="%s" target="_blank">terms of pricacy</a>.', _('Send Message'), '/' . $lang . '/legal/') ?></p>
             <p class="small-font"><?= _('The fields marked with a star (*) are mandatory') ?></p>
         </form>
         <div class="form-sent hide">
-            <img src="../img/icons/Check.png" />
+            <img src="img/icons/Check.png" />
             <h3><?= _('Message received.') ?></h3>
             <p><?= _('We usually take one day to respond.') ?></p>
         </div>

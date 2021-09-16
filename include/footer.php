@@ -34,5 +34,6 @@
     <?php else: ?>
         <script src="js/damavis.js"></script>
     <?php endif; ?>
+        <script defer async src="https://www.google.com/recaptcha/api.js"></script>
     </body>
 </html>

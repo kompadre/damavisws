@@ -8,7 +8,7 @@
     <div></div>
 </div>
 <div class="datadriven data-driven">
-    <div class="steps">
+    <div class="steps video-container">
         <video autoplay muted loop alt="Damavis Data Resistant Stage">
             <source src="/img/video/datadriven/dd_01.webm" type="video/webm" />
             <source src="/img/video/datadriven/dd_01.s.mp4" type="video/mp4" />

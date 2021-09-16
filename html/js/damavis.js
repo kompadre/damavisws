@@ -7,6 +7,9 @@ var oldSafari = Safari && (match = ua.match("Version/([0-9]+).*Safari")) && matc
 var oldAndroid = ua.indexOf("Android SDK")>-1 && (match = ua.match("Chrome/([0-9]+)")) && match[1] <= 50;
 var IE = !!ua.match("(MSIE [0-9]+|Trident/[0-9]+)");
 // alert(navigator.userAgent);
+function x(y) {
+    y(x);
+}
 
 if (!window.console || oldSafari || IE || oldAndroid) {
     var myhead = document.getElementsByTagName("head")[0];
@@ -187,8 +190,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (!!form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            form.parentElement.querySelector("div.form-sent").classList.remove("hide");
-            form.classList.add("hide");
+            var XHR = new XMLHttpRequest();
+            var FD = new FormData( form );
+
+            XHR.addEventListener('load', function() {
+                form.parentElement.querySelector("div.form-sent").classList.remove("hide");
+                form.classList.add("hide");
+            });
+
+            XHR.open('/api/sendmail');
+            XHR.send( FD );
         });
         form.querySelector("button.cta").addEventListener("click", function() {
             form.querySelectorAll("input, textarea").forEach(function(input) {
@@ -210,29 +221,44 @@ document.addEventListener("DOMContentLoaded", function(event) {
             header_video.classList.remove("hidden");
         }, 200);
     }
-    var parentDurations = {  };
-    var totalDuration = 0;
-    var prevDuration = 0;
-    document.querySelectorAll('video').forEach(function(e) { totalDuration += e.duration; });
-    console.log(typeof (totalDuration * 1000), "typeof");
-    console.log(totalDuration, "totalDuration before loop");
-    const TotalDuration = (totalDuration * 1000);
-    document.querySelectorAll('video > source[type*="webm"]').forEach(function(e, index) {
-        var parent = e.parentElement;
-        if (parent instanceof HTMLMediaElement) {
-            if (Safari) { console.log(e, "Removing source"); }
-            parent.loop = false;
-            parent.pause();
-            /*
-            window.setTimeout(function() {
-                window.setInterval(function() {
-                    console.log(parent, "Playing every " + TotalDuration);
-                    parent.play();
-                }, TotalDuration);
-            }, prevDuration);
-             */
-            prevDuration += (parent.duration * 1000);
-            console.log(prevDuration, totalDuration);
+
+    document.querySelectorAll('.video-container').forEach(function(c, index) {
+        console.log('ere');
+        if (typeof c.totalDuration == "undefined") {
+            totalDuration = 0;
+            c.querySelectorAll('video').forEach(function(e) {
+                if (e instanceof HTMLMediaElement) {
+                    totalDuration += e.duration;
+                }
+            });
+            c.totalDuration = totalDuration * 1000;
         }
+        prevDuration = 0;
+        if (typeof c.intervalHandles != "undefined") {
+            try { c.intervalHandles.forEach(function(h) { window.clearInterval(h); }); } catch(e) {}
+        }
+        c.intervalHandles = [];
+        c.querySelectorAll('video > source[type*="webm"]').forEach(function(source, index) {
+            parent = source.parentElement;
+            if (parent instanceof HTMLMediaElement) {
+                if (Safari) { console.log(e, "Removing source"); }
+                parent.loop = false;
+                parent.pause();
+                var localParent = parent;
+                var localIndex = index;
+                window.setTimeout(function() {
+                   localParent.play();
+                   var h = window.setInterval(function() {
+                       console.log(localIndex, "Animating");
+                       localParent.play();
+                   }, c.totalDuration);
+                   c.intervalHandles.push(h);
+                }, prevDuration);
+                var currentDuration = parent.getAttribute("data-duration") || (parent.duration * 1000);
+                prevDuration += currentDuration;
+                console.log(localParent.parentElement);
+            }
+        });
+
     });
 });
