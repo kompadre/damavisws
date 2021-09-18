@@ -5,7 +5,7 @@ if (empty($_POST)) {
 }
 switch($_GET['action']) {
     case 'sendmail':
-        $out = var_export($_POST, true);
+        $out['post'] = $_POST;
         break;
 }
 header('Content-Type: application/json');
