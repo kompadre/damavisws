@@ -32,7 +32,7 @@
     <?php if (isset($prod) && $prod) : ?>
         <script><?= file_get_contents('js/damavis.min.js') ?></script>
     <?php else: ?>
-        <script src="js/damavis.js"></script>
+        <script src="js/damavis.js?cache=<?= time() ?>"></script>
     <?php endif; ?>
         <script defer async src="https://www.google.com/recaptcha/api.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126214848-1"></script>
