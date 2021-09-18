@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                    }, c.totalDuration);
                    c.intervalHandles.push(h);
                 }, prevDuration);
-                var currentDuration = parseInt(parent.getAttribute("data-duration")) || (parent.duration * 1000);
+                var currentDuration = parseInt(parent.getAttribute("data-duration"));
                 prevDuration += currentDuration;
                 console.log(localParent.parentElement);
             }
