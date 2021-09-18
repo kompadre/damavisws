@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             try { c.intervalHandles.forEach(function(h) { window.clearInterval(h); }); } catch(e) {}
         }
         c.intervalHandles = [];
-        document.setTimeout(function() {
+        window.setTimeout(function() {
             c.querySelectorAll('video > source[type*="webm"]').forEach(function(source, index) {
                 parent = source.parentElement;
                 if (parent instanceof HTMLMediaElement) {
