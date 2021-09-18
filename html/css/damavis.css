@@ -554,18 +554,18 @@ body {
           padding-bottom: 30px; } }
       body > div#main > div div.double-title {
         color: #051C3D; }
-        body > div#main > div div.double-title h1, body > div#main > div div.double-title > h3 {
+        body > div#main > div div.double-title > h1, body > div#main > div div.double-title > h2, body > div#main > div div.double-title > h3, body > div#main > div div.double-title > div.fake-header {
           font-size: 2.22em;
           margin-top: 0px !important;
           margin-bottom: 1em;
           font-weight: 500; }
           @media (max-width: 1080px) {
-            body > div#main > div div.double-title h1, body > div#main > div div.double-title > h3 {
+            body > div#main > div div.double-title > h1, body > div#main > div div.double-title > h2, body > div#main > div div.double-title > h3, body > div#main > div div.double-title > div.fake-header {
               font-size: 1.4em; } }
           @media (max-width: 425px) {
-            body > div#main > div div.double-title h1, body > div#main > div div.double-title > h3 {
+            body > div#main > div div.double-title > h1, body > div#main > div div.double-title > h2, body > div#main > div div.double-title > h3, body > div#main > div div.double-title > div.fake-header {
               font-size: 1em; } }
-        body > div#main > div div.double-title > h1 {
+        body > div#main > div div.double-title > h1:not(.normal-header) {
           font-size: 3.5em;
           margin-bottom: 1em; }
         body > div#main > div div.double-title > p {
@@ -579,7 +579,7 @@ body {
         body > div#main > div div.double-title > p.content {
           text-transform: none;
           font-family: Roboto; }
-      body > div#main > div.datadriven div.double-title > h3 {
+      body > div#main > div.datadriven div.double-title > h2, body > div#main > div.datadriven div.double-title > h3 {
         margin-top: 0px;
         font-size: 1.7em; }
       body > div#main > div.datadriven div.double-title > p.content {
@@ -598,7 +598,7 @@ body {
         @media (max-width: 425px) {
           body > div#main > div.big-banner {
             grid-template-columns: 1fr; } }
-        body > div#main > div.big-banner > div.double-title > h3 {
+        body > div#main > div.big-banner > div.double-title > h1, body > div#main > div.big-banner > div.double-title > h2, body > div#main > div.big-banner > div.double-title > h3 {
           font-size: 3.18em; }
         body > div#main > div.big-banner > div.double-title > p.content {
           font-size: 1.09em; }
@@ -728,14 +728,15 @@ body {
             body > div#main > div.home.banner > div.banner-content > p {
               /* font-size: 14px; */
               margin-top: 10px; } }
-        body > div#main > div.home.banner > div.banner-content > button.cta {
-          align-self: start; }
+        body > div#main > div.home.banner > div.banner-content > a.cta, body > div#main > div.home.banner > div.banner-content > button.cta {
+          align-self: start;
+          display: block; }
     body > div#main > div.home.services {
       /* height: 787px; */
       background-color: #f2f2f9;
       padding-top: 10px; }
       @media (min-width: 768px) {
-        body > div#main > div.home.services > div.double-title > h3 {
+        body > div#main > div.home.services > div.double-title > h2, body > div#main > div.home.services > div.double-title > h3 {
           max-width: 50vw; } }
       body > div#main > div.home.services > div.cards {
         margin-top: 90px;
@@ -973,6 +974,8 @@ body {
             margin-top: 0.5em; }
           body > div#main > div.home.contact > div.contact-form > div.form-sent > h3 {
             font-weight: 500; }
+          body > div#main > div.home.contact > div.contact-form > div.form-sent > p {
+            text-align: center; }
         body > div#main > div.home.contact > div.contact-form > a.contact-jobs-link {
           /* margin-top: 20px; */
           margin-bottom: 0px;
@@ -1008,7 +1011,7 @@ body {
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto; }
-    body > div#main > div.services.big-banner > div.double-title h3 {
+    body > div#main > div.services.big-banner > div.double-title h1, body > div#main > div.services.big-banner > div.double-title h2, body > div#main > div.services.big-banner > div.double-title h3 {
       font-size: 2.27em; }
     body > div#main > div.services.technology {
       background-color: #FAFAFF;
@@ -1109,14 +1112,14 @@ body {
         height: 500px; }
     body > div#main > div.about.manifesto {
       background-color: #FAFAFF; }
-      body > div#main > div.about.manifesto > div.double-title > h3 {
+      body > div#main > div.about.manifesto > div.double-title > div.fake-header {
         font-size: 1.82em;
         color: #022387 !important;
         max-width: 75%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1em !important; }
-        body > div#main > div.about.manifesto > div.double-title > h3 > strong {
+        body > div#main > div.about.manifesto > div.double-title > div.fake-header > strong {
           font-weight: 700;
           text-decoration: underline;
           text-decoration-color: #00FDAA; }
@@ -1282,14 +1285,14 @@ body {
     @media (min-width: 768px) {
       body > div#main > div.work.frame-1 > div.double-title {
         max-width: 65%; }
-        body > div#main > div.work.frame-1 > div.double-title > h3 {
+        body > div#main > div.work.frame-1 > div.double-title > h1 {
           line-height: 1.1em; }
         body > div#main > div.work.frame-1 > div.double-title > p.content {
           max-width: 80%; } }
     body > div#main > div.work.frame-2 {
       display: grid;
       background-color: #FAFAFF; }
-      body > div#main > div.work.frame-2 > div.double-title > h3 {
+      body > div#main > div.work.frame-2 > div.double-title > h2 {
         line-height: 1.1em; }
       body > div#main > div.work.frame-2 > div.double-title > p.content {
         max-width: 80%; }
@@ -1353,9 +1356,9 @@ body {
           @media (min-width: 1080px) {
             body > div#main > footer > div.footer-content > div.social {
               justify-content: flex-end; } }
-          body > div#main > footer > div.footer-content > div.social > img {
-            max-height: 30px;
-            margin-left: 15px; }
+          body > div#main > footer > div.footer-content > div.social > a > img {
+            max-height: 1.4em;
+            margin-right: 0.4em; }
         body > div#main > footer > div.footer-content > nav {
           display: flex;
           grid-area: menu;

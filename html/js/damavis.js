@@ -198,9 +198,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 form.classList.add("hide");
             });
 
-            XHR.open('/api/sendmail');
+            XHR.open('POST', '/api/sendmail');
             XHR.send( FD );
         });
+
         form.querySelector("button.cta").addEventListener("click", function() {
             form.querySelectorAll("input, textarea").forEach(function(input) {
                 input.classList.add("visited");

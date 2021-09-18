@@ -359,7 +359,7 @@ body {
       }
       div.double-title {
         color: $color_text_dark_2;
-        h1, >h3 {
+        >h1, >h2, >h3, >div.fake-header {
           font-size: 2.22em;
           @media (max-width: $breakpoint_1080) {
             font-size: 1.4em;
@@ -371,7 +371,7 @@ body {
           margin-bottom: 1em;
           font-weight: 500;
         }
-        >h1 {
+        >h1:not(.normal-header) {
           font-size: 3.5em;
           margin-bottom: 1em;
         }
@@ -391,7 +391,7 @@ body {
         }
       }
       &.datadriven div.double-title {
-        >h3 {
+        >h2, >h3 {
           margin-top: 0px;
           font-size: 1.7em;
         }
@@ -415,7 +415,7 @@ body {
           grid-template-columns: 1fr;
         }
         >div.double-title {
-          >h3 {
+          >h1, >h2, >h3 {
             font-size: 3.18em;
           }
           >p.content {
@@ -541,8 +541,9 @@ body {
           font-weight: 300;
           color: white;
         }
-        >button.cta {
+        >a.cta, >button.cta {
           align-self: start;
+          display: block;
         }
 
         /*
@@ -573,7 +574,7 @@ body {
       @media (min-width: 420px) {
 
       }
-      >div.double-title >h3 {
+      >div.double-title >h2, >div.double-title >h3 {
         @media (min-width: $breakpoint_768) {
           max-width: 50vw;
         }
@@ -851,6 +852,7 @@ body {
             margin-top: 0.5em;
           }
           >h3 { font-weight: 500; }
+          >p { text-align: center; }
         }
         >a.contact-jobs-link {
           /* margin-top: 20px; */
@@ -897,7 +899,7 @@ body {
       }
     }
     >div.services.big-banner > div.double-title {
-      h3 {
+      h1, h2, h3 {
         font-size: 2.27em;
       }
     }
@@ -1020,7 +1022,7 @@ body {
     }
     >div.about.manifesto {
       background-color: $color_almost_white;
-      >div.double-title >h3 {
+      >div.double-title >div.fake-header {
         font-size: 1.82em;
         color: $color_damavis_blue!important;
         max-width: 75%;
@@ -1238,21 +1240,16 @@ body {
       >div.double-title {
         @media (min-width: $breakpoint_768) {
           max-width: 65%;
-          >h3 {
-            line-height: 1.1em;
-          }
-          >p.content {
-            max-width: 80%;
-          }
+          >h1 { line-height: 1.1em; }
+          >p.content { max-width: 80%;}
         }
       }
     }
     >div.work.frame-2 {
       display: grid;
       background-color: $color_almost_white;
-      >div:first-child {}
       >div.double-title {
-        >h3 {
+        >h2 {
           line-height: 1.1em;
         }
         >p.content {
@@ -1262,14 +1259,10 @@ body {
     }
     >div.work.frame-3 {
       display: grid;
-      >div:first-child {}
-      >div:last-child {}
     }
     >div.work.frame-4 {
       display: grid;
       background-color: $color_almost_white;
-      >div:first-child {
-      }
     }
     >div.work.frame-5 {
       display: grid;
@@ -1334,9 +1327,9 @@ body {
           */
           height: 48px;
           padding-bottom: 15px;
-          >img {
-            max-height: 30px;
-            margin-left: 15px;
+          >a >img {
+            max-height: 1.4em;
+            margin-right: 0.4em;
           }
         }
         >nav {

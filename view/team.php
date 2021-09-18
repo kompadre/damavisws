@@ -27,9 +27,9 @@
                     <p class="name"><?= $member[1] ?></p>
                     <p class="position"><?= $member[2] ?></p>
                     <div class="social">
-                        <?php if (isset($member[3])) : ?><a href="https://twitter.com/<?= $member[3] ?>" rel="noreferrer"><img src="../img/icons/Twitter.svg"></a><?php endif; ?>
-                        <?php if (isset($member[4])) : ?><a href="https://github.com/<?= $member[4] ?>" rel="noreferrer"><img src="../img/icons/Github.svg"></a><?php endif; ?>
-                        <?php if (isset($member[5])) : ?><a href="https://www.linkedin.com/in/<?= $member[5] ?>/" rel="noreferrer"><img src="../img/icons/Linkedin.svg"></a><?php endif; ?>
+                        <?php if (isset($member[3])) : ?><a href="https://twitter.com/<?= $member[3] ?>" target="_blank" rel="nofollow"><img src="../img/icons/Twitter.svg"></a><?php endif; ?>
+                        <?php if (isset($member[4])) : ?><a href="https://github.com/<?= $member[4] ?>" target="_blank" rel="nofollow"><img src="../img/icons/Github.svg"></a><?php endif; ?>
+                        <?php if (isset($member[5])) : ?><a href="https://www.linkedin.com/in/<?= $member[5] ?>/" target="_blank" rel="nofollow"><img src="../img/icons/Linkedin.svg"></a><?php endif; ?>
                     </div>
                 </div>
             </div>

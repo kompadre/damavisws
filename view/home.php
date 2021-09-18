@@ -9,13 +9,13 @@
             <p><?= _('BIG DATA STUDIO') ?></p>
             <h1><?= _('Get insights from your data') ?></h1>
             <p><?= _('Damavis is an innovative startup specialized in the management of the most important resource of 21st century companies: their data. Our main objective is to get the highest possible performance of the data so that our clients can make better strategic decisions, ensuring scalability, maximum flexibility and integration of artificial intelligence algorithms.') ?></p>
-            <button class="cta">Reach us</button>
+            <a class="cta" href="#contact-form-mark">Reach us</a>
         </div>
     </div>
     <div class="home services">
         <div class="double-title">
             <p class="center"><?= _('SERVICES') ?></p>
-            <h3 class="center"><?= _('We provide the state-of-the-art data solutions your firm needs to grow.') ?></h3>
+            <h2 class="center"><?= _('We provide the state-of-the-art data solutions your firm needs to grow.') ?></h2>
         </div>
         <div class="cards video-container">
             <div class="card">
@@ -100,7 +100,7 @@
         <div>
             <div class="double-title">
                 <p class="left"><?= _('DATA DRIVEN') ?></p>
-                <h3 class="left"><?= _('The solution is hidden in your data. Let us reveal it for you.') ?></h3>
+                <h2 class="left"><?= _('The solution is hidden in your data. Let us reveal it for you.') ?></h2>
             </div>
             <p><?= _('The objective of Damavis is to work hand in hand with our clients to take them to the Data Driven Stage, in which it is possible to be highly competitive through an intelligent use of the data. The following five stages describe the path to achieving complete Digital Transformation.') ?></p>
         </div>
@@ -109,32 +109,32 @@
         <div>
             <div class="double-title">
                 <p class="left"><?= _('MEET OUR TEAM') ?></p>
-                <h3 class="left"><?= _('We are strongly committed to teamwork, quality, assertiveness, effectiveness and efficiency.') ?></h3>
+                <h2 class="left"><?= _('We are strongly committed to teamwork, quality, assertiveness, effectiveness and efficiency.') ?></h2>
             </div>
             <p><?= _('Aware of the power that data can offer the world, we have created a team of experts with the ability to create and deliver Big Data tools that lead to success.') ?></p>
             <a class="cta" href="/<?= $lang ?>/team/"><?= _('Meet our team') ?></a>
         </div>
         <div>
-            <img src="img/home/ill-team.png" alt="Damavis Team">
+            <img src="img/home/damavis-team.png" alt="Damavis Team">
         </div>
     </div>
     <div class="home clients">
         <div class="double-title">
             <p class="center"><?= _('CLIENTS') ?></p>
-            <h3 class="center"><?= _('We have performed outstanding projects with:') ?></h3>
+            <h2 class="center"><?= _('We have performed outstanding projects with:') ?></h2>
         </div>
         <div class="logos">
-            <img src="img/clients/camper.png">
-            <img src="img/clients/avoris.png">
-            <img src="img/clients/barcelo.png">
-            <img src="img/clients/fastpay.png">
-            <img src="img/clients/jtg.png">
-            <img src="img/clients/hotelbeds.png">
-            <img src="img/clients/melia.png">
-            <img src="img/clients/globalia.png">
-            <img src="img/clients/inno.png">
-            <img src="img/clients/tcgfactory.png">
-            <img src="img/clients/w2m.png">
+            <img alt="Damavis cliente Camper" src="img/clients/camper.png">
+            <img alt="Damavis cliente Avoris" src="img/clients/avoris.png">
+            <img alt="Damavis cliente Barcelo" src="img/clients/barcelo.png">
+            <img alt="Damavis cliente Fastpay" src="img/clients/fastpay.png">
+            <img alt="Damavis cliente Jtg" src="img/clients/jtg.png">
+            <img alt="Damavis cliente Hotelbeds" src="img/clients/hotelbeds.png">
+            <img alt="Damavis cliente Melia" src="img/clients/melia.png">
+            <img alt="Damavis cliente Globalia" src="img/clients/globalia.png">
+            <img alt="Damavis cliente Inno" src="img/clients/inno.png">
+            <img alt="Damavis cliente Tcgfactory" src="img/clients/tcgfactory.png">
+            <img alt="Damavis cliente W2m" src="img/clients/w2m.png">
         </div>
     </div>
     <?php include('./include/form.php'); ?>

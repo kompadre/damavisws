@@ -7,7 +7,7 @@
         </div>
         <div class="double-title">
             <p><?= _('ABOUT US') ?></p>
-            <h3><?= _('We perform intelligent data analysis') ?></h3>
+            <h1><?= _('We perform intelligent data analysis') ?></h1>
             <p class="content"><?= _('Damavis is an innovative studio specialized in the management of the most important resource of 21st century companies: their data. Our main goal is to get the highest performance of the data so that our clients can make better strategic business decisions, going hand by hand with them on the way to becoming a Data Driven company. The high versatility of our profiles makes it possible for us to provide our services in any area related to data. We manage from the creation of optimized Data Lakes to the deployment of artificial intelligence algorithms into live production environments whose reponses can happen in real time.') ?></p>
             <p class="content"><?= _('At Damavis we believe that the journey towards Digital Transformation must be progressive and complete, adapted to the needs of each of our clients. With our experience in the data world, we are able to apply scalable, flexible and adapted solutions to all types of markets.') ?></p>
         </div>
@@ -15,10 +15,10 @@
     <div class="about manifesto">
         <div class="double-title center">
             <p><?= _('OUR MANIFESTO') ?></p>
-            <h3><?= _('We believe in our <strong>Teamwork</strong>, it will make the dream work.') ?></h3>
-            <h3><?= _('We keep <strong>quality</strong> as our seal.') ?></h3>
-            <h3><?= _('We’re direct, honest and respectful with others and we excel in the way we do things.') ?></h3>
-            <h3><?= _('We’re passionately curious and always remember, that <strong>knowledge is our power</strong>.') ?></h3>
+            <div class="fake-header"><?= _('We believe in our <strong>Teamwork</strong>, it will make the dream work.') ?></div>
+            <div class="fake-header"><?= _('We keep <strong>quality</strong> as our seal.') ?></div>
+            <div class="fake-header"><?= _('We’re direct, honest and respectful with others and we excel in the way we do things.') ?></div>
+            <div class="fake-header"><?= _('We’re passionately curious and always remember, that <strong>knowledge is our power</strong>.') ?></div>
         </div>
         <div class="cards">
             <div class="card">

@@ -1,8 +1,8 @@
-<div class="home contact">
+<div class="home contact" id="contact-form-mark">
     <div class="contact-form">
         <div class="double-title">
             <p class="center"><?= _('CONTACT') ?></p>
-            <h3 class="center"><?= _('Set up your data-driven growth') ?></h3>
+            <h<?= $currentPage == 'contact' ? '1' : '3' ?> class="normal-header center"><?= _('Set up your data-driven growth') ?></h<?= $currentPage == 'contact' ? '1' : '3' ?>>
         </div>
         <form id="contact-form">
             <input type="hidden" name="csrf" value="" />
@@ -17,7 +17,7 @@
             <button class="cta" class="g-recaptcha" data-sitekey="<?= getenv('RECAPTCHA_SITE') ?>" data-callback="recaptchaCallback" data-action="submit">
                 <?= _('Send Message') ?>
             </button>
-            <p class="small-font"><?= __('By clicking the “%s” button, you agree on our <a href="%s" target="_blank">terms of pricacy</a>.', _('Send Message'), '/' . $lang . '/legal/') ?></p>
+            <p class="small-font"><?= __('By clicking the “%s” button, you agree on our %s.', _('Send Message'), '<a href="/' . $lang . '/legal/" target="_blank" title="'._('terms and conditions').'">'. _('terms and conditions') .'</a>') ?></p>
             <p class="small-font"><?= _('The fields marked with a star (*) are mandatory') ?></p>
         </form>
         <div class="form-sent hide">
@@ -25,8 +25,8 @@
             <h3><?= _('Message received.') ?></h3>
             <p><?= _('We usually take one day to respond.') ?></p>
         </div>
-        <a class="contact-jobs-link" href="/<?= $lang ?>/services/">
-            > <?= _('Do you need our services?') ?>
+        <a class="contact-jobs-link" href="/<?= $lang ?>/job/">
+            > <?= _('Do you want to work with us?') ?>
         </a>
     </div>
 </div>

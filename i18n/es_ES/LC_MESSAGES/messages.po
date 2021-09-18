@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-08-23 21:56+0200\n"
-"PO-Revision-Date: 2021-08-23 21:57+0200\n"
+"POT-Creation-Date: 2021-09-18 00:01+0200\n"
+"PO-Revision-Date: 2021-09-18 00:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -70,34 +70,35 @@ msgstr "Servicios"
 msgid "Legal"
 msgstr "Aviso Legal"
 
-#: include/_gettext_hints.php:3 view/team.php:3
+#: include/_gettext_hints.php:3 view/team.php:4
 msgid "CEO"
 msgstr "CEO"
 
-#: include/_gettext_hints.php:4 view/team.php:3 view/team.php:4 view/team.php:5
-#: view/team.php:6 view/team.php:7 view/team.php:8
+#: include/_gettext_hints.php:4 view/team.php:4 view/team.php:5 view/team.php:6
+#: view/team.php:7 view/team.php:8 view/team.php:9
 msgid "Co-founder"
 msgstr "Cofundador"
 
-#: include/_gettext_hints.php:5 view/team.php:7 view/team.php:8
+#: include/_gettext_hints.php:5 view/team.php:8 view/team.php:9
 #, fuzzy
 msgid "Head Data Scientist"
 msgstr "Director Científico de Datos"
 
-#: include/_gettext_hints.php:6 view/team.php:10 view/team.php:14
+#: include/_gettext_hints.php:6 view/team.php:11 view/team.php:15
+#: view/team.php:50
 msgid "Data Engineer"
 msgstr "Ingeniero de Datos"
 
-#: include/_gettext_hints.php:7 include/_gettext_hints.php:9 view/team.php:9
-#: view/team.php:11 view/team.php:13
+#: include/_gettext_hints.php:7 include/_gettext_hints.php:9 view/team.php:10
+#: view/team.php:12 view/team.php:14 view/team.php:51
 msgid "Data Scientist"
 msgstr "Científico de Datos"
 
-#: include/_gettext_hints.php:8 view/team.php:12
+#: include/_gettext_hints.php:8 view/team.php:13 view/team.php:49
 msgid "Quality Assurance"
 msgstr "Control de Calidad"
 
-#: include/_gettext_hints.php:10 include/form.php:17
+#: include/_gettext_hints.php:10
 #, php-format
 msgid ""
 "By clicking the “%s” button, you agree on our <a href=\"%s\">terms of "
@@ -145,52 +146,71 @@ msgstr "CONTACTO"
 msgid "Set up your data-driven growth"
 msgstr "Comienza tu crecimiento basado en datos"
 
-#: include/form.php:8
+#: include/form.php:9
 msgid "What is your name?"
 msgstr "Nombre completo"
 
-#: include/form.php:9 include/form.php:11 include/form.php:13
-#: include/form.php:15
+#: include/form.php:10 include/form.php:12 include/form.php:14
+#: include/form.php:16
 #, fuzzy
 msgid "Type here"
 msgstr "Escriba aquí"
 
-#: include/form.php:10
+#: include/form.php:11
 #, fuzzy
 msgid "What is your email?"
 msgstr "¿Cual es tu email?"
 
-#: include/form.php:12
+#: include/form.php:13
 #, fuzzy
 msgid "What is your organization?"
 msgstr "¿Cual es tu organización?"
 
-#: include/form.php:14
+#: include/form.php:15
 msgid "What is your message?"
 msgstr "Mensaje completo"
 
-#: include/form.php:16 include/form.php:17
+#: include/form.php:18 include/form.php:20
 msgid "Send Message"
 msgstr "Enviar mensaje"
 
-#: include/form.php:18
+#: include/form.php:20
+#, fuzzy
+#| msgid "Terms and Conditions"
+msgid "términos y condiciones"
+msgstr "Terminos Legales"
+
+#: include/form.php:20
+#, php-format
+msgid "By clicking the “%s” button, you agree on our %s."
+msgstr "Clicando en “%s” acepta Vd. nuestros %s."
+
+#: include/form.php:21
 #, fuzzy
 msgid "The fields marked with a star (*) are mandatory"
 msgstr "Los campos marcados con un asterisco (*) son obligatorios"
 
-#: include/form.php:22
+#: include/form.php:25
 #, fuzzy
 msgid "Message received."
 msgstr "Mensaje recibido."
 
-#: include/form.php:23
+#: include/form.php:26
 msgid "We usually take one day to respond."
 msgstr "Por lo general tardamos un día en responder."
 
-#: include/form.php:26
+#: include/form.php:29
 #, fuzzy
 msgid "Do you need our services?"
 msgstr "¿Necesita nuestros servicios?"
+
+#: include/header.php:38
+msgid "Cambiar idioma a español"
+msgstr ""
+
+#: include/header.php:39
+msgid "Change language to English"
+msgstr ""
 
 #: include/navigation.php:5
 msgid "About Us"
@@ -392,7 +412,7 @@ msgstr ""
 "avanzando, Damavis lo percibe como una posibilidad, y lo transforma, de "
 "lleno, en un caso de éxito."
 
-#: view/datadriven.php:4 view/home.php:90
+#: view/datadriven.php:4 view/home.php:102
 msgid "DATA DRIVEN"
 msgstr "DATA DRIVEN"
 
@@ -408,18 +428,18 @@ msgstr ""
 "El camino al éxito depende de ello. A continuación, podrás definir en qué "
 "etapa se encuentra tu negocio en el camino hacia la transformación digital."
 
-#: view/datadriven.php:16 view/datadriven.php:24 view/datadriven.php:32
-#: view/datadriven.php:40 view/datadriven.php:48 view/home.php:43
-#: view/home.php:52 view/home.php:61 view/home.php:70 view/home.php:79
+#: view/datadriven.php:17 view/datadriven.php:26 view/datadriven.php:35
+#: view/datadriven.php:44 view/datadriven.php:53 view/home.php:55
+#: view/home.php:64 view/home.php:73 view/home.php:82 view/home.php:91
 #, php-format
 msgid "Stage %d"
 msgstr "Fase %d"
 
-#: view/datadriven.php:17 view/home.php:44
+#: view/datadriven.php:18 view/home.php:56
 msgid "Data-Resistant"
 msgstr "Resistente al dato"
 
-#: view/datadriven.php:18
+#: view/datadriven.php:19
 msgid ""
 "In this stage, the company makes no use of the data, relying on the saying "
 "\"things have always been done this way\", something that is a clear brake "
@@ -434,11 +454,11 @@ msgstr ""
 "intereses internos, como pueden ser decisiones estratégicas erróneas o "
 "departamentos ineficientes."
 
-#: view/datadriven.php:25 view/home.php:53
+#: view/datadriven.php:27 view/home.php:65
 msgid "Data-Aware"
 msgstr "Consciente del dato"
 
-#: view/datadriven.php:26
+#: view/datadriven.php:28
 msgid ""
 "Once passed the Data-Resistant stage, the company begins to be aware of the "
 "value of the data, so it begins to collect a subset of data and perform a "
@@ -448,11 +468,11 @@ msgstr ""
 "motivo por el cual empieza a recolectarlos y a hacer análisis descriptivos "
 "básicos, producto de la débil curiosidad que presenta hasta el momento."
 
-#: view/datadriven.php:33 view/home.php:62
+#: view/datadriven.php:36 view/home.php:74
 msgid "Data-Guided"
 msgstr "Guiado por el dato"
 
-#: view/datadriven.php:34
+#: view/datadriven.php:37
 msgid ""
 "Now the company performs extensive analysis of its data, obtaining solid "
 "conclusions of the impact of taken past decisions. In this stage, the "
@@ -466,11 +486,11 @@ msgstr ""
 "capaz de obtener del dato un valor táctico, el cual implica saber si deben "
 "seguir haciendo lo que han hecho hasta ahora o cambiar de estrategia."
 
-#: view/datadriven.php:41 view/home.php:71
+#: view/datadriven.php:45 view/home.php:83
 msgid "Data-Savy"
 msgstr "Experto con los datos"
 
-#: view/datadriven.php:42
+#: view/datadriven.php:46
 msgid ""
 "Here, besides the obtained tactical value from the Data-Guided stage, a "
 "strategic value is also exploited, which means that the company not only "
@@ -482,11 +502,11 @@ msgstr ""
 "un valor estratégico, en el que la empresa no solo se centra en el qué (¿qué "
 "ha ido mal?) sino que lo extiende al por qué (¿por qué ha ido mal?)."
 
-#: view/datadriven.php:49 view/home.php:80
+#: view/datadriven.php:54 view/home.php:92
 msgid "Data-Driven"
 msgstr "Data Driven"
 
-#: view/datadriven.php:50
+#: view/datadriven.php:55
 msgid ""
 "In this last phase, once businesses have found out what has gone wrong and "
 "why, the immediate challenge to tackle is \"given that data confirms this "
@@ -519,28 +539,28 @@ msgstr ""
 "Proporcionamos las soluciones de datos del estado de la técnica de sus "
 "necesidades firmes para crecer."
 
-#: view/home.php:23
+#: view/home.php:26
 msgid "Data Management"
 msgstr "Gestión del dato"
 
-#: view/home.php:27 view/services.php:36
+#: view/home.php:33 view/services.php:36
 msgid "Artificial Intelligence"
 msgstr "Inteligencia Artificial"
 
-#: view/home.php:31
+#: view/home.php:40
 msgid "Data Visualization"
 msgstr "Visualización de datos"
 
-#: view/home.php:35 view/services.php:116
+#: view/home.php:47 view/services.php:116
 msgid "Real Time"
 msgstr "Tiempo real"
 
-#: view/home.php:91
+#: view/home.php:103
 #, fuzzy
 msgid "The solution is hidden in your data. Let us reveal it for you."
 msgstr "La solución se oculta en sus datos. Vamos a revelar por usted."
 
-#: view/home.php:93
+#: view/home.php:105
 #, fuzzy
 msgid ""
 "The objective of Damavis is to work hand in hand with our clients to take "
@@ -554,11 +574,11 @@ msgstr ""
 "etapas siguientes describen el camino para lograr la transformación digital "
 "completa."
 
-#: view/home.php:99
+#: view/home.php:111
 msgid "MEET OUR TEAM"
 msgstr "NUESTRO EQUIPO"
 
-#: view/home.php:100
+#: view/home.php:112
 msgid ""
 "We are strongly committed to teamwork, quality, assertiveness, effectiveness "
 "and efficiency."
@@ -566,7 +586,7 @@ msgstr ""
 "Apostamos por el trabajo en equipo, la calidad, asertividad, eficacia y "
 "eficiencia."
 
-#: view/home.php:102
+#: view/home.php:114
 msgid ""
 "Aware of the power that data can offer the world, we have created a team of "
 "experts with the ability to create and deliver Big Data tools that lead to "
@@ -576,15 +596,17 @@ msgstr ""
 "equipo de profesionales con capacidad de crear y facilitar herramientas de "
 "Big Data que conduzcan al éxito."
 
-#: view/home.php:103
-msgid "Meet us"
+#: view/home.php:115
+#, fuzzy
+#| msgid "Meet us"
+msgid "Meet our team"
 msgstr "Conócenos"
 
-#: view/home.php:111
+#: view/home.php:123
 msgid "CLIENTS"
 msgstr "CLIENTES"
 
-#: view/home.php:112
+#: view/home.php:124
 msgid "We have performed outstanding projects with:"
 msgstr "Hemos realizado proyectos excepcionales con:"
 
@@ -839,26 +861,65 @@ msgstr ""
 "Tenemos experiencia con las mejores tecnologías del campo de datos grandes y "
 "estamos añadiendo constantemente nuevos."
 
-#: view/team.php:4 view/team.php:5 view/team.php:6
+#: view/team.php:5 view/team.php:6 view/team.php:7
 #, fuzzy
 msgid "Head Data Engineer"
 msgstr "Ingeniero Jefe de Datos"
 
-#: view/team.php:17
+#: view/team.php:18 view/team.php:41 view/team.php:61
 msgid "OUR TEAM"
 msgstr "NUESTRO EQUIPO"
 
-#: view/team.php:18
+#: view/team.php:19
 msgid "Meet Damavis"
 msgstr "Conoce Damavis"
 
-#: view/team.php:19
+#: view/team.php:20
 msgid ""
 "The high versatility of our profiles makes it possible for us to provide our "
 "services in any area related to data."
 msgstr ""
 "La alta versatilidad de nuestros perfiles nos permite brindar nuestros "
 "servicios en cualquier área relacionada con los datos."
+
+#: view/team.php:42
+msgid "A great place to work"
+msgstr ""
+
+#: view/team.php:43
+msgid ""
+"Trust in the team is our first secret of success, that's why we are "
+"concerned with offering quality jobs in which to grow professionally and "
+"personally."
+msgstr ""
+
+#: view/team.php:46
+msgid ""
+"Damavis offers the possibility to connect with something bigger than oneself."
+msgstr ""
+
+#: view/team.php:47
+msgid ""
+"Damavis is a team of honest and demanding people who enjoy what they do."
+msgstr ""
+
+#: view/team.php:48
+msgid ""
+"Damavis consists of a group of people who collaborate to solve amazing "
+"problems and where helping each other is essential."
+msgstr ""
+
+#: view/team.php:62
+#, fuzzy
+#| msgid "Meet Damavis"
+msgid "Life at Damavis"
+msgstr "Conoce Damavis"
+
+#: view/team.php:63
+msgid ""
+"We build the team through meaningful experiences in one of the most "
+"beautiful places in the World: Mallorca."
+msgstr ""
 
 #: view/terms.php:4
 #, fuzzy
@@ -1263,9 +1324,6 @@ msgstr "¿Quieres trabajar con nosotros?"
 #~ "Lo que para un cliente supone un problema o impedimento para seguir "
 #~ "avanzando, Damavis lo percibe como una posibilidad, y lo transforma, de "
 #~ "lleno, en un caso de éxito."
-
-#~ msgid "Terms and Conditions"
-#~ msgstr "Terminos Legales"
 
 #~ msgid ""
 #~ "Estamos orientados a dar soluciones de valor añadido a las empresas. "
