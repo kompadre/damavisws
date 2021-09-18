@@ -226,13 +226,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelectorAll('.video-container').forEach(function(c, index) {
         console.log('ere');
         if (typeof c.totalDuration == "undefined") {
-            totalDuration = 0;
+            var totalDuration = 0;
             c.querySelectorAll('video').forEach(function(e) {
                 if (e instanceof HTMLMediaElement) {
-                    totalDuration += e.duration;
+                    totalDuration += Math.max( 1000, parseInt(e.getAttribute("data-duration")) );
                 }
             });
-            c.totalDuration = totalDuration * 1000;
+            c.totalDuration = totalDuration;
         }
         prevDuration = 0;
         if (typeof c.intervalHandles != "undefined") {
