@@ -19,28 +19,28 @@
         </div>
         <div class="cards video-container">
             <div class="card">
-                <video muted autoplay loop playsinline>
+                <video muted autoplay loop playsinline data-duration="3511">
                     <source src="/img/video/services/01.webm" type="video/webm" />
                     <source src="/img/video/services/01.s.mp4" type="video/mp4" />
                 </video>
                 <a href="/<?= $lang ?>/services/#data-management">&gt;&nbsp;<?= _('Data Management') ?></a>
             </div>
             <div class="card">
-                <video  muted autoplay loop playsinline>
+                <video  muted autoplay loop playsinline data-duration="2043">
                     <source src="/img/video/services/02.webm" type="video/webm" />
                     <source src="/img/video/services/02.s.mp4" type="video/mp4" />
                 </video>
                 <a href="/<?= $lang ?>/services/#ai">&gt;&nbsp;<?= _('Artificial Intelligence') ?></a>
             </div>
             <div class="card">
-                <video  muted autoplay loop playsinline>
+                <video  muted autoplay loop playsinline data-duration="3444">
                     <source src="/img/video/services/03.webm" type="video/webm" />
                     <source src="/img/video/services/03.s.mp4" type="video/mp4" />
                 </video>
                 <a href="/<?= $lang ?>/services/#visualization">&gt;&nbsp;<?= _('Data Visualization') ?></a>
             </div>
             <div class="card">
-                <video  muted autoplay loop playsinline>
+                <video  muted autoplay loop playsinline data-duration="2944">
                     <source src="/img/video/services/04.webm" type="video/webm" />
                     <source src="/img/video/services/04.s.mp4" type="video/mp4" />
                 </video>

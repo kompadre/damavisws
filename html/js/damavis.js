@@ -239,28 +239,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
             try { c.intervalHandles.forEach(function(h) { window.clearInterval(h); }); } catch(e) {}
         }
         c.intervalHandles = [];
-        window.setTimeout(function() {
-            c.querySelectorAll('video > source[type*="webm"]').forEach(function(source, index) {
-                parent = source.parentElement;
-                if (parent instanceof HTMLMediaElement) {
-                    if (Safari) { console.log(e, "Removing source"); }
-                    parent.loop = false;
-                    parent.pause();
-                    var localParent = parent;
-                    var localIndex = index;
-                    window.setTimeout(function() {
-                        localParent.play();
-                        var h = window.setInterval(function() {
-                            console.log(localIndex, "Animating");
-                            localParent.play();
-                        }, c.totalDuration);
-                        c.intervalHandles.push(h);
-                    }, prevDuration);
-                    var currentDuration = parent.getAttribute("data-duration") || (parent.duration * 1000);
-                    prevDuration += currentDuration;
-                    console.log(localParent.parentElement);
-                }
-            });
-        }, 3000);
+        c.querySelectorAll('video > source[type*="webm"]').forEach(function(source, index) {
+            parent = source.parentElement;
+            if (parent instanceof HTMLMediaElement) {
+                if (Safari) { console.log(e, "Removing source"); }
+                parent.loop = false;
+                parent.pause();
+                var localParent = parent;
+                var localIndex = index;
+                window.setTimeout(function() {
+                   localParent.play();
+                   var h = window.setInterval(function() {
+                       console.log(localIndex, "Animating");
+                       localParent.play();
+                   }, c.totalDuration);
+                   c.intervalHandles.push(h);
+                }, prevDuration);
+                var currentDuration = parseInt(parent.getAttribute("data-duration")) || (parent.duration * 1000);
+                prevDuration += currentDuration;
+                console.log(localParent.parentElement);
+            }
+        });
+
     });
 });
