@@ -10,12 +10,7 @@ RewriteRule ^(en|es)/job/*$ /$1/work.html [L]
 RewriteRule ^(en|es)/([a-z]+)/*$ /$1/$2.html [L]
 RewriteRule ^(en|es)/([a-z]+)/([a-z0-9]+)/*$ /$1/$2_$3.html [L]
 
+# API
 RewriteRule ^api/([a-z-_]+)/*$ /api.php?action=$1 [L]
-
-# RewriteRule ^(en|es)/about/*$ /html/$1.about.html [L]
-# RewriteRule ^(en|es)/team/*$ /html/$1.team.html [L]
-# RewriteRule ^(en|es)/contact/*$ /html/$1.contact.html [L]
-# RewriteRule ^(en|es)/terms/*$ /html/$1.terms.html [L]
-# RewriteRule ^(en|es)/job/*$ /html/$1.work.html [L]
-# RewriteRule ^job/*$ /html/en.work.html [L]
-
+# SEO in images
+RewriteRule ^img/services/[a-z-]+?-(card-[0-9]+\.png)$ /img/services/$1 [L]
