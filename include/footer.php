@@ -2,10 +2,10 @@
         <div class="footer-content">
             <img src="img/damavis-logo-light.svg" class="footer-logo" alt="Damavis">
             <div class="social">
-                <a href="https://www.linkedin.com/company/damavis/" rel="nofollow"><img alt="Social Media Facebook" src="img/icons/Facebook.svg"></a>
-                <a href="https://twitter.com/DamavisStudio" rel="nofollow"><img alt="Social Media Twitter" src="img/icons/Twitter.svg" ></a>
-                <a href="https://www.instagram.com/damavisstudio/" rel="nofollow"><img alt="Social Media Instagram" src="img/icons/Instagram.svg"></a>
-                <a href="https://github.com/damavis/" rel="nofollow"><img alt="Social Media Github" src="img/icons/Github.svg"></a>
+                <a target="_blank" href="https://www.facebook.com/damavisStudio/" rel="nofollow"><img alt="Social Media Facebook" src="img/icons/Facebook.svg"></a>
+                <a target="_blank" href="https://twitter.com/DamavisStudio" rel="nofollow"><img alt="Social Media Twitter" src="img/icons/Twitter.svg" ></a>
+                <a target="_blank" href="https://www.instagram.com/damavisstudio/" rel="nofollow"><img alt="Social Media Instagram" src="img/icons/Instagram.svg"></a>
+                <a target="_blank" href="https://github.com/damavis/" rel="nofollow"><img alt="Social Media Github" src="img/icons/Github.svg"></a>
             </div>
             <?php $showLegal = true; include(__DIR__ . '/navigation.php'); ?>
         </div>

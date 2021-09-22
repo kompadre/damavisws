@@ -67,8 +67,8 @@
         <form>
             <a class="cta" rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdGlELnI193ckVAWnla2Gw8v_zUHEGNQQnYXUuP5JGp3wbrrw/viewform"><?= _('Apply now') ?></a>
         </form>
-        <a class="contact-jobs-link" rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdGlELnI193ckVAWnla2Gw8v_zUHEGNQQnYXUuP5JGp3wbrrw/viewform">
-            > <?= _('Do you want to work with us?') ?>
+        <a class="contact-jobs-link" rel="noreferrer" href="/<?= $lang ?>/services/">
+            > <?= _('Do you need our services?') ?>
         </a>
     </div>
 </div>
