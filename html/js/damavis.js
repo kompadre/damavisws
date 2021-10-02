@@ -61,14 +61,13 @@ if (! ('addEventListener' in document)) {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-
     var hidePopup = function() {
         document.querySelectorAll("body > div.modal-backdrop, body > div.modal-dialog").forEach(function(elem) {
             elem.classList.add("hide");
         });
     }
     var acceptCookies = function(e) {
-        dateToExpire = new Date();
+        var dateToExpire = new Date();
         dateToExpire.setDate(dateToExpire.getDate() + 365);
         document.cookie = "termsAccepted=1; expires=" + dateToExpire.toUTCString() + "; domain=" + document.location.host + "; path=/; SameSite=Strict";
         hidePopup();
@@ -201,24 +200,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var form = document.querySelector("#contact-form");
     if (!!form) {
-        console.log("We have form");
-        var csrfElem = form.querySelector('input[name=csrf]');
-        if (!!csrfElem && csrfElem.getAttribute('value') == "") {
-            console.log("we have csrf");
-            var CSRFXHR = new XMLHttpRequest();
-            CSRFXHR.addEventListener('load', function(e) {
-                var data = JSON.parse(CSRFXHR.response);
-                csrfElem.setAttribute('value', data['csrf']);
-                console.log("xhr load");
-            });
-            CSRFXHR.addEventListener('error', function(e) {
-                console.log("xhr error");
-            });
-            CSRFXHR.open('POST', '/api/csrf');
-            CSRFXHR.send();
+        var loadCsrf = function(callback) {
+            var csrfElem = form.querySelector('input[name=csrf]');
+            if (!!csrfElem && csrfElem.getAttribute('value') == "") {
+                console.log("we have csrf");
+                var CSRFXHR = new XMLHttpRequest();
+                CSRFXHR.addEventListener('load', function(e) {
+                    var data = JSON.parse(CSRFXHR.response);
+                    csrfElem.setAttribute('value', data['csrf']);
+                    if (!!callback) {
+                        callback();
+                    }
+                    console.log("xhr load");
+                });
+                CSRFXHR.addEventListener('error', function(e) {
+                    console.log("xhr error");
+                });
+                CSRFXHR.open('POST', '/api/csrf');
+                CSRFXHR.send();
+            }
         }
         form.addEventListener('submit', function(e) {
             e.preventDefault();
+
+            if (e.currentTarget.querySelector("input[name=csrf]").value == "") {
+                var currentTarget = e.currentTarget;
+                return loadCsrf(function() {
+                    currentTarget.dispatchEvent(new Event('submit'));
+                });
+            }
+
             var XHR = new XMLHttpRequest();
             var FD = new FormData( form );
 
@@ -253,7 +264,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     document.querySelectorAll('.video-container').forEach(function(c, index) {
-        console.log('ere');
         if (typeof c.totalDuration == "undefined") {
             var totalDuration = 0;
             c.querySelectorAll('video').forEach(function(e) {
@@ -289,6 +299,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 console.log(localParent.parentElement);
             }
         });
-
     });
 });
