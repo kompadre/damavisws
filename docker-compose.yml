@@ -10,6 +10,7 @@ services:
     - "./bootstrap.php:/var/www/html/bootstrap.php"
     - "./config.php:/var/www/html/config.php"
     - "./index.php:/var/www/html/index.php"
+    - "./html/api.php:/var/www/html/api.php"
     - "./.htaccess.dynamic:/var/www/html/.htaccess"
     - "./html/css/:/var/www/html/css/"
     - "./html/js/:/var/www/html/js/"

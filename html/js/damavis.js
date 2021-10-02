@@ -7,9 +7,7 @@ var oldSafari = Safari && (match = ua.match("Version/([0-9]+).*Safari")) && matc
 var oldAndroid = ua.indexOf("Android SDK")>-1 && (match = ua.match("Chrome/([0-9]+)")) && match[1] <= 50;
 var IE = !!ua.match("(MSIE [0-9]+|Trident/[0-9]+)");
 // alert(navigator.userAgent);
-function x(y) {
-    y(x);
-}
+
 
 if (!window.console || oldSafari || IE || oldAndroid) {
     var myhead = document.getElementsByTagName("head")[0];
@@ -188,6 +186,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var form = document.querySelector("#contact-form");
     if (!!form) {
+        console.log("We have form");
+        var csrfElem = form.querySelector('input[name=csrf]');
+        if (!!csrfElem && csrfElem.getAttribute('value') == "") {
+            console.log("we have csrf");
+            var CSRFXHR = new XMLHttpRequest();
+            CSRFXHR.addEventListener('load', function(e) {
+                var data = JSON.parse(CSRFXHR.response);
+                csrfElem.setAttribute('value', data['csrf']);
+                console.log("xhr load");
+            });
+            CSRFXHR.addEventListener('error', function(e) {
+                console.log("xhr error");
+            });
+            CSRFXHR.open('POST', '/api/csrf');
+            CSRFXHR.send();
+        }
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             var XHR = new XMLHttpRequest();
@@ -242,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         c.querySelectorAll('video > source[type*="webm"]').forEach(function(source, index) {
             parent = source.parentElement;
             if (parent instanceof HTMLMediaElement) {
-                if (Safari) { console.log(e, "Removing source"); }
+                if (Safari) { console.log(source, "Removing source"); }
                 parent.loop = false;
                 parent.pause();
                 var localParent = parent;
