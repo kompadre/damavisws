@@ -23,8 +23,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="prefetch" type="text/css" href="css/damavis.css?ts=1632351884" />
-    <link type="text/css" rel="stylesheet" href="css/damavis.css?ts=1632351884" />
+    <link rel="prefetch" type="text/css" href="css/damavis.css?ts=1633215064" />
+    <link type="text/css" rel="stylesheet" href="css/damavis.css?ts=1633215064" />
 </head>
 <body>
     <div class="" id="main">
@@ -206,27 +206,30 @@
     <div class="home contact" id="contact-form-mark">
     <div class="contact-form">
         <div class="double-title">
-            <p class="center">CONTACTO</p>
-            <h3 class="normal-header center">Set up your data-driven growth</h3>
+            <p class="center">CONTACT</p>
+            <h3 class="normal-header center">
+                Set up your data-driven growth            </h3>
         </div>
         <form id="contact-form">
             <input type="hidden" name="csrf" value="" />
-            <label for="input-contact-name">Nombre completo*</label>
-            <input type="text" id="input-contact-name" name="name" placeholder="Type here" required>
-            <label for="input-contact-email">What is your email?*</label>
-            <input type="email" id="input-contact-email" name="email" placeholder="Type here" required>
-            <label for="input-contact-org">What is your organization?</label>
-            <input type="text" id="input-contact-org" name="org" placeholder="Type here">
-            <label for="textarea-contact-message">Mensaje completo</label>
-            <textarea id="textarea-contact-message" name="message" placeholder="Type here" required></textarea>
-            <button class="cta" class="g-recaptcha" data-sitekey="6LcqpHAcAAAAAIHVoSbBRdhU4alv601-fst9y5zY" data-callback="recaptchaCallback" data-action="submit">
+            <input type="hidden" name="purpose" value="workWithUs" />
+                            <label for="input-contact-name">Nombre completo*</label>
+                <input type="text" id="input-contact-name" name="name" placeholder="Escriba aquí" required>
+                <label for="input-contact-email">¿Cual es tu email?*</label>
+                <input type="email" id="input-contact-email" name="email" placeholder="Escriba aquí" required>
+                <label for="input-contact-org">¿Cual es tu organización?</label>
+                <input type="text" id="input-contact-org" name="org" placeholder="Escriba aquí">
+                <label for="textarea-contact-message">Mensaje completo</label>
+                <textarea id="textarea-contact-message" name="message" placeholder="Escriba aquí" required></textarea>
+                        <button class="cta" class="g-recaptcha" data-sitekey="6LcqpHAcAAAAAIHVoSbBRdhU4alv601-fst9y5zY" data-callback="recaptchaCallback" data-action="submit">
                 Enviar mensaje            </button>
-            <p class="small-font">Clicando en “Enviar mensaje” acepta Vd. nuestros <a href="/es/legal/" target="_blank" title="terms and conditions">terms and conditions</a>.</p>
-            <p class="small-font">The fields marked with a star (*) are mandatory</p>
+            <p class="small-font">
+                Clicando en “Enviar mensaje” acepta Vd. nuestros <a href="/es/legal/" target="_blank" title="Terminos Legales">Terminos Legales</a>.</p>
+            <p class="small-font">Los campos marcados con un asterisco (*) son obligatorios</p>
         </form>
         <div class="form-sent hide">
             <img src="img/icons/Check.png" />
-            <h3>Message received.</h3>
+            <h3>Mensaje recibido.</h3>
             <p>Por lo general tardamos un día en responder.</p>
         </div>
         <a class="contact-jobs-link" href="/es/job/">
@@ -253,14 +256,14 @@
     </nav>
         </div>
         <p class="footer-copyright small-font">
-            © Aneior Studio S.L. - Todos los derechos reservados - <a href="#">Atribuciones</a>
+            © Aneior Studio S.L. - Todos los derechos reservados - <span id="btn_attributions" class="link">Atribuciones</span>
         </p>
     </footer>
     </div>
     <div class="modal-backdrop hide"></div>
     <div class="modal-dialog hide">
         <a class="button close"></a>
-        <div class="modal-body cookie">
+        <div id="modal-content-cookie" class="modal-body cookie hide">
             <img alt="Damavis Cookies" src="../img/icons/Cookie.png" />
             <div>
                 <h3>Política de cookie</h3>
@@ -271,8 +274,19 @@
                 <button class="cta close">Cerrar</button>
             </div>
         </div>
+        <div id="modal-content-attrib" class="modal-body hide">
+            <img alt="Damavis Cookies" src="../img/icons/Attribution.svg" />
+            <div>
+                <h3>Atribuciones</h3>
+                <p></p>
+            </div>
+            <div class="bottom-buttons">
+                <button class="cta close">Cerrar</button>
+            </div>
+
+        </div>
     </div>
-            <script src="js/damavis.js?cache=1632351884"></script>
+            <script src="js/damavis.js?cache=1633215064"></script>
             <script defer async src="https://www.google.com/recaptcha/api.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126214848-1"></script>
         <script>

@@ -18,7 +18,7 @@ make your changes and see what they do in real time.
 
 creates a docker image with all the stuff necessary to generate static files.
 
-> docker run --env-file=.env -v \`pwd\`:/var/www/html php-damavis:latest php regen-static-html.php
+> docker run --env-file=.env -v "$(pwd):/var/www/html php-damavis:latest php regen-static-html.php
 
 generates static html files inside `./html`. Make sure `./html` exists!
 
