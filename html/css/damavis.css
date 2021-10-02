@@ -50,6 +50,12 @@ button.cta, a.cta {
     button.cta, a.cta {
       padding: 3vw 2.5vw; } }
 
+.link {
+  cursor: pointer; }
+
+button.cta:hover, a.cta:hover, nav > a:hover, .link:hover, .social > a:hover {
+  filter: invert(15%); }
+
 .center {
   margin-left: auto;
   margin-right: auto;

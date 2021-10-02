@@ -10,14 +10,14 @@
             <?php $showLegal = true; include(__DIR__ . '/navigation.php'); ?>
         </div>
         <p class="footer-copyright small-font">
-            © Aneior Studio S.L. - <?= _('All rights reserved') ?> - <a href="#"><?= _('Attributions') ?></a>
+            © Aneior Studio S.L. - <?= _('All rights reserved') ?> - <span id="btn_attributions" class="link"><?= _('Attributions') ?></span>
         </p>
     </footer>
     </div>
     <div class="modal-backdrop hide"></div>
     <div class="modal-dialog hide">
         <a class="button close"></a>
-        <div class="modal-body cookie">
+        <div id="modal-content-cookie" class="modal-body cookie hide">
             <img alt="Damavis Cookies" src="../img/icons/Cookie.png" />
             <div>
                 <h3><?= _('Cookies advise') ?></h3>
@@ -27,6 +27,17 @@
                 <button class="cta accept"><?= _('Okay') ?></button>
                 <button class="cta close"><?= _('Close') ?></button>
             </div>
+        </div>
+        <div id="modal-content-attrib" class="modal-body hide">
+            <img alt="Damavis Cookies" src="../img/icons/Attribution.svg" />
+            <div>
+                <h3><?= _('Atribuciones') ?></h3>
+                <p></p>
+            </div>
+            <div class="bottom-buttons">
+                <button class="cta close"><?= _('Close') ?></button>
+            </div>
+
         </div>
     </div>
     <?php if (isset($prod) && $prod) : ?>

@@ -62,7 +62,7 @@ if (! ('addEventListener' in document)) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-    var hideCookiePopup = function() {
+    var hidePopup = function() {
         document.querySelectorAll("body > div.modal-backdrop, body > div.modal-dialog").forEach(function(elem) {
             elem.classList.add("hide");
         });
@@ -71,15 +71,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         dateToExpire = new Date();
         dateToExpire.setDate(dateToExpire.getDate() + 365);
         document.cookie = "termsAccepted=1; expires=" + dateToExpire.toUTCString() + "; domain=" + document.location.host + "; path=/; SameSite=Strict";
-        hideCookiePopup();
+        hidePopup();
     }
-    var showCookiePopup = function() {
+    var showPopup = function(contentId) {
+        if (!contentId) {
+            contentId = "cookie";
+        }
         var modal_bd = document.querySelector("body > div.modal-backdrop");
+        modal_bd.classList.remove("hide");
         var modal_content = document.querySelector("body > div.modal-dialog");
-
-        [modal_bd, modal_content].forEach(function(elem) {
-            elem.classList.remove("hide");
-        });
+        modal_content.classList.remove("hide");
 
         var donothing = function(e) { console.log("Event prevented"); e.preventDefault(); e.stopPropagation(); return false; }
         modal_bd.addEventListener('click', donothing);
@@ -91,12 +92,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
             button.addEventListener('touch', acceptCookies);
         }
 
+        modal_content.querySelectorAll(".modal-body").forEach(function(body) {
+            body.classList.add("hide");
+        });
+
+        modal_content.querySelector("#modal-content-" + contentId).classList.remove("hide");
+
         modal_content.querySelectorAll("a.close, button.close").forEach(function(elem) {
             console.log(elem);
-            elem.addEventListener('click', hideCookiePopup);
-            elem.addEventListener('touch', hideCookiePopup);
+            elem.addEventListener('click', hidePopup);
+            elem.addEventListener('touch', hidePopup);
         });
     }
+
     var cookies = document.cookie.split('; ');
     var termsAcceptedCookieFound = false;
     for (var i=0;i<cookies.length;i++) {
@@ -107,8 +115,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }
     if (!termsAcceptedCookieFound && document.location.href.indexOf("cookiesAccepted") === -1) {
-        showCookiePopup();
+        showPopup('cookie');
     }
+
+    document.querySelector("#btn_attributions").addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        showPopup('attrib');
+        return false;
+    });
 
     var logo = document.querySelector("header > a > img.logo");
     var hamburger = document.querySelector(".burger");
@@ -256,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         c.querySelectorAll('video > source[type*="webm"]').forEach(function(source, index) {
             parent = source.parentElement;
             if (parent instanceof HTMLMediaElement) {
-                if (Safari) { console.log(source, "Removing source"); }
+                if (Safari) { source.remove(); }
                 parent.loop = false;
                 parent.pause();
                 var localParent = parent;

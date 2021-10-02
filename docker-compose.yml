@@ -18,3 +18,10 @@ services:
     - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
     ports:
     - "80:80"
+  lt:
+    image: lambdatest/tunnel
+    links:
+      - "http:damavis"
+    environment:
+      LT_USERNAME: kompadre@gmail.com
+      LT_ACCESS_KEY: wgXnOgFSt8b5drOyImAwqx0Aejzc4H7n7Asu5Rnycq2woT6vW7

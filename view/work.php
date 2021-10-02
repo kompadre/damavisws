@@ -58,18 +58,5 @@
     </div>
     <div><img src="img/work/octocat.png" class="photo" alt="Damavis Careers Special Value" /></div>
 </div>
-<div class="home contact">
-    <div class="contact-form">
-        <div class="double-title">
-            <p class="center"><?= _('JOIN US') ?></p>
-            <h3 class="center"><?= _('Do you want to be part of the Damavis team?') ?></h3>
-        </div>
-        <form>
-            <a class="cta" rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdGlELnI193ckVAWnla2Gw8v_zUHEGNQQnYXUuP5JGp3wbrrw/viewform"><?= _('Apply now') ?></a>
-        </form>
-        <a class="contact-jobs-link" rel="noreferrer" href="/<?= $lang ?>/services/">
-            > <?= _('Do you need our services?') ?>
-        </a>
-    </div>
-</div>
+<?php include('./include/form.php'); ?>
 <?php include('./include/footer.php'); ?>
