@@ -23,8 +23,8 @@ else if (!isset($lang)) {
 }
 
 $currentPage = isset($currentPage) ? $currentPage : 'home';
-$newlocale = $lang == 'en' ? 'C' : ($lang . '_' . strtoupper($lang == 'en' ? 'US' : $lang) . '.utf8');
-if ($lang != 'en') { putenv('LANGUAGE=' . $lang . '_' . strtoupper($lang)); }
+$newlocale = $lang == 'en' ? 'C' : ($lang . '_' . strtoupper($lang) . '.utf8');
+if ($lang != 'en') { putenv('LANGUAGE=' . $newlocale); }
 setlocale(LC_MESSAGES, $newlocale);
 textdomain('messages');
 bind_textdomain_codeset('messages', 'utf-8');

@@ -39,8 +39,8 @@
             <h3><?= _('Message received.') ?></h3>
             <p><?= _('We usually take one day to respond.') ?></p>
         </div>
-        <a class="contact-jobs-link" href="/<?= $lang ?>/job/">
-            > <?= _('Do you want to work with us?') ?>
+        <a class="contact-jobs-link" href="/<?= $lang . '/' . ($isWork ? 'services' : 'job') ?>/">
+            > <?= _($isWork ? 'Do you need our services?' : 'Do you want to work with us?') ?>
         </a>
     </div>
 </div>
