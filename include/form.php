@@ -15,10 +15,8 @@
                 <input type="text" id="input-contact-name" name="name" placeholder="<?= _('Type here') ?>" required>
                 <label for="input-contact-email"><?= _('What is your email?') ?>*</label>
                 <input type="email" id="input-contact-email" name="email" placeholder="<?= _('Type here') ?>" required>
-                <label for="input-contact-org"><?= _('What is your organization?') ?></label>
-                <input type="text" id="input-contact-org" name="org" placeholder="<?= _('Type here') ?>">
                 <label for="textarea-contact-message"><?= _('What is your message?') ?></label>
-                <textarea id="textarea-contact-message" name="message" placeholder="<?= _('Type here') ?>" required></textarea>
+                <textarea id="textarea-contact-message" name="message" placeholder="<?= _('Type here') ?>"></textarea>
             <?php else: ?>
                 <label for="input-contact-name"><?= _('What is your name?') ?>*</label>
                 <input type="text" id="input-contact-name" name="name" placeholder="<?= _('Type here') ?>" required>

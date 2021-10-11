@@ -31,7 +31,7 @@
         <div id="modal-content-attrib" class="modal-body hide">
             <img alt="Damavis Cookies" src="../img/icons/Attribution.svg" />
             <div>
-                <h3><?= _('Atribuciones') ?></h3>
+                <h3><?= _('Attributions') ?></h3>
                 <p></p>
             </div>
             <div class="bottom-buttons">

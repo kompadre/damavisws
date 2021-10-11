@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-10-02 19:50+0200\n"
-"PO-Revision-Date: 2021-10-02 19:52+0200\n"
+"POT-Creation-Date: 2021-10-11 18:37+0200\n"
+"PO-Revision-Date: 2021-10-11 18:37+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -110,7 +110,7 @@ msgstr ""
 msgid "All rights reserved"
 msgstr "Todos los derechos reservados"
 
-#: include/footer.php:13
+#: include/footer.php:13 include/footer.php:34
 msgid "Attributions"
 msgstr "Atribuciones"
 
@@ -133,63 +133,63 @@ msgstr ""
 msgid "Okay"
 msgstr "¡Entendido!"
 
-#: include/footer.php:28
+#: include/footer.php:28 include/footer.php:38
 msgid "Close"
 msgstr "Cerrar"
 
-#: include/form.php:4 include/form.php:5
-msgid "work"
-msgstr ""
+#: include/form.php:5
+msgid "JOIN US"
+msgstr "ÚNETE A NOSOTROS"
 
-#: include/form.php:10 include/form.php:19
+#: include/form.php:7
+msgid "Do you want to be part of the Damavis team?"
+msgstr "¿Quieres formar parte del equipo Damavis?"
+
+#: include/form.php:14 include/form.php:21
 msgid "What is your name?"
 msgstr "Nombre completo"
 
-#: include/form.php:11 include/form.php:13 include/form.php:15
-#: include/form.php:17 include/form.php:20 include/form.php:22
+#: include/form.php:15 include/form.php:17 include/form.php:19
+#: include/form.php:22 include/form.php:24
 msgid "Type here"
 msgstr "Escriba aquí"
 
-#: include/form.php:12 include/form.php:21
+#: include/form.php:16 include/form.php:23
 msgid "What is your email?"
 msgstr "¿Cual es tu email?"
 
-#: include/form.php:14
-msgid "What is your organization?"
-msgstr "¿Cual es tu organización?"
-
-#: include/form.php:16
+#: include/form.php:18
 msgid "What is your message?"
 msgstr "Mensaje completo"
 
-#: include/form.php:25 include/form.php:27
+#: include/form.php:27 include/form.php:31
 msgid "Send Message"
 msgstr "Enviar mensaje"
 
-#: include/form.php:27
+#: include/form.php:32
 msgid "terms and conditions"
 msgstr "Terminos Legales"
 
-#: include/form.php:27
+#: include/form.php:30
 #, php-format
 msgid "By clicking the “%s” button, you agree on our %s."
 msgstr "Clicando en “%s” acepta Vd. nuestros %s."
 
-#: include/form.php:28
+#: include/form.php:33
 msgid "The fields marked with a star (*) are mandatory"
 msgstr "Los campos marcados con un asterisco (*) son obligatorios"
 
-#: include/form.php:32
+#: include/form.php:37
 msgid "Message received."
 msgstr "Mensaje recibido."
 
-#: include/form.php:33
+#: include/form.php:38
 msgid "We usually take one day to respond."
 msgstr "Por lo general tardamos un día en responder."
 
-#: include/form.php:36
-msgid "Do you want to work with us?"
-msgstr "¿Quieres trabajar con nosotros?"
+#: include/form.php:41
+msgid "Do you need our services?"
+msgstr "¿Necesita nuestros servicios?"
 
 #: include/header.php:38
 msgid "Cambiar idioma a español"
@@ -558,11 +558,15 @@ msgstr ""
 "etapas siguientes describen el camino para lograr la transformación digital "
 "completa."
 
-#: view/home.php:111
+#: view/home.php:106
+msgid "Learn more"
+msgstr "Saber más"
+
+#: view/home.php:112
 msgid "MEET OUR TEAM"
 msgstr "NUESTRO EQUIPO"
 
-#: view/home.php:112
+#: view/home.php:113
 msgid ""
 "We are strongly committed to teamwork, quality, assertiveness, effectiveness "
 "and efficiency."
@@ -570,7 +574,7 @@ msgstr ""
 "Apostamos por el trabajo en equipo, la calidad, asertividad, eficacia y "
 "eficiencia."
 
-#: view/home.php:114
+#: view/home.php:115
 msgid ""
 "Aware of the power that data can offer the world, we have created a team of "
 "experts with the ability to create and deliver Big Data tools that lead to "
@@ -580,15 +584,15 @@ msgstr ""
 "equipo de profesionales con capacidad de crear y facilitar herramientas de "
 "Big Data que conduzcan al éxito."
 
-#: view/home.php:115
+#: view/home.php:116
 msgid "Meet our team"
 msgstr "Conócenos"
 
-#: view/home.php:123
+#: view/home.php:124
 msgid "CLIENTS"
 msgstr "CLIENTES"
 
-#: view/home.php:124
+#: view/home.php:125
 msgid "We have performed outstanding projects with:"
 msgstr "Hemos realizado proyectos excepcionales con:"
 
@@ -1188,21 +1192,19 @@ msgstr "Perfil en GitHub demostrando sus habilidades."
 msgid "Knowledge of CI / CD tools."
 msgstr "Conocimientos de herramientas de CI / CD."
 
-#: view/work.php:65
-msgid "JOIN US"
-msgstr "ÚNETE A NOSOTROS"
+#, fuzzy
+#~| msgid "Attributions"
+#~ msgid "Atribuciones"
+#~ msgstr "Atribuciones"
 
-#: view/work.php:66
-msgid "Do you want to be part of the Damavis team?"
-msgstr "¿Quieres formar parte del equipo Damavis?"
+#~ msgid "What is your organization?"
+#~ msgstr "¿Cual es tu organización?"
 
-#: view/work.php:69
-msgid "Apply now"
-msgstr "Suscríbete"
+#~ msgid "Do you want to work with us?"
+#~ msgstr "¿Quieres trabajar con nosotros?"
 
-#: view/work.php:72
-msgid "Do you need our services?"
-msgstr "¿Necesita nuestros servicios?"
+#~ msgid "Apply now"
+#~ msgstr "Suscríbete"
 
 #~ msgid "CONTACT"
 #~ msgstr "CONTACTO"

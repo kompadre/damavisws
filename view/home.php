@@ -103,6 +103,7 @@
                 <h2 class="left"><?= _('The solution is hidden in your data. Let us reveal it for you.') ?></h2>
             </div>
             <p><?= _('The objective of Damavis is to work hand in hand with our clients to take them to the Data Driven Stage, in which it is possible to be highly competitive through an intelligent use of the data. The following five stages describe the path to achieving complete Digital Transformation.') ?></p>
+            <a class="cta" href="/es/team/"><?= _('Learn more') ?></a>
         </div>
     </div>
     <div class="home team">
