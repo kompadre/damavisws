@@ -19,17 +19,17 @@
     </div>
     <div class="cards">
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Data Lake')); ?>-card-1.png" title="<?= _('Data Lake') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Data Lake')); ?>-card-1.png" alt="<?= _('Data Lake') ?>" />
             <h3><?= _('Data Lake') ?></h3>
             <p><?= _('We are experts at creating data repositories in their natural format in a way that fulfils the specific needs of our clients thus creating a centralized and strong base so that the different parts of the company can use this source of information to develop their own projects.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Data Warehouse')); ?>-card-2.png" title="<?= _('Data Warehouse') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Data Warehouse')); ?>-card-2.png" alt="<?= _('Data Warehouse') ?>" />
             <h3><?= _('Data Warehouse') ?></h3>
             <p><?= _('We take care of understanding the problems of our customers in order to decide which is the optimal format in which their data should be stored.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('ETL')); ?>-card-3.png" title="<?= _('ETL') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('ETL')); ?>-card-3.png" alt="<?= _('ETL') ?>" />
             <h3><?= _('ETL') ?></h3>
             <p><?= _('Extract, Transform and Load, also known as ETL, involves the transformation and processing of data so that analytical teams can develop artificial intelligence models as well as visualizations on which the company relies on.') ?></p>
         </div>
@@ -43,47 +43,47 @@
     </div>
     <div class="cards">
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Customer Segmentation')); ?>-card-4.png" title="<?= _('Customer Segmentation') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Customer Segmentation')); ?>-card-4.png" alt="<?= _('Customer Segmentation') ?>" />
             <h3><?= _('Customer Segmentation') ?></h3>
             <p><?= _('We are experts at creating data repositories in their natural format in a way that fulfils the specific needs of our clients thus creating a centralized and strong base so that the different parts of the company can use this source of information to develop their own projects.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Search of Optimal Paths')); ?>-card-5.png" title="<?= _('Search of Optimal Paths') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Search of Optimal Paths')); ?>-card-5.png" alt="<?= _('Search of Optimal Paths') ?>" />
             <h3><?= _('Search of Optimal Paths') ?></h3>
             <p><?= _('We take care of understanding the problems of our customers in order to decide which is the optimal format in which their data should be stored.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Record Linkage')); ?>-card-6.png" title="<?= _('Record Linkage') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Record Linkage')); ?>-card-6.png" alt="<?= _('Record Linkage') ?>" />
             <h3><?= _('Record Linkage') ?></h3>
             <p><?= _('We create relationships of the records that lack unique identifier between the different data sources, using probabilistic methodologies of Record Linkage or Machine Learning.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Time Series Prediction')); ?>-card-7.png" title="<?= _('Time Series Prediction') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Time Series Prediction')); ?>-card-7.png" alt="<?= _('Time Series Prediction') ?>" />
             <h3><?= _('Time Series Prediction') ?></h3>
             <p><?= _('We are able to model any type of time series that has an implicit pattern, such as predicting product demands, prices or cash flows, using classic statistical techniques.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Conversion Probability Estimation')); ?>-card-8.png" title="<?= _('Conversion Probability Estimation') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Conversion Probability Estimation')); ?>-card-8.png" alt="<?= _('Conversion Probability Estimation') ?>" />
             <h3><?= _('Conversion Probability Estimation') ?></h3>
             <p><?= _('We can estimate the probability of purchasing a product in a particular context using advanced classification algorithms. Something very valuable in terms of eCommerce, where knowing how much to bet on a product determines the profitability of an online marketing policy.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Pricing Optimization')); ?>-card-9.png" title="<?= _('Pricing Optimization') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Pricing Optimization')); ?>-card-9.png" alt="<?= _('Pricing Optimization') ?>" />
             <h3><?= _('Pricing Optimization') ?></h3>
             <p><?= _('We develop intelligent algorithms for our clients that are able to understand the market context and change the price dynamically and automatically, thus increasing the speed of reaction to market changes and therefore their competitiveness.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Text Analysis')); ?>-card-10.png" title="<?= _('Text Analysis') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Text Analysis')); ?>-card-10.png" alt="<?= _('Text Analysis') ?>" />
             <h3><?= _('Text Analysis') ?></h3>
             <p><?= _('We are able to model any type of time series that has an implicit pattern, such as predicting product demands, prices or cash flows, using classic statistical techniques.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Recommendation Systems')); ?>-card-11.png" title="<?= _('Recommendation Systems') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Recommendation Systems')); ?>-card-11.png" alt="<?= _('Recommendation Systems') ?>" />
             <h3><?= _('Recommendation Systems') ?></h3>
             <p><?= _('We can estimate the probability of purchasing a product in a particular context using advanced classification algorithms. Something very valuable in terms of eCommerce, where knowing how much to bet on a product determines the profitability of an online marketing policy.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Image Recognition')); ?>-card-12.png" title="<?= _('Image Recognition') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Image Recognition')); ?>-card-12.png" alt="<?= _('Image Recognition') ?>" />
             <h3><?= _('Image Recognition') ?></h3>
             <p><?= _('We develop intelligent algorithms for our clients that are able to understand the market context and change the price dynamically and automatically, thus increasing the speed of reaction to market changes and therefore their competitiveness.') ?></p>
         </div>
@@ -97,17 +97,17 @@
     </div>
     <div class="cards">
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Business Intelligence Tools')); ?>-card-13.png" title="<?= _('Business Intelligence Tools') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Business Intelligence Tools')); ?>-card-13.png" alt="<?= _('Business Intelligence Tools') ?>" />
             <h3><?= _('Business Intelligence Tools') ?></h3>
             <p><?= _('We transform information into knowledge in order to optimize the strategic decisions of a company by integrating any Business Intelligence technology according to the needs and preferences of our customers.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('Dashboards')); ?>-card-14.png" title="<?= _('Dashboards') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('Dashboards')); ?>-card-14.png" alt="<?= _('Dashboards') ?>" />
             <h3><?= _('Dashboards') ?></h3>
             <p><?= _('We are experts at developing interactive Dashboards that, based on large volumes of data, visually shows direct results and helps to make strategic decisions.') ?></p>
         </div>
         <div class="card">
-            <img src="../img/services/<?= $normalizePath(_('High Dimensions Visualization')); ?>-card-15.png" title="<?= _('High Dimensions Visualization') ?>" />
+            <img src="../img/services/<?= $normalizePath(_('High Dimensions Visualization')); ?>-card-15.png" alt="<?= _('High Dimensions Visualization') ?>" />
             <h3><?= _('High Dimensions Visualization') ?></h3>
             <p><?= _('We provide visualization tools that make easy to quickly understand what is happening in our clients\' market and thus be able to apply predictive analysis techniques and future projections.') ?></p>
         </div>
