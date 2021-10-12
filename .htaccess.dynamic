@@ -12,6 +12,7 @@ RewriteRule ^(en|es)/contact/*$ /index.php?url=contact.php&l=$1 [L]
 RewriteRule ^(en|es)/(terms|legal)/*$ /index.php?url=terms.php&l=$1 [L]
 RewriteRule ^(en|es)/job/*$ /index.php?url=work.php&l=$1 [L]
 RewriteRule ^(en|es)/([a-z]+)/([a-z0-9]+)/*$ /index.php?url=$2_$3.php&l=$1 [L]
+
 # API
 RewriteRule ^api/([a-z-_]+)/*$ /api.php?action=$1 [L]
 # SEO in images

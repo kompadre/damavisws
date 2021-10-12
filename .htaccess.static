@@ -9,6 +9,7 @@ RewriteRule ^(en|es)/data-driven/*$ /$1/datadriven.html [L]
 RewriteRule ^(en|es)/job/*$ /$1/work.html [L]
 RewriteRule ^(en|es)/([a-z]+)/*$ /$1/$2.html [L]
 RewriteRule ^(en|es)/([a-z]+)/([a-z0-9]+)/*$ /$1/$2_$3.html [L]
+RewriteRule ^(en|es)/(terms|legal)/*$ /$1/$2.html [L]
 
 # API
 RewriteRule ^api/([a-z-_]+)/*$ /api.php?action=$1 [L]
