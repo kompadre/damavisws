@@ -25,8 +25,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="prefetch" type="text/css" href="css/damavis.css?ts=<?= time(); ?>" />
-    <link type="text/css" rel="stylesheet" href="css/damavis.css?ts=<?= time(); ?>" />
+    <link rel="prefetch" type="text/css" href="css/damavis.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/damavis.min.css" />
 </head>
 <body>
     <div class="<?= isset($darkBg) && $darkBg ? 'dark-bg' : '' ?>" id="main">
