@@ -26,3 +26,20 @@ foreach(['en', 'es'] as $lang) {
         }
     }
 }
+
+if (!is_dir('./html/css')) {
+    mkdir('./html/css');
+}
+exec("sassc ./source/css/damavis.scss ./source/css/damavis.css");
+exec("esbuild --minify ./source/css/damavis.css --outfile=./html/css/damavis.min.css");
+exec("sassc ./source/css/damavis-fallback-ie.scss ./source/css/damavis-fallback-ie.css");
+exec("esbuild --minify ./source/css/damavis-fallback-ie.css --outfile=./html/css/damavis-fallback-ie.min.css");
+exec("sassc ./source/css/damavis-fallback-safari.scss ./source/css/damavis-fallback-safari.css");
+exec("esbuild --minify ./source/css/damavis-fallback-safari.css --outfile=./html/css/damavis-fallback-safari.min.css");
+
+if (!is_dir('./html/js')) {
+    mkdir('./html/js');
+}
+exec("esbuild --minify ./source/js/damavis.js --outfile=./html/js/damavis.min.js");
+
+

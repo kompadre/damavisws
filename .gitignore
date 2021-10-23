@@ -3,5 +3,8 @@
 *-autosave.kra
 *~
 .htaccess
-# /html/??/*.html
+/html/??/*.html
 /source/video
+/source/css/*.css
+/html/css/*.min.css
+/html/js/*.min.js
