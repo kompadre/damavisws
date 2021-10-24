@@ -2,6 +2,7 @@
 */*/.sass-cache/*
 *-autosave.kra
 *~
+.env
 .htaccess
 /html/??/*.html
 /source/video

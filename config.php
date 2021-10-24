@@ -17,7 +17,7 @@ $meta = [
     'team' => [ 'page' => 'team', 'title' => 'Damavis | '. _('Team'), 'keywords' => $defaultKeywords, 'description' => $defaultDescription ],
     'services' => [ 'page' => 'services', 'title' => 'Damavis | ' ._('Services'), 'keywords' => $defaultKeywords, 'description' => $defaultDescription ],
     'terms' => [ 'page' => 'terms', 'title' => 'Damavis | '. _('Legal'), 'keywords' => $defaultKeywords, 'description' => $defaultDescription ],
-    'work' => [ 'page' => 'work', 'title' => 'Damavis | '. _('Services'), 'keywords' => $defaultKeywords, 'description' => $defaultDescription ]];
+    'work' => [ 'page' => 'work', 'title' => 'Damavis | '. _('Work with us'), 'keywords' => $defaultKeywords, 'description' => $defaultDescription ]];
 
 
 

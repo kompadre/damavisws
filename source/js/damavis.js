@@ -220,26 +220,40 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 CSRFXHR.send();
             }
         }
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function formOnSubmit(e) {
             e.preventDefault();
+            var currentTarget = e.currentTarget;
+            currentTarget.removeEventListener('submit', formOnSubmit);
+            currentTarget.addEventListener('submit', function(e2) { e2.stopPropagation(); return false; /* and do nothing else */ });
+            currentTarget.querySelector("button.cta").setAttribute("disabled", true);
 
-            if (e.currentTarget.querySelector("input[name=csrf]").value == "") {
-                var currentTarget = e.currentTarget;
-                return loadCsrf(function() {
-                    currentTarget.dispatchEvent(new Event('submit'));
-                });
+            var promises = [];
+            if (currentTarget.querySelector("input[name=recaptcha]").value == "") {
+                promises.push(grecaptcha.execute(window.recaptchaSiteKey, {action: 'sendmail'}).then(function(token) {
+                    currentTarget.querySelector("input[name=recaptcha]").value = token;
+                    return "recaptcha";
+                }));
+            }
+            if (currentTarget.querySelector("input[name=csrf]").value == "") {
+                promises.push(
+                    fetch('/api/csrf', {method: 'POST'})
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(data) {
+                        currentTarget.querySelector("input[name=csrf]").value = data.csrf;
+                        return "csrf";
+                    }));
             }
 
-            var XHR = new XMLHttpRequest();
-            var FD = new FormData( form );
-
-            XHR.addEventListener('load', function() {
-                form.parentElement.querySelector("div.form-sent").classList.remove("hide");
-                form.classList.add("hide");
+            Promise.all(promises).then(function() {
+                var FD = new FormData( form );
+                fetch('/api/sendmail', {method: 'POST', body: FD})
+                    .then(function() {
+                        form.parentElement.querySelector("div.form-sent").classList.remove("hide");
+                        form.classList.add("hide");
+                    });
             });
-
-            XHR.open('POST', '/api/sendmail');
-            XHR.send( FD );
         });
 
         form.querySelector("button.cta").addEventListener("click", function() {
@@ -289,7 +303,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 window.setTimeout(function() {
                    localParent.play();
                    var h = window.setInterval(function() {
-                       console.log(localIndex, "Animating");
                        localParent.play();
                    }, c.totalDuration);
                    c.intervalHandles.push(h);

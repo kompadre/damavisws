@@ -4,11 +4,7 @@ services:
   http:
     build: .
     volumes:
-    - "./html/en/:/var/www/html/en/"
-    - "./html/es/:/var/www/html/es/"
-    - "./html/css/:/var/www/html/css/"
-    - "./html/img/:/var/www/html/img/"
-    - "./html/js/:/var/www/html/js/"
+    - "./html:/var/www/html"
     - "./.htaccess.static:/var/www/html/.htaccess"
     - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
     ports:

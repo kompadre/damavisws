@@ -2,7 +2,9 @@ version: "3"
 
 services:
   http:
-    build: .
+    build:
+      dockerfile: dev.Dockerfile
+      context: .
     volumes:
     - "./view/:/var/www/html/view/"
     - "./include/:/var/www/html/include/"
@@ -13,9 +15,13 @@ services:
     - "./html/api.php:/var/www/html/api.php"
     - "./.htaccess.dynamic:/var/www/html/.htaccess"
     - "./html/css/:/var/www/html/css/"
-    - "./html/js/:/var/www/html/js/"
+    - "./html/js/damavis.min.js:/var/www/html/js/damavis.min.js"
+    - "./source/js/damavis.js:/var/www/html/js/damavis.js"
     - "./html/img/:/var/www/html/img/"
     - "./source/apache/damavis.conf:/etc/apache2/sites-enabled/damavis.conf"
+    environment:
+      - RECAPTCHA_SITE=${RECAPTCHA_SITE}
+      - RECAPTCHA_SECRET=${RECAPTCHA_SECRET}
     ports:
     - "80:80"
   mailhog:

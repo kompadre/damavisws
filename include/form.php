@@ -7,9 +7,9 @@
                 <?= _($isWork ? 'Do you want to be part of the Damavis team?' : 'Set up your data-driven growth') ?>
             </h<?= $isContact ? '1' : '3' ?>>
         </div>
-        <form id="contact-form">
+        <form id="contact-form" method="post">
             <input type="hidden" name="csrf" value="" />
-            <input type="hidden" name="purpose" value="workWithUs" />
+            <input type="hidden" name="recaptcha" value="" />
             <?php if ($currentPage != 'work') : ?>
                 <label for="input-contact-name"><?= _('What is your name?') ?>*</label>
                 <input type="text" id="input-contact-name" name="name" placeholder="<?= _('Type here') ?>" required>
@@ -18,14 +18,13 @@
                 <label for="textarea-contact-message"><?= _('What is your message?') ?></label>
                 <textarea id="textarea-contact-message" name="message" placeholder="<?= _('Type here') ?>"></textarea>
             <?php else: ?>
+                <input type="hidden" name="purpose" value="workWithUs" />
                 <label for="input-contact-name"><?= _('What is your name?') ?>*</label>
                 <input type="text" id="input-contact-name" name="name" placeholder="<?= _('Type here') ?>" required>
                 <label for="input-contact-email"><?= _('What is your email?') ?>*</label>
                 <input type="email" id="input-contact-email" name="email" placeholder="<?= _('Type here') ?>" required>
             <?php endif; ?>
-            <button class="cta" class="g-recaptcha" data-sitekey="<?= getenv('RECAPTCHA_SITE') ?>" data-callback="recaptchaCallback" data-action="submit">
-                <?= _('Send Message') ?>
-            </button>
+            <button class="cta"><?= _('Send Message') ?></button>
             <p class="small-font">
                 <?= __('By clicking the “%s” button, you agree on our %s.',
                     _('Send Message'),

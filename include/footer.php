@@ -37,13 +37,13 @@
             <div class="bottom-buttons">
                 <button class="cta close"><?= _('Close') ?></button>
             </div>
-
         </div>
     </div>
-    <script src="js/damavis.min.js"></script>
-    <script defer async src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="js/damavis<?= getenv('DAMAVISWS_PROD') != null ? '.min' :  '' ?>.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=<?= getenv('RECAPTCHA_SITE') ?>"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126214848-1"></script>
     <script>
+        window.recaptchaSiteKey = "<?= getenv('RECAPTCHA_SITE') ?>";
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());

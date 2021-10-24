@@ -45,7 +45,12 @@ button.cta, a.cta {
   border: 0;
   font-family: Rubik;
   margin-bottom: 1em;
+  &[disabled] {
+    background-color: #e8ffff;
+    color: #6b7a7a;
+  }
 }
+
 .link {
   cursor: pointer;
 }
@@ -64,7 +69,11 @@ button.cta:hover, a.cta:hover, nav > a:hover, .link:hover, .social > a:hover {
   visibility: hidden!important;
 }
 
+
 body {
+  >div >div.grecaptcha-badge {
+    box-shadow: none!important;
+  }
   >div.modal-backdrop, >div.modal-dialog {
     position: fixed;
   }
